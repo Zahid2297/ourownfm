@@ -13,7 +13,7 @@ const HomePage = () => {
   });
   return (
     <div>
-      <div ref={circle} className="w-100 h-100 bg-red-700"></div>
+      <div ref={circle} className="w-100 h-100 bg-blue-700"></div>
       <button onClick={onClick}>cli8ck me</button>
     </div>
   );

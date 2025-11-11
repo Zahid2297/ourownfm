@@ -1,16 +1,9 @@
 
 import './App.css'
-import Slider from './components/slider'
-import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import HomePage from './pages/homePage';
+import { router } from './routes/routes';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage/>,
-  },
-]);
+
 
 function App() {
 

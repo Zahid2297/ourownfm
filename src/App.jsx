@@ -1,12 +1,22 @@
 
 import './App.css'
+import Slider from './components/slider'
+import { createBrowserRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
+import HomePage from './pages/homePage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage/>,
+  },
+]);
 
 function App() {
 
   return (
-   <div>
-    <h1 className='text-red-900 font-black text-2xl'>Zahed</h1>
-   </div>
+    <RouterProvider router={router}/>
+
   )
 }
 

@@ -1,18 +1,22 @@
-import { useEffect, useRef } from "react"
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
-const HomePage = () =>{
-    const circle = useRef();
+const HomePage = () => {
+  const circle = useRef();
 
-   useGSAP(()=>{
-    gsap.to(circle.current, {x:400, duration: 2, borderRadius: "50%"})
-    console.log(circle)
-   })
-    return <div ref={circle} className="w-100 h-100 bg-red-700">
+  const { contextSafe } = useGSAP(() => {});
 
+  const onClick = contextSafe(() => {
+    console.log("clickewd");
+    gsap.to(circle.current, { x: 400, duration: 2, borderRadius: "50%" });
+  });
+  return (
+    <div>
+      <div ref={circle} className="w-100 h-100 bg-red-700"></div>
+      <button onClick={onClick}>cli8ck me</button>
     </div>
+  );
+};
 
-}
-
-export default HomePage
+export default HomePage;

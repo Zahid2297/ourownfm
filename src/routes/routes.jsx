@@ -5,10 +5,10 @@ import Slider from "../components/slider";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage/>,
+    element: <HomePage />,
   },
   {
     path: "/slider",
-    element: <Slider/>,
+    element: <Slider />,
   },
 ]);

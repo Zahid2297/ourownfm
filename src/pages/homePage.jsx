@@ -42,7 +42,7 @@ const HomePage = () => {
             href="mailto:support@example.com"
             className="underline hover:text-sky-100"
           >
-            yaseen@standardtouch.com
+            info@ourownfm.com
           </a>
         </p>
       </div>

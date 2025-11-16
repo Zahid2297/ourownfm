@@ -3,6 +3,7 @@ import HomePage from "../pages/home/homePage";
 import Slider from "../components/slider";
 import NotFound from "../pages/404/notFound";
 import ComingSoonPage from "@/pages/coming_soon/comingSoon";
+import LandingPage from "@/pages/landing/landingPage";
 
 export const router = createBrowserRouter([
   {
@@ -16,5 +17,9 @@ export const router = createBrowserRouter([
   {
     path: "*",
     element: <NotFound />,
+  },
+  {
+    path: "/landing",
+    element: <LandingPage />,
   },
 ]);

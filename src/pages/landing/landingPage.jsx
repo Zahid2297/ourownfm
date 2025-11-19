@@ -3,8 +3,18 @@ import { RiCheckLine, RiMailLine } from "react-icons/ri";
 import { div } from "three/tsl";
 import Silk from "@/components/Silk";
 import Hero from "@/components/Hero";
+import GooeyNav from "@/components/GooeyNav";
 
 const LandingPage = () => {
+  const items = [
+    { label: "Home", href: "/landing" },
+    {
+      label: "Services",
+      href: "/services",
+    },
+    { label: "About", href: "/about-us" },
+    { label: "Contact", href: "/contact-us" },
+  ];
   return (
     <div className="h-screen relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -29,13 +39,26 @@ const LandingPage = () => {
             className="md:h-36 h-30 w-auto "
           />
         </a>
-        <ul className="md:flex font-semibold hidden">
-          <li className="mx-[10px] cursor-pointer text-white">Home</li>
-          <li className="mx-[10px] cursor-pointer text-white">Services</li>
-          <li className="mx-[10px] cursor-pointer text-white">About Us</li>
-          <li className="mx-[10px] cursor-pointer text-white">Contact Us</li>
-        </ul>
-        <div className="hidden md:block px-8 py-1.5 mr-4 bg-gradient-to-r from-gray-500 via-black to-gray-500 hover:from-black hover:via-gray-500 hover:to-black  text-white  rounded-2xl font-bold cursor-pointer transition duration-300">
+        {/* <ul className="md:flex font-semibold hidden">
+          <li className="mx-[30px] cursor-pointer text-white">Home</li>
+          <li className="mx-[30px] cursor-pointer text-white">Services</li>
+          <li className="mx-[30px] cursor-pointer text-white">About Us</li>
+          <li className="mx-[30px] cursor-pointer text-white">Contact Us</li>
+        </ul> */}
+        {/* relative h-14 flex items-center mt-4 hidden md:block */}
+        <div className=" ">
+          <GooeyNav
+            items={items}
+            particleCount={20}
+            particleDistances={[90, 10]}
+            particleR={100}
+            initialActiveIndex={0}
+            animationTime={600}
+            timeVariance={300}
+            colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+          />
+        </div>
+        <div className="hidden md:block px-5 py-1.5 mr-4 bg-gradient-to-r from-gray-500 via-transparent to-gray-500 hover:from-transparent hover:via-gray-500 hover:to-transparent text-white  rounded-xl font-bold cursor-pointer transition duration-300">
           Login
         </div>
       </nav>

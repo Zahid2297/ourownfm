@@ -4,6 +4,7 @@ import Slider from "../components/slider";
 import NotFound from "../pages/404/notFound";
 import ComingSoonPage from "@/pages/coming_soon/comingSoon";
 import LandingPage from "@/pages/landing/landingPage";
+import ServicePage from "@/pages/Services/servicePage";
 
 export const router = createBrowserRouter([
   {
@@ -21,5 +22,9 @@ export const router = createBrowserRouter([
   {
     path: "/landing",
     element: <LandingPage />,
+  },
+  {
+    path: "/services",
+    element: <ServicePage />,
   },
 ]);

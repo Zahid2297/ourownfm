@@ -1,20 +1,32 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { RiCheckLine, RiMailLine } from "react-icons/ri";
 import { div } from "three/tsl";
 import Silk from "@/components/Silk";
 import Hero from "@/components/Hero";
-import GooeyNav from "@/components/GooeyNav";
+import { BsSun } from "react-icons/bs";
+import StaggeredMenu from "@/components/StaggeredMenu";
 
 const LandingPage = () => {
-  const items = [
-    { label: "Home", href: "/landing" },
-    {
-      label: "Services",
-      href: "/services",
-    },
-    { label: "About", href: "/about-us" },
-    { label: "Contact", href: "/contact-us" },
+  const menuItems = [
+    { label: "Home", ariaLabel: "Go to home page", link: "/" },
+
+    { label: "About", ariaLabel: "Learn about us", link: "/about" },
+
+    { label: "Services", ariaLabel: "View our services", link: "/services" },
+
+    { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
   ];
+
+  const socialItems = [
+    { label: "Twitter", link: "https://twitter.com" },
+
+    { label: "GitHub", link: "https://github.com" },
+
+    { label: "LinkedIn", link: "https://linkedin.com" },
+  ];
+
+  const menuRef = useRef();
+
   return (
     <div className="h-screen relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
@@ -31,37 +43,23 @@ const LandingPage = () => {
         <Hero />
       </div> */}
 
-      <nav className="w-full h-26 bg-transparent flex justify-between items-center px-2 md:px-2 rounded-b-3xl shadow-xl/30 shadow-slate-100">
-        <a href="https://ourownfm.com/">
-          <img
-            src="../logo1 white (2).png"
-            alt="site logo"
-            className="md:h-36 h-30 w-auto "
-          />
-        </a>
-        {/* <ul className="md:flex font-semibold hidden">
-          <li className="mx-[30px] cursor-pointer text-white">Home</li>
-          <li className="mx-[30px] cursor-pointer text-white">Services</li>
-          <li className="mx-[30px] cursor-pointer text-white">About Us</li>
-          <li className="mx-[30px] cursor-pointer text-white">Contact Us</li>
-        </ul> */}
-        {/* relative h-14 flex items-center mt-4 hidden md:block */}
-        <div className=" ">
-          <GooeyNav
-            items={items}
-            particleCount={20}
-            particleDistances={[90, 10]}
-            particleR={100}
-            initialActiveIndex={0}
-            animationTime={600}
-            timeVariance={300}
-            colors={[1, 2, 3, 1, 2, 3, 1, 4]}
-          />
-        </div>
-        <div className="hidden md:block px-5 py-1.5 mr-4 bg-gradient-to-r from-gray-500 via-transparent to-gray-500 hover:from-transparent hover:via-gray-500 hover:to-transparent text-white  rounded-xl font-bold cursor-pointer transition duration-300">
-          Login
-        </div>
-      </nav>
+      <StaggeredMenu
+        className="relative z-[999]"
+        position="right"
+        isFixed={false}
+        items={menuItems}
+        socialItems={socialItems}
+        displaySocials={true}
+        displayItemNumbering={false}
+        menuButtonColor="#fff"
+        openMenuButtonColor="black"
+        changeMenuColorOnOpen={true}
+        colors={["#B19EEF", "#5227FF"]}
+        logoUrl="/path-to-your-logo.svg"
+        accentColor="#ff6b6b"
+        onMenuOpen={() => console.log("Menu opened")}
+        onMenuClose={() => console.log("Menu closed")}
+      />
     </div>
   );
 };

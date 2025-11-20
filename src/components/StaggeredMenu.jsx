@@ -430,7 +430,7 @@ rounded-b-3xl shadow-xl/30 shadow-slate-100 pointer-events-auto"
 
             {/* Theme Button + Menu Button */}
             <div className="flex items-center gap-4 ">
-              <button>
+              <button className="cursor-pointer">
                 <BsSun color="white" size={22} />
               </button>
               {/* Your Sun Icon */}
@@ -489,7 +489,7 @@ rounded-b-3xl shadow-xl/30 shadow-slate-100 pointer-events-auto"
         <aside
           id="staggered-menu-panel"
           ref={panelRef}
-          className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
+          className="staggered-menu-panel absolute top-0 right-0 h-full bg-black flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
           style={{ WebkitBackdropFilter: "blur(12px)" }}
           aria-hidden={!open}
         >

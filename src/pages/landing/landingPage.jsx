@@ -5,6 +5,7 @@ import Silk from "@/components/Silk";
 import Hero from "@/components/Hero";
 import { BsSun } from "react-icons/bs";
 import StaggeredMenu from "@/components/StaggeredMenu";
+import ModelViewer from "@/components/ModelViewer";
 
 const LandingPage = () => {
   const menuItems = [
@@ -39,10 +40,6 @@ const LandingPage = () => {
         />
       </div>
 
-      {/* <div>
-        <Hero />
-      </div> */}
-
       <StaggeredMenu
         className="relative z-[999]"
         position="right"
@@ -54,12 +51,33 @@ const LandingPage = () => {
         menuButtonColor="#fff"
         openMenuButtonColor="black"
         changeMenuColorOnOpen={true}
-        colors={["#B19EEF", "#5227FF"]}
+        colors={["white", "black"]}
         logoUrl="/path-to-your-logo.svg"
-        accentColor="#ff6b6b"
+        accentColor="gray"
         onMenuOpen={() => console.log("Menu opened")}
         onMenuClose={() => console.log("Menu closed")}
       />
+
+      {/* <div>
+        <ModelViewer
+          url="/view.glb"
+          width={1200}
+          height={900}
+          showScreenshotButton={false}
+          enableHoverRotation={true}
+          fadeIn={true}
+          autoRotate={false}
+          autoRotateSpeed={0.2}
+          defaultRotationY={35}
+          defaultRotationX={18}
+          defaultZoom={3} // closer
+          minZoomDistance={0}
+          maxZoomDistance={8}
+          modelXOffset={3} // left-right
+          modelYOffset={-9} // up-down
+          enableManualRotation={true}
+        />
+      </div> */}
     </div>
   );
 };

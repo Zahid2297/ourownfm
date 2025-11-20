@@ -21,7 +21,7 @@ const LandingPage = () => {
   const socialItems = [
     { label: "Twitter", link: "https://twitter.com" },
 
-    { label: "GitHub", link: "https://github.com" },
+    { label: "Facebook", link: "https://facebook.com" },
 
     { label: "LinkedIn", link: "https://linkedin.com" },
   ];
@@ -29,8 +29,8 @@ const LandingPage = () => {
   const menuRef = useRef();
 
   return (
-    <div className="h-screen relative overflow-hidden">
-      <div className="absolute inset-0 -z-10">
+    <div className="min-h-screen relative overflow-visible">
+      <div className="fixed inset-0 -z-50">
         <Silk
           speed={10}
           scale={1}
@@ -41,15 +41,15 @@ const LandingPage = () => {
       </div>
 
       <StaggeredMenu
-        className="relative z-[999]"
+        className="fixed inset-0 z-[9999]"
         position="right"
-        isFixed={false}
+        isFixed={true}
         items={menuItems}
         socialItems={socialItems}
         displaySocials={true}
         displayItemNumbering={false}
         menuButtonColor="#fff"
-        openMenuButtonColor="black"
+        openMenuButtonColor="white"
         changeMenuColorOnOpen={true}
         colors={["white", "black"]}
         logoUrl="/path-to-your-logo.svg"
@@ -58,26 +58,61 @@ const LandingPage = () => {
         onMenuClose={() => console.log("Menu closed")}
       />
 
-      {/* <div>
-        <ModelViewer
-          url="/view.glb"
-          width={1200}
-          height={900}
-          showScreenshotButton={false}
-          enableHoverRotation={true}
-          fadeIn={true}
-          autoRotate={false}
-          autoRotateSpeed={0.2}
-          defaultRotationY={35}
-          defaultRotationX={18}
-          defaultZoom={3} // closer
-          minZoomDistance={0}
-          maxZoomDistance={8}
-          modelXOffset={3} // left-right
-          modelYOffset={-9} // up-down
-          enableManualRotation={true}
-        />
-      </div> */}
+      <div className="relative z-10 pt-[120px]">
+        <div className="w-full max-w-[1900px] mx-auto min-h-[700px] grid grid-cols-1 md:grid-cols-12">
+          {/* LEFT HERO CONTENT – ALWAYS VISIBLE */}
+          <div className="flex flex-col md:justify-center mt-20 md:mt-0 h-auto md:pl-28 z-10 text-center md:text-left md:col-span-2 md:-mr-150">
+            <h1 className="text-white text-xl md:text-6xl font-bold leading-tight">
+              Building a Skilled Future Ready Facilities Management Workforce
+            </h1>
+
+            <div>
+              <p className="text-white/80 text-xs md:text-xl mt-4">
+                Training | Consultancy | Project Guidance | Sustainability
+                <br />
+                Empowering India & GCC
+              </p>
+
+              <div className="flex flex-col md:flex-row gap-4 mt-8 md:justify-start justify-center ">
+                <li className="mx-[30px] cursor-pointer text-white hover:text-red-500 z-50 hover:bg-amber-400">
+                  Home
+                </li>
+                <button className="cursor-pointer rounded-3xl text-white">
+                  Schedule Consultation
+                </button>
+                <button className="cursor-pointer rounded-3xl text-white">
+                  Explore Programs
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT MODEL – ONLY VISIBLE ON MD+ */}
+          <div className="relative z-0 hidden md:block h-[880px] md:col-span-10 ">
+            <ModelViewer
+              url="/view.glb"
+              showScreenshotButton={false}
+              enableHoverRotation={true}
+              fadeIn={true}
+              autoRotate={false}
+              autoRotateSpeed={0.3}
+              defaultRotationY={35}
+              defaultRotationX={18}
+              defaultZoom={3}
+              minZoomDistance={0}
+              maxZoomDistance={8}
+              modelXOffset={3}
+              modelYOffset={-8}
+              enableManualRotation={false}
+              enableManualZoom={false}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative z-40 pt-[1200px] ">
+        <h1 className="text-white  text-9xl">hello</h1>
+      </div>
     </div>
   );
 };

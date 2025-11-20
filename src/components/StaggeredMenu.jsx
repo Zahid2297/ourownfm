@@ -1,6 +1,7 @@
 import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { BsSun } from "react-icons/bs";
+import Silk from "@/components/Silk";
 
 export const StaggeredMenu = ({
   position = "right",
@@ -404,11 +405,16 @@ export const StaggeredMenu = ({
         </div>
         {/* custom header code */}
         <header className="absolute top-0 left-0 w-full z-20 pointer-events-none">
-          <nav
-            className="w-full h-26 bg-transparent flex justify-between items-center 
-px-4 md:px-8 py-4
-rounded-b-3xl shadow-xl/30 shadow-slate-100 pointer-events-auto"
-          >
+          <nav className="w-full h-26 flex justify-between items-center px-4 md:px-8 py-4 shadow-xl/60 shadow-slate-100 pointer-events-auto">
+            <div className="absolute inset-0 -z-10">
+              <Silk
+                speed={10}
+                scale={1}
+                color="#1C1C1C"
+                noiseIntensity={0}
+                rotation={2}
+              />
+            </div>
             {/* Left Logo */}
             <a href="https://ourownfm.com/">
               <img
@@ -597,7 +603,7 @@ sition: absolute; top: 0; right: 0; width: clamp(260px, 38vw, 420px); height: 10
 .sm-scope .sm-socials-link:hover { color: var(--sm-accent, #ff0000); }
 .sm-scope .sm-panel-title { margin: 0; font-size: 1rem; font-weight: 600; color: #fff; text-transform: uppercase; }
 .sm-scope .sm-panel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.sm-scope .sm-panel-item { position: relative; color: #000; font-weight: 600; font-size: 4rem; cursor: pointer; line-height: 1; letter-spacing: -2px; text-transform: uppercase; transition: background 0.25s, color 0.25s; display: inline-block; text-decoration: none; padding-right: 1.4em; }
+.sm-scope .sm-panel-item { position: relative; color: #000; font-weight: 600; font-size: 4rem; cursor: pointer; line-height: 1;margin-top: 35px; letter-spacing: -2px; text-transform: uppercase; transition: background 0.25s, color 0.25s; display: inline-block; text-decoration: none; padding-right: 1.4em; }
 .sm-scope .sm-panel-itemLabel { display: inline-block; will-change: transform; transform-origin: 50% 100%; }
 .sm-scope .sm-panel-item:hover { color: var(--sm-accent, #ff0000); }
 .sm-scope .sm-panel-list[data-numbering] { counter-reset: smItem; }

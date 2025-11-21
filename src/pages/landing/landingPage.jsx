@@ -74,7 +74,10 @@ const LandingPage = () => {
               </p>
 
               <div className="flex flex-col md:flex-row gap-4 mt-8 md:justify-start justify-center ">
-                <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">
+                <button
+                  className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black "
+                  onClick={() => console.log("Enroll Now Clicked")}
+                >
                   Enroll Now
                 </button>
                 <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">

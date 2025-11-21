@@ -61,26 +61,26 @@ const LandingPage = () => {
       <div className="relative z-10 pt-[120px]">
         <div className="w-full max-w-[1900px] mx-auto min-h-[700px] grid grid-cols-1 md:grid-cols-12">
           {/* LEFT HERO CONTENT – ALWAYS VISIBLE */}
-          <div className="flex flex-col md:justify-center mt-20 md:mt-0 h-auto md:pl-28 z-10 text-center md:text-left md:col-span-2 md:-mr-150">
-            <h1 className="text-white text-xl md:text-6xl font-bold leading-tight">
+          <div className="flex flex-col md:justify-center mt-20 md:mb-40 h-auto md:pl-50 z-10 text-center md:text-left md:col-span-2 md:-mr-190 ">
+            <h1 className="text-white text-xl md:text-6xl font-bold leading-tight md:text-shadow-lg/30">
               Building a Skilled Future Ready Facilities Management Workforce
             </h1>
 
             <div>
-              <p className="text-white/80 text-xs md:text-xl mt-4">
+              <p className="text-white/80 text-xs md:text-xl mt-4 md:text-shadow-lg/30">
                 Training | Consultancy | Project Guidance | Sustainability
                 <br />
                 Empowering India & GCC
               </p>
 
               <div className="flex flex-col md:flex-row gap-4 mt-8 md:justify-start justify-center ">
-                <li className="mx-[30px] cursor-pointer text-white hover:text-red-500 z-50 hover:bg-amber-400">
-                  Home
-                </li>
-                <button className="cursor-pointer rounded-3xl text-white">
+                <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">
+                  Enroll Now
+                </button>
+                <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">
                   Schedule Consultation
                 </button>
-                <button className="cursor-pointer rounded-3xl text-white">
+                <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">
                   Explore Programs
                 </button>
               </div>
@@ -88,7 +88,7 @@ const LandingPage = () => {
           </div>
 
           {/* RIGHT MODEL – ONLY VISIBLE ON MD+ */}
-          <div className="relative z-0 hidden md:block h-[880px] md:col-span-10 ">
+          <div className="relative z-0 hidden md:block h-[880px] md:col-span-10 opacity-75 ">
             <ModelViewer
               url="/view.glb"
               showScreenshotButton={false}

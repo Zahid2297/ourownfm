@@ -365,7 +365,7 @@ export const StaggeredMenu = ({
   return (
     <div
       className={`sm-scope z-40 ${
-        isFixed
+        open && isFixed
           ? "fixed top-0 left-0 w-screen h-screen overflow-hidden"
           : "w-full h-full"
       }`}
@@ -404,7 +404,7 @@ export const StaggeredMenu = ({
           })()}
         </div>
         {/* custom header code */}
-        <header className="absolute top-0 left-0 w-full z-20 pointer-events-none">
+        <header className="absolute top-0 left-0 w-full z-20">
           <nav className="w-full h-26 flex justify-between items-center px-4 md:px-8 py-4 shadow-xl/60 shadow-slate-100 pointer-events-auto">
             <div className="absolute inset-0 -z-10">
               <Silk

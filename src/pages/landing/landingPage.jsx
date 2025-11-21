@@ -61,13 +61,13 @@ const LandingPage = () => {
       <div className="relative z-10 pt-[120px]">
         <div className="w-full max-w-[1900px] mx-auto min-h-[700px] grid grid-cols-1 md:grid-cols-12">
           {/* LEFT HERO CONTENT – ALWAYS VISIBLE */}
-          <div className="flex flex-col md:justify-center mt-20 md:mb-40 h-auto md:pl-50 z-10 text-center md:text-left md:col-span-2 md:-mr-190 ">
-            <h1 className="text-white text-xl md:text-6xl font-bold leading-tight md:text-shadow-lg/30">
+          <div className="flex flex-col md:justify-center mt-20 md:mb-40 h-auto md:pl-50 z-10 text-center md:text-left md:col-span-2 md:-mr-190 md:text-shadow-lg/30">
+            <h1 className="text-white text-xl md:text-6xl font-bold leading-tight ">
               Building a Skilled Future Ready Facilities Management Workforce
             </h1>
 
             <div>
-              <p className="text-white/80 text-xs md:text-xl mt-4 md:text-shadow-lg/30">
+              <p className="text-white/80 text-xs md:text-xl mt-4 ">
                 Training | Consultancy | Project Guidance | Sustainability
                 <br />
                 Empowering India & GCC

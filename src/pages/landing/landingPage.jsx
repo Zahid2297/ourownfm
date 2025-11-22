@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { RiCheckLine, RiMailLine } from "react-icons/ri";
 import { div } from "three/tsl";
 import Silk from "@/components/Silk";
-import Hero from "@/components/Hero";
+
 import { BsSun } from "react-icons/bs";
 import StaggeredMenu from "@/components/StaggeredMenu";
 import ModelViewer from "@/components/ModelViewer";
@@ -58,32 +58,52 @@ const LandingPage = () => {
         onMenuClose={() => console.log("Menu closed")}
       />
 
-      <div className="relative z-10 pt-[120px]">
+      <div className="relative z-10 md:pt-[120px] pt-[105px]">
         <div className="w-full max-w-[1900px] mx-auto min-h-[700px] grid grid-cols-1 md:grid-cols-12">
           {/* LEFT HERO CONTENT – ALWAYS VISIBLE */}
-          <div className="flex flex-col md:justify-center mt-20 md:mb-40 h-auto md:pl-50 z-10 text-center md:text-left md:col-span-2 md:-mr-190 md:text-shadow-lg/30">
-            <h1 className="text-white text-xl md:text-6xl font-bold leading-tight ">
-              Building a Skilled Future Ready Facilities Management Workforce
-            </h1>
+          <div
+            className="
+  relative
+  flex flex-col md:justify-center md:mb-40 h-auto md:pl-50 z-10 text-center 
+  md:text-left md:col-span-2 md:-mr-190 md:text-shadow-lg/30  
+  bg-[url(/handshakeimg.jpg)] bg-no-repeat bg-top bg-contain md:bg-none
 
-            <div>
-              <p className="text-white/80 text-xs md:text-xl mt-4 ">
-                Training | Consultancy | Project Guidance | Sustainability
+  before:content-['']
+  before:absolute before:inset-0 before:bg-black/60
+  before:h-[283px]              /* CHANGE THIS until it matches image height */
+  before:pointer-events-none 
+  before:z-0
+  before:md:hidden
+"
+          >
+            <div className="relative z-10">
+              <h1 className="text-white  pt-23 text-2xl md:text-6xl font-bold leading-tight text-shadow-lg/20 ">
+                Building a Skilled Future Ready Facilities Management Workforce
+              </h1>
+
+              <p className="text-white/80 text-xs md:text-xl mt-2 ">
+                Training | Consultancy | Project Guidance
                 <br />
                 Empowering India & GCC
               </p>
 
-              <div className="flex flex-col md:flex-row gap-4 mt-8 md:justify-start justify-center ">
+              <div className="flex md:flex-row gap-4 mt-6 md:justify-start justify-center text-xs md:text-base">
                 <button
-                  className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black "
+                  className="cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold md:bg-none bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
                   onClick={() => console.log("Enroll Now Clicked")}
                 >
                   Enroll Now
                 </button>
-                <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">
+                <button
+                  className=" hidden md:block cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
+                  onClick={() => console.log("Enroll Now Clicked")}
+                >
                   Schedule Consultation
                 </button>
-                <button className="cursor-pointer border px-5 py-1 rounded-2xl text-white hover:bg-gradient-to-r from-black via-gray-500 to-black ">
+                <button
+                  className=" hidden md:block cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
+                  onClick={() => console.log("Enroll Now Clicked")}
+                >
                   Explore Programs
                 </button>
               </div>

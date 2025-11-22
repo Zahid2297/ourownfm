@@ -405,7 +405,7 @@ export const StaggeredMenu = ({
         </div>
         {/* custom header code */}
         <header className="absolute top-0 left-0 w-full z-20">
-          <nav className="w-full h-26 flex justify-between items-center px-4 md:px-8 py-4 shadow-xl/60 shadow-slate-100 pointer-events-auto">
+          <nav className="w-full h-26 flex justify-between items-center px-4 md:px-8 py-4 md:shadow-xl/60 md:shadow-slate-100 pointer-events-auto">
             <div className="absolute inset-0 -z-10">
               <Silk
                 speed={10}

@@ -7,6 +7,8 @@ import { BsSun } from "react-icons/bs";
 import StaggeredMenu from "@/components/StaggeredMenu";
 import ModelViewer from "@/components/ModelViewer";
 import AnimatedContent from "@/components/AnimatedContent";
+import ScrollFloat from "@/components/ScrollFloat";
+import ScrollStack, { ScrollStackItem } from "@/components/ScrollStack";
 
 const LandingPage = () => {
   const menuItems = [
@@ -60,7 +62,13 @@ const LandingPage = () => {
       />
 
       <div className="relative z-10 md:pt-[120px] pt-[105px]">
-        <div className="w-full max-w-[1900px] mx-auto min-h-[700px] grid grid-cols-1 md:grid-cols-12">
+        <div
+          className="
+  w-full max-w-[1900px] mx-auto 
+  min-h-[400px] md:min-h-[700px]
+  grid grid-cols-1 md:grid-cols-12
+"
+        >
           {/* LEFT HERO CONTENT – ALWAYS VISIBLE */}
 
           <div
@@ -154,9 +162,34 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* <div className="h-auto w-100 flex flex-wrap flex-col items-center p-10">
-        <div className="w-full h-auto flex items-center"></div>
-        <div className="w-full flex"></div>
+      <div className="w-full min-h-[50vh] md:min-h-[70vh] flex justify-center items-center bg-transparent relative font-bold px-4">
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          crollStart={window.innerWidth < 768 ? "top 60%" : "top 90%"}
+          scrollEnd={window.innerWidth < 768 ? "top 10%" : "top 20%"}
+          stagger={window.innerWidth < 768 ? 0.02 : 0.05}
+          textClassName="!text-white text-5xl md:text-7xl  font-bold text-center  "
+        >
+          React Bits
+        </ScrollFloat>
+      </div>
+      <div className="h-[1000px]">hello</div>
+      {/* <div className="w-full h-auto flex justify-center items-center bg-transparent relative  px-4 py-20">
+        <ScrollStack>
+          <ScrollStackItem>
+            <h2>Card 1</h2>
+            <p>This is the first card in the stack</p>
+          </ScrollStackItem>
+          <ScrollStackItem>
+            <h2>Card 2</h2>
+            <p>This is the second card in the stack</p>
+          </ScrollStackItem>
+          <ScrollStackItem>
+            <h2>Card 3</h2>
+            <p>This is the third card in the stack</p>
+          </ScrollStackItem>
+        </ScrollStack>
       </div> */}
     </div>
   );

@@ -2,10 +2,11 @@ import { useState, useRef } from "react";
 import { RiCheckLine, RiMailLine } from "react-icons/ri";
 import { div } from "three/tsl";
 import Silk from "@/components/Silk";
-
+import TextType from "@/components/TextType";
 import { BsSun } from "react-icons/bs";
 import StaggeredMenu from "@/components/StaggeredMenu";
 import ModelViewer from "@/components/ModelViewer";
+import AnimatedContent from "@/components/AnimatedContent";
 
 const LandingPage = () => {
   const menuItems = [
@@ -61,10 +62,11 @@ const LandingPage = () => {
       <div className="relative z-10 md:pt-[120px] pt-[105px]">
         <div className="w-full max-w-[1900px] mx-auto min-h-[700px] grid grid-cols-1 md:grid-cols-12">
           {/* LEFT HERO CONTENT – ALWAYS VISIBLE */}
+
           <div
             className="
   relative
-  flex flex-col md:justify-center md:mb-40 h-auto md:pl-50 z-10 text-center 
+  flex flex-col md:justify-center font-Satoshi md:mb-40 h-auto md:pl-50 z-10 text-center 
   md:text-left md:col-span-2 md:-mr-190 md:text-shadow-lg/30  
   bg-[url(/handshakeimg.jpg)] bg-no-repeat bg-top bg-contain md:bg-none
 
@@ -77,36 +79,55 @@ const LandingPage = () => {
 "
           >
             <div className="relative z-10">
-              <h1 className="text-white  pt-23 text-2xl md:text-6xl font-bold leading-tight text-shadow-lg/20 ">
-                Building a Skilled Future Ready Facilities Management Workforce
-              </h1>
+              <AnimatedContent
+                distance={170}
+                direction="horizontal"
+                reverse={true}
+                duration={2.5}
+                ease="power3.out"
+                initialOpacity={0.1}
+                animateOpacity={true}
+                threshold={0.1}
+                delay={0}
+              >
+                <h1 className="text-white  pt-23 text-2xl md:text-6xl font-bold leading-tight text-shadow-lg/20 ">
+                  Building a Skilled Future Ready Facilities Management
+                  Workforce
+                </h1>
 
-              <p className="text-white/80 text-xs md:text-xl mt-2 ">
-                Training | Consultancy | Project Guidance
-                <br />
-                Empowering India & GCC
-              </p>
+                <p className="text-white/80 text-xs md:text-xl mt-2 ">
+                  <TextType
+                    text={["Training", "Consultancy", "Project Guidance"]}
+                    typingSpeed={75}
+                    pauseDuration={1500}
+                    showCursor={true}
+                    cursorCharacter="|"
+                  />
+                  <br />
+                  Empowering India & GCC
+                </p>
 
-              <div className="flex md:flex-row gap-4 mt-6 md:justify-start justify-center text-xs md:text-base">
-                <button
-                  className="cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold md:bg-none bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
-                  onClick={() => console.log("Enroll Now Clicked")}
-                >
-                  Enroll Now
-                </button>
-                <button
-                  className=" hidden md:block cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
-                  onClick={() => console.log("Enroll Now Clicked")}
-                >
-                  Schedule Consultation
-                </button>
-                <button
-                  className=" hidden md:block cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
-                  onClick={() => console.log("Enroll Now Clicked")}
-                >
-                  Explore Programs
-                </button>
-              </div>
+                <div className="flex md:flex-row gap-4 mt-6 md:justify-start justify-center text-xs md:text-base">
+                  <button
+                    className="cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold md:bg-none bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
+                    onClick={() => console.log("Enroll Now Clicked")}
+                  >
+                    Enroll Now
+                  </button>
+                  <button
+                    className=" hidden md:block cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
+                    onClick={() => console.log("Enroll Now Clicked")}
+                  >
+                    Schedule Consultation
+                  </button>
+                  <button
+                    className=" hidden md:block cursor-pointer border md:px-5 md:py-1 px-2 py-1 rounded-2xl text-white font-semibold bg-black/35 md:hover:bg-gradient-to-r md:from-black md:via-gray-500 md:to-black "
+                    onClick={() => console.log("Enroll Now Clicked")}
+                  >
+                    Explore Programs
+                  </button>
+                </div>
+              </AnimatedContent>
             </div>
           </div>
 
@@ -133,9 +154,10 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="relative z-40 pt-[1200px] ">
-        <h1 className="text-white  text-9xl">hello</h1>
-      </div>
+      {/* <div className="h-auto w-100 flex flex-wrap flex-col items-center p-10">
+        <div className="w-full h-auto flex items-center"></div>
+        <div className="w-full flex"></div>
+      </div> */}
     </div>
   );
 };

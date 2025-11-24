@@ -65,7 +65,7 @@ const LandingPage = () => {
         <div
           className="
   w-full max-w-[1900px] mx-auto 
-  min-h-[400px] md:min-h-[700px]
+  min-h-[290px] md:min-h-[700px]
   grid grid-cols-1 md:grid-cols-12
 "
         >
@@ -162,35 +162,53 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="w-full min-h-[50vh] md:min-h-[70vh] flex justify-center items-center bg-transparent relative font-bold px-4">
-        <ScrollFloat
-          animationDuration={1}
-          ease="back.inOut(2)"
-          crollStart={window.innerWidth < 768 ? "top 60%" : "top 90%"}
-          scrollEnd={window.innerWidth < 768 ? "top 10%" : "top 20%"}
-          stagger={window.innerWidth < 768 ? 0.02 : 0.05}
-          textClassName="!text-white text-5xl md:text-7xl  font-bold text-center  "
+      <h2 className="text-white text-3xl font-bold text-center md:hidden mt-10">
+        React Bits
+      </h2>
+
+      {/* DESKTOP VERSION — keep animation */}
+
+      <div className="w-full h-screen bg-transparent ">
+        <div className="hidden md:flex w-full justify-center mt-40">
+          <ScrollFloat
+            animationDuration={1}
+            ease="back.inOut(2)"
+            scrollStart="top center 90%"
+            scrollEnd="top bottom 50%"
+            stagger={0.03}
+            textClassName="!text-white text-5xl md:text-7xl font-bold text-center"
+          >
+            React Bits
+          </ScrollFloat>
+        </div>
+        <ScrollStack
+          itemDistance={200}
+          itemStackDistance={30}
+          stackPosition="10%"
+          baseScale={0.85}
+          rotationAmount={0}
+          blurAmount={0}
+          useWindowScroll={false}
         >
-          React Bits
-        </ScrollFloat>
-      </div>
-      <div className="h-[1000px]">hello</div>
-      {/* <div className="w-full h-auto flex justify-center items-center bg-transparent relative  px-4 py-20">
-        <ScrollStack>
-          <ScrollStackItem>
-            <h2>Card 1</h2>
-            <p>This is the first card in the stack</p>
+          {/* YOUR CARDS */}
+          <ScrollStackItem itemClassName="bg-transparent border border-white/20 rounded-3xl">
+            <h2 className="text-white text-4xl font-bold">Welcome</h2>
+            <p className="text-white/70 mt-2">This is the first card.</p>
           </ScrollStackItem>
-          <ScrollStackItem>
-            <h2>Card 2</h2>
-            <p>This is the second card in the stack</p>
+
+          <ScrollStackItem itemClassName="bg-transparent border border-white/20 rounded-3xl">
+            <h2 className="text-white text-4xl font-bold">About Us</h2>
+            <p className="text-white/70 mt-2">We build cool UI animations.</p>
           </ScrollStackItem>
-          <ScrollStackItem>
-            <h2>Card 3</h2>
-            <p>This is the third card in the stack</p>
+
+          <ScrollStackItem itemClassName="bg-transparent border border-white/20 rounded-3xl">
+            <h2 className="text-white text-4xl font-bold">Contact</h2>
+            <p className="text-white/70 mt-2">Get in touch!</p>
           </ScrollStackItem>
         </ScrollStack>
-      </div> */}
+      </div>
+
+      <div className="h-auto text-9xl text-white">heloo</div>
     </div>
   );
 };

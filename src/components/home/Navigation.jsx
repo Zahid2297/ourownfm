@@ -85,7 +85,7 @@ const Navigation = ({ scrollToSection, hideNavbar = false }) => {
         openMenuButtonColor={theme === "dark" ? "#fff" : "#000"}
         changeMenuColorOnOpen={true}
         colors={
-          theme === "dark" ? ["#ffffff", "#63b3ed"] : ["#000000", "#63b3ed"]
+          theme === "dark" ? ["#ffffff", "#1976D2"] : ["#000000", "#1976D2"]
         }
         logoUrl={theme === "dark" ? "/logo1 white (2).png" : "/logo1 black.png"}
         accentColor={theme === "dark" ? "#3b82f6" : "#2563eb"}

@@ -1,5 +1,5 @@
 import AnimatedContent from "@/components/AnimatedContent";
-import TiltedCard from "@/components/TiltedCard";
+import FeatureCard from "@/components/home/FeatureCard";
 import { Building2, Users, Briefcase, Laptop } from "lucide-react";
 
 const WhyChooseUsSection = () => {
@@ -46,56 +46,24 @@ const WhyChooseUsSection = () => {
           </h2>
         </AnimatedContent>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <AnimatedContent
-                key={index}
-                distance={50}
-                delay={index * 0.15}
-                threshold={0.1}
-              >
-                <TiltedCard
-                  imageSrc=""
-                  altText={feature.title}
-                  captionText=""
-                  containerHeight="350px"
-                  containerWidth="100%"
-                  imageHeight="100%"
-                  imageWidth="100%"
-                  scaleOnHover={1.05}
-                  rotateAmplitude={8}
-                  showMobileWarning={false}
-                  showTooltip={false}
-                  overlayContent={
-                    <div className="w-full h-full flex flex-col items-center justify-center text-center p-8 rounded-2xl bg-background border border-border/50 shadow-lg">
-                      {/* Icon Circle */}
-                      <div
-                        className={`w-20 h-20 rounded-full ${feature.bgColor} flex items-center justify-center mb-6`}
-                      >
-                        <div
-                          className={`w-12 h-12 rounded-full bg-gradient-to-br ${feature.color} flex items-center justify-center`}
-                        >
-                          <Icon className="w-6 h-6 text-white" />
-                        </div>
-                      </div>
-
-                      {/* Title */}
-                      <h3 className="text-xl font-bold mb-3 text-foreground">
-                        {feature.title}
-                      </h3>
-
-                      {/* Description */}
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {feature.description}
-                      </p>
-                    </div>
-                  }
-                  displayOverlayContent={true}
+          {features.map((feature, index) => (
+            <AnimatedContent
+              key={index}
+              distance={50}
+              delay={index * 0.15}
+              threshold={0.1}
+            >
+              <div className="h-[350px]">
+                <FeatureCard
+                  icon={feature.icon}
+                  title={feature.title}
+                  description={feature.description}
+                  color={feature.color}
+                  bgColor={feature.bgColor}
                 />
-              </AnimatedContent>
-            );
-          })}
+              </div>
+            </AnimatedContent>
+          ))}
         </div>
       </div>
     </section>

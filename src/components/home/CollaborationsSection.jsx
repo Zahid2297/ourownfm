@@ -1,29 +1,32 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Building2, Users } from "lucide-react";
 import AnimatedContent from "@/components/AnimatedContent";
+import LogoLoop from "@/components/LogoLoop";
 
 const CollaborationsSection = () => {
   const collaborations = [
     {
-      title: "Factech",
-      description: "CAFM Partner",
-      icon: Building2,
+      name: "Factech",
+      subtitle: "CAFM Partner",
+      image: "", // Add logo image path here
     },
     {
-      title: "VDEI",
-      description: "BIM Partner",
-      icon: Building2,
+      name: "VDEI",
+      subtitle: "BIM Partner",
+      image: "", // Add logo image path here
     },
     {
-      title: "Industry Experts",
-      description: "Leading FM Professionals",
-      icon: Users,
+      name: "Industry Experts",
+      subtitle: "Leading FM Professionals",
+      image: "", // Add logo image path here
+    },
+    {
+      name: "Partner 4",
+      subtitle: "Technology Partner",
+      image: "", // Add logo image path here
+    },
+    {
+      name: "Partner 5",
+      subtitle: "Training Partner",
+      image: "", // Add logo image path here
     },
   ];
 
@@ -38,32 +41,9 @@ const CollaborationsSection = () => {
             Our Collaborations
           </h2>
         </AnimatedContent>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {collaborations.map((collab, index) => {
-            const Icon = collab.icon;
-            return (
-              <AnimatedContent
-                key={index}
-                distance={50}
-                delay={index * 0.15}
-                threshold={0.2}
-              >
-                <Card className="text-center p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group border-2 hover:border-primary/50">
-                  <CardHeader>
-                    <CardTitle className="group-hover:text-primary transition-colors duration-300">
-                      {collab.title}
-                    </CardTitle>
-                    <CardDescription>{collab.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="h-24 bg-muted rounded-lg flex items-center justify-center group-hover:bg-primary/5 transition-colors duration-300">
-                      <Icon className="h-12 w-12 text-muted-foreground group-hover:text-primary group-hover:scale-110 transition-all duration-300" />
-                    </div>
-                  </CardContent>
-                </Card>
-              </AnimatedContent>
-            );
-          })}
+
+        <div className="mt-8">
+          <LogoLoop logos={collaborations} speed={30} direction="left" />
         </div>
       </div>
     </section>

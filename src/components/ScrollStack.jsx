@@ -228,10 +228,11 @@ const ScrollStack = ({
 
     return () => scroller.removeEventListener("wheel", forwardScroll);
   }, [useWindowScroll]);
+  
 
   return (
     <div
-      className={`relative w-full h-full overflow-y-auto ${className}`}
+      className={`relative w-full h-screen overflow-y-auto ${className}`}
       ref={scrollerRef}
       style={{ overscrollBehavior: "contain" }}
     >

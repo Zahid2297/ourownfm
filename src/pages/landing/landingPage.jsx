@@ -167,9 +167,7 @@ const LandingPage = () => {
       </h2>
 
       {/* DESKTOP VERSION — keep animation */}
-
-      <div className="w-full h-screen bg-transparent ">
-        <div className="hidden md:flex w-full justify-center mt-40">
+      <div className="hidden md:flex w-full justify-center mt-40">
           <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
@@ -181,6 +179,9 @@ const LandingPage = () => {
             React Bits
           </ScrollFloat>
         </div>
+
+      <div className="w-full bg-transparent ">
+        
         <ScrollStack
           itemDistance={200}
           itemStackDistance={30}
@@ -189,6 +190,7 @@ const LandingPage = () => {
           rotationAmount={0}
           blurAmount={0}
           useWindowScroll={false}
+          
         >
           {/* YOUR CARDS */}
           <ScrollStackItem itemClassName="bg-transparent border border-white/20 rounded-3xl">
@@ -208,7 +210,7 @@ const LandingPage = () => {
         </ScrollStack>
       </div>
 
-      <div className="h-auto text-9xl text-white">heloo</div>
+      <div className="h-auto text-9xl text-white pt-100 pl-50">heloo</div>
     </div>
   );
 };

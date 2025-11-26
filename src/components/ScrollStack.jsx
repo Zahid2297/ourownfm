@@ -384,7 +384,7 @@ const ScrollStack = ({
       ref={scrollerRef}
       style={containerStyles}
     >
-      <div className="scroll-stack-inner pt-0 px-4 md:px-20 pb-0">
+      <div className="scroll-stack-inner pt-8 px-4 md:px-20 pb-0">
         {children}
         {/* Spacer so the last pin can release cleanly */}
         <div className="scroll-stack-end w-full h-px" />

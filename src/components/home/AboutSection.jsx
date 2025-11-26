@@ -9,10 +9,10 @@ const AboutSection = ({ scrollToSection }) => {
   return (
     <section id="about" className="relative pb-0 bg-background z-20">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-background dark:from-blue-950/20 dark:to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
 
       {/* Sticky Header - acts as folder label */}
-      <div className="sticky top-0 z-[500] bg-background/95 backdrop-blur-md py-4 border-b border-border/50">
+      <div className="sticky top-0 z-[500] bg-background backdrop-blur-md py-4 border-b border-border/50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -47,13 +47,7 @@ const AboutSection = ({ scrollToSection }) => {
             blurAmount={0}
           >
             {/* Vision Card */}
-            <ScrollStackItem
-              itemClassName={`${
-                theme === "dark"
-                  ? "bg-gradient-to-br from-blue-900/95 to-cyan-900/80 border-2 border-blue-500/30 backdrop-blur-sm shadow-xl"
-                  : "bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-300 backdrop-blur-sm shadow-xl"
-              }`}
-            >
+            <ScrollStackItem itemClassName="bg-background/95 backdrop-blur-md border border-border/50 shadow-xl">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
@@ -73,13 +67,7 @@ const AboutSection = ({ scrollToSection }) => {
             </ScrollStackItem>
 
             {/* Mission Card */}
-            <ScrollStackItem
-              itemClassName={`${
-                theme === "dark"
-                  ? "bg-gradient-to-br from-cyan-900/95 to-blue-900/80 border-2 border-cyan-500/30 backdrop-blur-sm shadow-xl"
-                  : "bg-gradient-to-br from-cyan-50 to-blue-50 border-2 border-cyan-300 backdrop-blur-sm shadow-xl"
-              }`}
-            >
+            <ScrollStackItem itemClassName="bg-background/95 backdrop-blur-md border border-border/50 shadow-xl">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
@@ -100,13 +88,7 @@ const AboutSection = ({ scrollToSection }) => {
             </ScrollStackItem>
 
             {/* Approach Card */}
-            <ScrollStackItem
-              itemClassName={`${
-                theme === "dark"
-                  ? "bg-gradient-to-br from-indigo-900/95 to-blue-900/80 border-2 border-indigo-500/30 backdrop-blur-sm shadow-xl"
-                  : "bg-gradient-to-br from-indigo-50 to-blue-50 border-2 border-indigo-300 backdrop-blur-sm shadow-xl"
-              }`}
-            >
+            <ScrollStackItem itemClassName="bg-background/95 backdrop-blur-md border border-border/50 shadow-xl">
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center">

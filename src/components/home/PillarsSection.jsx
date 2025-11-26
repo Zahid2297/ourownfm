@@ -30,7 +30,7 @@ const PillarsSection = () => {
   ];
 
   return (
-    <section className="relative py-32 mt-32 overflow-hidden z-0">
+    <section className="relative py-32 mt-48 overflow-hidden z-0">
       {/* Normal gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
 

@@ -1,6 +1,5 @@
 import { useState, useRef } from "react";
 import { RiCheckLine, RiMailLine } from "react-icons/ri";
-import { div } from "three/tsl";
 import Silk from "@/components/Silk";
 import TextType from "@/components/TextType";
 import { BsSun } from "react-icons/bs";

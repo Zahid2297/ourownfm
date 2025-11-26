@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { RiCheckLine, RiMailLine } from "react-icons/ri";
-import { div } from "three/tsl";
 import Silk from "@/components/Silk";
 
 const Nav = () => {

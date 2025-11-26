@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { forwardRef, useRef, useMemo, useLayoutEffect } from "react";
+import { forwardRef, useRef, useMemo, useLayoutEffect, useEffect } from "react";
 import { Color } from "three";
 
 const hexToNormalizedRGB = (hex) => {
@@ -79,7 +79,9 @@ const SilkPlane = forwardRef(function SilkPlane({ uniforms }, ref) {
   }, [ref, viewport]);
 
   useFrame((_, delta) => {
-    ref.current.material.uniforms.uTime.value += 0.1 * delta;
+    if (ref.current && ref.current.material) {
+      ref.current.material.uniforms.uTime.value += 0.1 * delta;
+    }
   });
 
   return (
@@ -103,7 +105,9 @@ const Silk = ({
   rotation = 0,
 }) => {
   const meshRef = useRef();
+  const colorRef = useRef(color);
 
+  // Create uniforms once and keep them stable
   const uniforms = useMemo(
     () => ({
       uSpeed: { value: speed },
@@ -113,8 +117,19 @@ const Silk = ({
       uRotation: { value: rotation },
       uTime: { value: 0 },
     }),
-    [speed, scale, noiseIntensity, color, rotation]
+    // Don't include color in dependencies - update it dynamically
+    [speed, scale, noiseIntensity, rotation]
   );
+
+  // Update color ref when it changes
+  useEffect(() => {
+    colorRef.current = color;
+    if (meshRef.current && meshRef.current.material) {
+      meshRef.current.material.uniforms.uColor.value = new Color(
+        ...hexToNormalizedRGB(color)
+      );
+    }
+  }, [color]);
 
   return (
     <Canvas dpr={[1, 2]} frameloop="always">

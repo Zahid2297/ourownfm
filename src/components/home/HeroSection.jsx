@@ -40,12 +40,12 @@ const HeroSection = ({ scrollToSection }) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-6 ${textColor} drop-shadow-2xl leading-tight`}
         >
-          Building a Skilled, Future-Ready
+          Shaping Tomorrow’s 
           <br />
           <span
             className={`text-transparent bg-clip-text bg-gradient-to-r ${gradientFrom} ${gradientTo}`}
           >
-            Facilities Management Workforce
+            Facilities Management
           </span>
         </motion.h1>
 

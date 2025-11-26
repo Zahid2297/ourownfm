@@ -12,7 +12,7 @@ const AboutSection = ({ scrollToSection }) => {
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
 
       {/* Sticky Header - acts as folder label */}
-      <div className="sticky top-0 z-[500] bg-background backdrop-blur-md py-4 border-b border-border/50">
+      <div className="sticky top-0 z-[500] backdrop-blur-md py-4 ">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

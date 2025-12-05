@@ -5,6 +5,7 @@ import NotFound from "../pages/404/notFound";
 import ComingSoonPage from "@/pages/coming_soon/comingSoon";
 import LandingPage from "@/pages/landing/landingPage";
 import ServicePage from "@/pages/Services/servicePage";
+import PixaLandingPage from "@/pages/pixa/PixaLandingPage";
 
 export const router = createBrowserRouter([
   {
@@ -26,5 +27,9 @@ export const router = createBrowserRouter([
   {
     path: "/services",
     element: <ServicePage />,
+  },
+  {
+    path: "/pixa",
+    element: <PixaLandingPage />,
   },
 ]);

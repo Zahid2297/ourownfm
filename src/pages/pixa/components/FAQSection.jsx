@@ -5,24 +5,34 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "What's Pixa playground?",
+      question: "What is Facilities Management (FM)?",
       answer:
-        "Pixa's playground is an integrated webapp to seamlessly test different LLM models such as GPT4, Claude, Gemini, etc.",
+        "Facilities Management (FM) is the practice of coordinating people, places, processes, and technology to ensure the functionality, comfort, safety, and efficiency of the built environment. It includes both hard FM (technical services like HVAC, electrical, plumbing) and soft FM (services like cleaning, security, catering).",
     },
     {
-      question: "What are LLM?",
+      question: "Who can enroll in your training programs?",
       answer:
-        "LLM stands for 'Large Language Model.' It's a type of artificial intelligence model trained on vast amounts of text data to understand and generate human-like text. These models, like GPT-4, can perform various tasks, such as answering questions, generating content, translating languages, and more, by leveraging patterns learned from the data they were trained on.",
+        "Our training programs are designed for everyone — from fresh graduates to working professionals. We especially welcome those switching careers, professionals from small towns, and anyone looking to build a career in FM. No prior experience is required for our fundamental courses.",
     },
     {
-      question: "Where can I test different AI models?",
+      question: "Do you provide placement assistance?",
       answer:
-        "You can use Pixa's AI Playground to test different models, including GPT4, Claude, Perplexity and more.",
+        "Yes! We offer placement support for India and GCC markets. This includes resume development, interview preparation, job matching through our partner network, and GCC recruitment coordination. We support placements for Facility Executives, Managers, Engineers, Supervisors, Coordinators, and more.",
     },
     {
-      question: "Is Pixa Free to use?",
+      question: "What makes your training different from other FM courses?",
       answer:
-        "You can start using Pixa for free, and later upgrade your plan to access all its features.",
+        "Our training is designed by industry practitioners, focuses on practical and digital-first FM skills, includes real-world learning through site visits, and provides continuous mentorship beyond the classroom. We emphasize hands-on experience with CAFM, BIM, IoT, and other modern FM tools.",
+    },
+    {
+      question: "Are site visits included in the training?",
+      answer:
+        "Yes! All students receive 2–4 structured site visits to commercial buildings, industrial plants, hospitals, and universities. These include audits, data collection, equipment study, and SOP review to provide real-world learning experience.",
+    },
+    {
+      question: "What certifications do you offer?",
+      answer:
+        "We offer certifications for each training module, including FM Operations Certificate, Digital FM Specialist, HSE Compliance Certificate, FM Leadership Certificate, Sustainability Practitioner, and FM Finance Essentials. We also provide IFMA FMP/CFM preparation courses.",
     },
   ];
 
@@ -31,8 +41,8 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]">
-      <h3 className="tw-text-4xl tw-font-medium max-md:tw-text-2xl">Faq</h3>
+    <section id="faq" className="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]">
+      <h3 className="tw-text-4xl tw-font-medium max-md:tw-text-2xl">Frequently Asked Questions</h3>
       <div className="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4">
         {faqs.map((faq, index) => (
           <div key={index}>

@@ -49,12 +49,14 @@ const ServicesSection = () => {
   const projectGuidance = [
     {
       type: "New FM Project Setup",
-      description: "Asset register development, O&M planning, Manpower planning, Mobilisation",
+      description:
+        "Asset register development, O&M planning, Manpower planning, Mobilisation",
       fees: "₹1,00,000 – ₹6,00,000",
     },
     {
       type: "Streamlining Existing FM",
-      description: "Identifying inefficiencies, Rebuilding SOPs, Vendor evaluation, KPI review",
+      description:
+        "Identifying inefficiencies, Rebuilding SOPs, Vendor evaluation, KPI review",
       fees: "₹75,000 – ₹3,50,000",
     },
     {
@@ -75,7 +77,8 @@ const ServicesSection = () => {
             Consultancy Services
           </h2>
           <p className="tw-text-lg tw-text-center tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[800px] tw-mx-auto tw-px-4">
-            We offer end-to-end FM consultancy designed for new setups, existing facilities, and organisations undergoing transformation.
+            We offer end-to-end FM consultancy designed for new setups, existing
+            facilities, and organisations undergoing transformation.
           </p>
         </div>
 
@@ -83,15 +86,20 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-3xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
+              className="tw-p-8 tw-bg-gradient-to-br tw-from-white tw-to-gray-100 dark:tw-from-black dark:tw-to-gray-900 tw-rounded-3xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
             >
               <div className="tw-text-5xl tw-mb-4 tw-text-gray-800 dark:tw-text-gray-200">
                 <i className={`bi ${service.icon}`}></i>
               </div>
-              <h3 className="tw-text-2xl tw-font-semibold tw-mb-4">{service.title}</h3>
+              <h3 className="tw-text-2xl tw-font-semibold tw-mb-4">
+                {service.title}
+              </h3>
               <ul className="tw-list-none tw-space-y-2 tw-mb-4">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="tw-text-gray-700 dark:tw-text-gray-300">
+                  <li
+                    key={idx}
+                    className="tw-text-gray-700 dark:tw-text-gray-300"
+                  >
                     • {feature}
                   </li>
                 ))}
@@ -111,9 +119,11 @@ const ServicesSection = () => {
             {projectGuidance.map((project, index) => (
               <div
                 key={index}
-                className="tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
+                className="tw-p-8 tw-bg-gradient-to-br tw-from-white tw-to-gray-100 dark:tw-from-black dark:tw-to-gray-900 tw-rounded-xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
               >
-                <h4 className="tw-text-xl tw-font-semibold tw-mb-3">{project.type}</h4>
+                <h4 className="tw-text-xl tw-font-semibold tw-mb-3">
+                  {project.type}
+                </h4>
                 <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-mb-4 tw-text-sm">
                   {project.description}
                 </p>
@@ -130,4 +140,3 @@ const ServicesSection = () => {
 };
 
 export default ServicesSection;
-

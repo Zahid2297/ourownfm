@@ -1,22 +1,28 @@
 const FeaturesSection = () => {
-  const features = [
+  const pillars = [
     {
-      title: "Unified interface",
+      title: "Technicality",
       description:
-        "Our's is the only unified AI Interface tool brings together all your favorite chat models into one seamless platform. No more juggling between different AI systems—easily manage and interact with multiple chatbots from a single interface.",
-      image: "/pixa-assets/images/home/interface.png",
+        "Provide industry-relevant technical skills, practical site learning, and digital FM integration.",
+      icon: "bi-tools",
     },
     {
-      title: "API Access",
+      title: "Sustainability",
       description:
-        "Pixa's LLM API offers advanced summarization, text generation, and question-answering. Easily integrate with support for JSON, HTML, Markdown, and plain text, enhancing your applications with powerful language tools.",
-      image: "/pixa-assets/images/home/api.png",
+        "Embed energy efficiency, ESG compliance, green building standards, and resource optimisation into every FM function.",
+      icon: "bi-leaf",
     },
     {
-      title: "Pre-built Tools",
+      title: "Leadership",
       description:
-        "Pixa offers pre-built AI integrations for diverse creative tasks including image, video, music, and PDF generation, simplifying advanced feature integration into your apps.",
-      image: "/pixa-assets/images/home/integrations1.png",
+        "Develop FM leaders who can manage people, systems, and operations with confidence, empathy, and strategic clarity.",
+      icon: "bi-people",
+    },
+    {
+      title: "Accountability",
+      description:
+        "Promote responsible, transparent, and measurable FM practices driven by data and performance KPIs.",
+      icon: "bi-clipboard-check",
     },
   ];
 
@@ -25,66 +31,29 @@ const FeaturesSection = () => {
       <div className="tw-mt-8 tw-flex tw-flex-col tw-w-full tw-h-full tw-place-items-center tw-gap-5">
         <div className="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
           <h2 className="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2">
-            Experience all the benefits of AI
+            Our Four Pillars
           </h2>
+          <p className="tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-mt-2">
+            The foundation of our training and consultancy approach
+          </p>
         </div>
         <div className="tw-mt-6 tw-flex tw-flex-col tw-max-w-[1150px] max-lg:tw-max-w-full tw-h-full tw-p-4 max-lg:tw-place-content-center tw-gap-8">
-          <div className="max-xl:tw-flex max-xl:tw-flex-col tw-place-items-center tw-grid tw-grid-cols-3 tw-gap-8 tw-place-content-center tw-auto-rows-auto">
-            {features.map((feature, index) => (
-              <div key={index} className="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
-                <a
-                  href="#"
-                  className="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-3xl hover:tw-scale-[1.02]"
-                >
-                  <div className="tw-w-full tw-flex tw-place-contet-center tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-overflow-hidden">
-                    <img
-                      src={feature.image}
-                      className="tw-w-full tw-h-auto tw-object-contain"
-                      alt={feature.title}
-                    />
+          <div className="max-xl:tw-flex max-xl:tw-flex-col tw-place-items-center tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-8 tw-place-content-center tw-auto-rows-auto">
+            {pillars.map((pillar, index) => (
+              <div key={index} className="reveal-up tw-w-full tw-min-h-[300px] tw-flex">
+                <div className="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-3xl hover:tw-scale-[1.02]">
+                  <div className="tw-w-full tw-flex tw-place-contet-center tw-min-h-[100px] tw-h-[100px] tw-rounded-xl tw-overflow-hidden tw-items-center tw-justify-center">
+                    <i className={`bi ${pillar.icon} tw-text-6xl tw-text-gray-800 dark:tw-text-gray-200`}></i>
                   </div>
                   <h2 className="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
-                    {feature.title}
+                    {pillar.title}
                   </h2>
                   <p className="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
-                    {feature.description}
+                    {pillar.description}
                   </p>
-                  <div className="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
-                    <span>Learn more</span>
-                    <i className="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"></i>
-                  </div>
-                </a>
-              </div>
-            ))}
-          </div>
-
-          <div className="reveal-up tw-w-full md:tw-h-[350px] max-md:tw-min-h-[350px] tw-flex">
-            <a
-              href="#"
-              className="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex max-md:tw-flex-col tw-w-full tw-h-full tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-3xl hover:tw-scale-[1.02]"
-            >
-              <div className="tw-text-6xl tw-overflow-hidden tw-rounded-xl tw-w-full tw-h-full max-md:tw-h-[180px]">
-                <img
-                  src="/pixa-assets/images/home/ai-models.png"
-                  className="tw-w-full tw-object-contain tw-h-full"
-                  alt="AI models"
-                />
-              </div>
-              <div className="tw-flex tw-flex-col tw-gap-4">
-                <h2 className="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
-                  Multiple AI models
-                </h2>
-                <p className="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
-                  Pixa supports various AI models, including ChatGPT, Gemini, Claude, Mistral and
-                  more, providing a range of advanced capabilities for various language and
-                  creative tasks.
-                </p>
-                <div className="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
-                  <span>Learn more</span>
-                  <i className="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"></i>
                 </div>
               </div>
-            </a>
+            ))}
           </div>
         </div>
       </div>

@@ -55,47 +55,53 @@ const TrainingProgramsSection = () => {
             Training Programs
           </h2>
           <p className="tw-text-lg tw-text-center tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[800px] tw-mx-auto tw-px-4">
-            Each module includes classroom learning, case studies, site visits, hands-on tools, live dashboards, and project-based assignments.
+            Each module includes classroom learning, case studies, site visits,
+            hands-on tools, live dashboards, and project-based assignments.
           </p>
         </div>
 
-        <div className="reveal-up tw-w-full tw-overflow-x-auto tw-mt-4 tw-px-2">
-          <div className="tw-min-w-full">
-            <div className="tw-hidden md:tw-grid md:tw-grid-cols-5 tw-gap-4 tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg tw-mb-4">
-              <div className="tw-font-semibold">Module</div>
-              <div className="tw-font-semibold">Duration</div>
-              <div className="tw-font-semibold">Key Contents</div>
-              <div className="tw-font-semibold">Certification</div>
-              <div className="tw-font-semibold">Fees</div>
-            </div>
+        <div className="reveal-up tw-w-full tw-mt-4 tw-px-2">
+          <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6">
             {programs.map((program, index) => (
               <div
                 key={index}
-                className="tw-mb-6 tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
+                className="tw-p-8 tw-bg-gradient-to-br tw-from-white tw-to-gray-100 dark:tw-from-black dark:tw-to-gray-900 tw-rounded-xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123] tw-flex tw-flex-col"
               >
-                <div className="md:tw-hidden tw-mb-4">
-                  <h3 className="tw-text-xl tw-font-semibold tw-mb-2">{program.module}</h3>
-                </div>
-                <div className="md:tw-grid md:tw-grid-cols-5 tw-gap-4 tw-items-center">
+                <h3 className="tw-text-xl tw-font-semibold tw-mb-4 tw-text-gray-900 dark:tw-text-white">
+                  {program.module}
+                </h3>
+                <div className="tw-flex tw-flex-col tw-gap-3 tw-flex-grow">
                   <div>
-                    <div className="md:tw-hidden tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">Module</div>
-                    <div className="tw-font-medium">{program.module}</div>
+                    <div className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">
+                      Duration
+                    </div>
+                    <div className="tw-text-gray-900 dark:tw-text-white">
+                      {program.duration}
+                    </div>
                   </div>
                   <div>
-                    <div className="md:tw-hidden tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">Duration</div>
-                    <div>{program.duration}</div>
+                    <div className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">
+                      Key Contents
+                    </div>
+                    <div className="tw-text-sm tw-text-gray-700 dark:tw-text-gray-300">
+                      {program.contents}
+                    </div>
                   </div>
                   <div>
-                    <div className="md:tw-hidden tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">Key Contents</div>
-                    <div className="tw-text-sm">{program.contents}</div>
+                    <div className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">
+                      Certification
+                    </div>
+                    <div className="tw-text-sm tw-font-medium tw-text-gray-900 dark:tw-text-white">
+                      {program.certification}
+                    </div>
                   </div>
-                  <div>
-                    <div className="md:tw-hidden tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">Certification</div>
-                    <div className="tw-text-sm tw-font-medium">{program.certification}</div>
-                  </div>
-                  <div>
-                    <div className="md:tw-hidden tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-1">Fees</div>
-                    <div className="tw-text-lg tw-font-semibold tw-text-gray-900 dark:tw-text-white">{program.fees}</div>
+                  <div className="tw-mt-auto tw-pt-4">
+                    <div className="tw-text-lg tw-font-semibold tw-text-gray-900 dark:tw-text-white tw-mb-4">
+                      {program.fees}
+                    </div>
+                    <button className="tw-w-full tw-py-2 tw-px-4 tw-border tw-border-white dark:tw-border-gray-700 tw-text-white tw-rounded-lg tw-transition-all tw-duration-300 hover:tw-bg-white hover:tw-text-black dark:hover:tw-bg-gray-800">
+                      Enroll Now
+                    </button>
                   </div>
                 </div>
               </div>
@@ -117,4 +123,3 @@ const TrainingProgramsSection = () => {
 };
 
 export default TrainingProgramsSection;
-

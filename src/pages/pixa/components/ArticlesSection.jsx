@@ -2,56 +2,82 @@ const ArticlesSection = () => {
   const articles = [
     {
       image: "/pixa-assets/images/home/article1.jpg",
-      category: "Machine learning",
-      date: "Jul, 17, 2024",
-      title: "Latest AI tools",
+      category: "Training",
+      date: "2024",
+      title: "FM Fundamentals & Technical Operations",
     },
     {
       image: "/pixa-assets/images/home/article2.jpg",
-      category: "Announcement",
-      date: "June, 22, 2024",
-      title: "Pixa Unveils new technology",
+      category: "Digital FM",
+      date: "2024",
+      title: "CAFM, IoT, BMS, BIM Integration",
     },
     {
       image: "/pixa-assets/images/home/article3.jpg",
-      category: "Announcement",
-      date: "Apr, 27, 2024",
-      title: "Launching Pixa playground",
+      category: "Sustainability",
+      date: "2024",
+      title: "ESG & Green Building Practices",
     },
   ];
 
   return (
-    <section className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3">
+    <section
+      id="collaborations"
+      className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+    >
       <h3 className="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl">
-        Read resources by experts ✨
+        Our Collaborations & Partners ✨
       </h3>
+      <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
+        We collaborate with industry leaders to deliver practical, real-world
+        learning
+      </p>
 
       <div className="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
-        {articles.map((article, index) => (
-          <a
-            key={index}
-            href="#"
-            className="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
-          >
-            <div className="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl">
-              <img
-                src={article.image}
-                alt="article image"
-                className="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
-              />
-            </div>
+        <div className="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] max-lg:tw-w-[350px]">
+          <div className="tw-text-5xl tw-mb-4">
+            <i className="bi bi-laptop"></i>
+          </div>
+          <h3 className="tw-font-semibold tw-text-2xl">CAFM Partners</h3>
+          <p className="tw-text-gray-700 dark:tw-text-gray-300">
+            Implement cloud-based CAFM. Provide hands-on digital FM dashboards.
+          </p>
+          <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mt-auto">
+            Partner: Factech
+          </p>
+        </div>
 
-            <div className="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2">
-              <div className="tw-text-gray-800 dark:tw-text-gray-200">{article.category}</div>
-              <div className="tw-text-gray-600 dark:tw-text-gray-400">{article.date}</div>
-            </div>
-            <h3 className="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">{article.title}</h3>
-          </a>
-        ))}
+        <div className="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] max-lg:tw-w-[350px]">
+          <div className="tw-text-5xl tw-mb-4">
+            <i className="bi bi-diagram-3"></i>
+          </div>
+          <h3 className="tw-font-semibold tw-text-2xl">
+            BIM & Digital Twin Partners
+          </h3>
+          <p className="tw-text-gray-700 dark:tw-text-gray-300">
+            BIM-based asset visualisation. As-built data integration.
+            Model-based facility operations.
+          </p>
+          <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mt-auto">
+            Partner: VDEI
+          </p>
+        </div>
+
+        <div className="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] max-lg:tw-w-[350px]">
+          <div className="tw-text-5xl tw-mb-4">
+            <i className="bi bi-tools"></i>
+          </div>
+          <h3 className="tw-font-semibold tw-text-2xl">
+            MEP Service Providers
+          </h3>
+          <p className="tw-text-gray-700 dark:tw-text-gray-300">
+            Technical site training. Practical troubleshooting guidance.
+            Equipment maintenance demonstrations.
+          </p>
+        </div>
       </div>
     </section>
   );
 };
 
 export default ArticlesSection;
-

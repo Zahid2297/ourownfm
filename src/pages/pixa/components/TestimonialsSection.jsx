@@ -1,47 +1,47 @@
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Mante",
-      role: "Glu, cto",
+      name: "FM Professional",
+      role: "India",
       image: "/pixa-assets/images/people/man2.jpg",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolore deleniti iusto Numquam!",
+      text: "The hands-on training at Our Own FM Academy helped us optimize operations and achieve real cost savings.",
     },
     {
-      name: "Trich B",
-      role: "AMI, ceo",
+      name: "Facility Manager",
+      role: "GCC",
       image: "/pixa-assets/images/people/women.jpg",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, vero. Lorem ipsum dolor sit amet.",
+      text: "Collaboration with experts gave our team practical insights we couldn't get elsewhere.",
     },
     {
-      name: "John B",
-      role: "Benz, ceo",
+      name: "FM Executive",
+      role: "India",
       image: "/pixa-assets/images/people/man.jpg",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita nihil repellendus accusamus itaque facere labore, suscipit tempore in harum repellat. Doloribus, dolor facere dolorem impedit facilis rerum beatae exercitationem aliquid porro ea architecto similique illo omnis odio consequatur modi.",
+      text: "The digital FM skills training transformed how we manage our facilities. The CAFM and BIM training was particularly valuable.",
     },
     {
-      name: "Ben Alfert B",
-      role: "XZ tech, cto",
+      name: "Facility Engineer",
+      role: "GCC",
       image: "/pixa-assets/images/people/man2.jpg",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, vero.",
+      text: "The mentorship and career support helped me transition into a senior FM role. Highly recommended!",
     },
     {
-      name: "Rachel",
-      role: "Gem, cto",
+      name: "FM Coordinator",
+      role: "India",
       image: "/pixa-assets/images/people/women.jpg",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, vero. Lorem, ipsum dolor.",
+      text: "Real-world learning through site visits and case studies made all the difference. Not just theory!",
     },
     {
-      name: "Jamie",
-      role: "SnapFist.ai, ceo",
+      name: "Sustainability Officer",
+      role: "GCC",
       image: "/pixa-assets/images/people/man.jpg",
-      text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nihil vitae fuga ab reiciendis optio et corporis dolorem alias deserunt, molestias in iusto! Ratione, quisquam incidunt. Reprehenderit ipsam officiis enim.",
+      text: "The sustainability and ESG training gave me the expertise needed to lead green building initiatives in our organization.",
     },
   ];
 
   return (
     <section className="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]">
       <h3 className="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl">
-        Join the professionals using Pixa
+        Success Stories from Our Community
       </h3>
       <div className="tw-mt-20 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
         {testimonials.map((testimonial, index) => (

@@ -14,7 +14,7 @@ const PricingSection = () => {
       price: "₹18,000",
       certification: "Digital FM Specialist",
       description: "Data-driven FM, mobile audits, dashboards",
-      highlighted: true,
+      highlighted: false,
     },
     {
       title: "Health, Safety, Risk & Compliance",
@@ -59,7 +59,8 @@ const PricingSection = () => {
         Training Programs
       </h3>
       <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
-        Each module includes classroom learning, case studies, site visits, hands-on tools, live dashboards, and project-based assignments.
+        Each module includes classroom learning, case studies, site visits,
+        hands-on tools, live dashboards, and project-based assignments.
       </p>
       <div className="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
         {trainingModules.map((module, index) => (
@@ -73,7 +74,9 @@ const PricingSection = () => {
               {module.title}
             </h3>
             <div className="tw-flex tw-gap-2 tw-items-center tw-mb-2">
-              <span className="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">{module.price}</span>
+              <span className="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+                {module.price}
+              </span>
             </div>
             <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-2">
               Duration: {module.duration}
@@ -103,4 +106,3 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
-

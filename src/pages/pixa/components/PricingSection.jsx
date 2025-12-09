@@ -55,7 +55,7 @@ const PricingSection = () => {
       className="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-gap-6 tw-place-items-center tw-p-[2%]"
       id="training"
     >
-      <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl">
+      <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
         Training Programs
       </h3>
       <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
@@ -70,11 +70,11 @@ const PricingSection = () => {
               module.highlighted ? "tw-border-2 dark:tw-border-[#595858]" : ""
             }`}
           >
-            <h3 className="tw-text-xl tw-font-semibold tw-text-center tw-mb-2">
+            <h3 className="tw-text-xl tw-font-semibold tw-text-center tw-mb-2 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               {module.title}
             </h3>
             <div className="tw-flex tw-gap-2 tw-items-center tw-mb-2">
-              <span className="tw-text-3xl max-md:tw-text-2xl tw-font-semibold">
+              <span className="tw-text-3xl max-md:tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-white">
                 {module.price}
               </span>
             </div>
@@ -93,7 +93,7 @@ const PricingSection = () => {
               className={`btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02] ${
                 module.highlighted
                   ? ""
-                  : "!tw-text-black !tw-bg-transparent !tw-border-[1px] tw-border-black dark:tw-border-white dark:!tw-text-white"
+                  : "!tw-bg-transparent !tw-border-[1px]"
               }`}
             >
               Enroll Now

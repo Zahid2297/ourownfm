@@ -37,12 +37,12 @@ const PreBuiltToolsSection = () => {
       <div className="reveal-up tw-mt-[5%] tw-flex tw-h-full tw-w-full tw-place-content-center tw-gap-2 tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col">
         <div className="tw-relative tw-flex tw-max-w-[30%] max-lg:tw-max-w-full tw-flex-col tw-place-items-start tw-gap-4 tw-p-2 max-lg:tw-place-items-center max-lg:tw-place-content-center max-lg:tw-w-full">
           <div className="tw-top-40 tw-flex tw-flex-col lg:tw-sticky tw-place-items-center tw-max-h-fit tw-max-w-[850px] max-lg:tw-max-h-fit max-lg:tw-max-w-[320px] tw-overflow-hidden">
-            <h2 className="tw-text-5xl tw-font-serif tw-text-center tw-font-medium max-md:tw-text-3xl">
+            <h2 className="tw-text-5xl tw-font-serif tw-text-center tw-font-medium max-md:tw-text-3xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               What We Offer
             </h2>
             <a
               href="#contact"
-              className="btn !tw-mt-8 !tw-bg-transparent !tw-text-black !tw-border-[1px] !tw-border-black dark:!tw-border-white dark:!tw-text-white"
+              className="btn !tw-mt-8"
             >
               Connect
             </a>
@@ -57,7 +57,7 @@ const PreBuiltToolsSection = () => {
                   <i className={offering.icon}></i>
                 </div>
                 <div className="tw-flex tw-flex-col tw-gap-4">
-                  <h3 className="tw-text-2xl max-md:tw-text-xl">{offering.title}</h3>
+                  <h3 className="tw-text-2xl max-md:tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">{offering.title}</h3>
                   <p className="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm">
                     {offering.description}
                   </p>

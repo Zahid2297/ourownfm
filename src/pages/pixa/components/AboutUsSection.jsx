@@ -41,7 +41,7 @@ const AboutUsSection = () => {
         
         {/* Main Heading */}
         <div className="reveal-up tw-text-center tw-mb-12">
-          <h2 className="tw-text-6xl max-lg:tw-text-4xl tw-leading-normal tw-uppercase tw-font-semibold tw-mb-8">
+          <h2 className="tw-text-6xl max-lg:tw-text-4xl tw-leading-normal tw-uppercase tw-font-semibold tw-mb-8 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             About Us
           </h2>
           <div className="tw-max-w-[900px] tw-mx-auto tw-text-lg tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed tw-space-y-5 tw-px-4">
@@ -60,7 +60,7 @@ const AboutUsSection = () => {
         {/* Our Purpose - Highlighted Box */}
         <div className="reveal-up tw-w-full tw-max-w-[1000px] tw-mt-4">
           <div className="tw-p-12 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-3xl tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]">
-            <h3 className="tw-text-3xl tw-font-semibold tw-text-center tw-mb-6">Our Purpose</h3>
+            <h3 className="tw-text-3xl tw-font-semibold tw-text-center tw-mb-6 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Our Purpose</h3>
             <p className="tw-text-center tw-text-lg tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed tw-mb-4">
               To make high-quality FM education accessible to everyone — from fresh graduates to working professionals — especially those who lack networks, resources, or exposure.
             </p>
@@ -72,7 +72,7 @@ const AboutUsSection = () => {
 
         {/* What We Offer - Grid Cards */}
         <div className="reveal-up tw-w-full tw-mt-8">
-          <h3 className="tw-text-4xl tw-font-semibold tw-text-center tw-mb-10">What We Offer</h3>
+          <h3 className="tw-text-4xl tw-font-semibold tw-text-center tw-mb-10 tw-text-[#19300e] dark:tw-text-[#c1fc75]">What We Offer</h3>
           <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8 tw-px-2">
             {offerings.map((offering, index) => (
               <div
@@ -82,7 +82,7 @@ const AboutUsSection = () => {
                 <div className="tw-text-5xl tw-mb-4 tw-text-gray-800 dark:tw-text-gray-200">
                   <i className={`bi ${offering.icon}`}></i>
                 </div>
-                <h4 className="tw-text-2xl tw-font-semibold tw-mb-3">{offering.title}</h4>
+                <h4 className="tw-text-2xl tw-font-semibold tw-mb-3 tw-text-[#19300e] dark:tw-text-[#c1fc75]">{offering.title}</h4>
                 <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-leading-relaxed">
                   {offering.description}
                 </p>
@@ -93,7 +93,7 @@ const AboutUsSection = () => {
 
         {/* Why Choose Us - Two Column Layout */}
         <div className="reveal-up tw-w-full tw-max-w-[1000px] tw-mt-12">
-          <h3 className="tw-text-4xl tw-font-semibold tw-text-center tw-mb-10">Why Choose Us</h3>
+          <h3 className="tw-text-4xl tw-font-semibold tw-text-center tw-mb-10 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Why Choose Us</h3>
           <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 tw-px-2">
             {whyChooseUs.map((point, index) => (
               <div
@@ -112,17 +112,17 @@ const AboutUsSection = () => {
         {/* Vision & Commitment - Side by Side */}
         <div className="reveal-up tw-w-full tw-max-w-[1000px] tw-mt-12 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8 tw-px-2">
           <div className="tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-2xl tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]">
-            <h3 className="tw-text-3xl tw-font-semibold tw-mb-4">Our Vision</h3>
+            <h3 className="tw-text-3xl tw-font-semibold tw-mb-4 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Our Vision</h3>
             <p className="tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed">
               To become the most trusted FM learning ecosystem in India and the GCC — empowering 10,000+ professionals with future-ready technical, operational, and digital FM capabilities by 2030.
             </p>
           </div>
           <div className="tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-2xl tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]">
-            <h3 className="tw-text-3xl tw-font-semibold tw-mb-4">Our Commitment</h3>
+            <h3 className="tw-text-3xl tw-font-semibold tw-mb-4 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Our Commitment</h3>
             <p className="tw-text-gray-800 dark:tw-text-gray-200 tw-mb-4 tw-leading-relaxed">
               We stand for access, mentorship, integrity, and real growth.
             </p>
-            <p className="tw-text-xl tw-font-semibold tw-text-gray-900 dark:tw-text-white">
+            <p className="tw-text-xl tw-font-semibold tw-text-gray-900 dark:tw-text-[#c1fc75]">
               Unlock potential. Build skills. Transform careers.
             </p>
           </div>

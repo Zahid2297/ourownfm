@@ -26,7 +26,7 @@ const FourPillarsSection = () => {
     <section className="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-py-20 tw-px-8">
       <div className="tw-w-full tw-max-w-[1200px] tw-flex tw-flex-col tw-place-items-center tw-gap-16 tw-px-4">
         <div className="reveal-up tw-flex tw-flex-col tw-gap-6 tw-text-center tw-mb-8">
-          <h2 className="tw-text-6xl tw-font-semibold max-md:tw-text-4xl tw-uppercase tw-mb-4">
+          <h2 className="tw-text-6xl tw-font-semibold max-md:tw-text-4xl tw-uppercase tw-mb-4 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Our Four Pillars
           </h2>
           <p className="tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[700px] tw-mx-auto tw-px-4">
@@ -40,7 +40,7 @@ const FourPillarsSection = () => {
                 <div className="tw-text-6xl tw-text-gray-800 dark:tw-text-gray-200">
                   <i className={`bi ${pillar.icon}`}></i>
                 </div>
-                <h3 className="tw-text-2xl tw-font-semibold">
+                <h3 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                   {pillar.title}
                 </h3>
                 <p className="tw-text-base tw-leading-relaxed tw-text-gray-700 dark:tw-text-gray-300 tw-mt-auto">

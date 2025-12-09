@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] tw-text-black dark:tw-text-white max-md:tw-flex-col">
+    <footer className="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] tw-text-[#19300e] dark:tw-text-[#c1fc75] max-md:tw-flex-col">
       <div className="tw-flex max-md:tw-flex-col max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around">
         <div className="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
           <a href="#" className="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6">
@@ -14,7 +14,7 @@ const Footer = () => {
               alt="Our Own FM Academy"
               className="tw-max-w-[120px] tw-hidden dark:tw-block"
             />
-            <div className="tw-max-w-[120px] tw-text-center tw-text-xl tw-h-fit tw-font-semibold">Our Own FM Academy</div>
+            <div className="tw-max-w-[120px] tw-text-center tw-text-xl tw-h-fit tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">Our Own FM Academy</div>
           </a>
           <div className="tw-flex tw-gap-4 tw-text-lg">
             <a href="https://github.com/abuzar-alvi" aria-label="Github">
@@ -31,7 +31,7 @@ const Footer = () => {
 
         <div className="tw-flex max-md:tw-flex-col tw-flex-wrap tw-gap-6 tw-h-full tw-w-full tw-justify-around">
           <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
-            <h2 className="tw-text-xl">Programs</h2>
+            <h2 className="tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">Programs</h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
               <a href="#training" className="footer-link">
                 Training Programs
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
 
           <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
-            <h2 className="tw-text-xl">Company</h2>
+            <h2 className="tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">Company</h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
               <a href="#about" className="footer-link">
                 About Us
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
 
           <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
-            <h2 className="tw-text-xl">Resources</h2>
+            <h2 className="tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">Resources</h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
               <a href="#faq" className="footer-link">
                 FAQ

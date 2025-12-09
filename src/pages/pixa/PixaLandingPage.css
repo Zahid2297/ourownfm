@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
-@import url('/pixa-tailwind.css');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap");
+@import url("/pixa-tailwind.css");
 
 :root {
-  --primary-text-color: #000;
+  --primary-text-color: #19300e;
   --bg-color: #ffffff;
-  --btn-color: #fdfdfd;
-  --btn-bg: #000;
-  --header-link-hover: #000000;
+  --btn-color: #ffffff;
+  --btn-bg: #19300e;
+  --header-link-hover: #19300e;
   --header-link-hover-bg: #bababa36;
-  --input-hover-bd-color: #232323;
+  --input-hover-bd-color: #19300e;
   --dropdown-bg: #f3f4f6;
   --dropdown-hover-bg: #dddddd84;
-  --faq-h-text: #0e0e0e;
-  --faq-content-text: #1e1e1e;
+  --faq-h-text: #19300e;
+  --faq-content-text: #19300e;
   --hr-color: #e5e7eb;
-  --footer-link: #282828;
-  --footer-link-hover: #000;
+  --footer-link: #19300e;
+  --footer-link-hover: #19300e;
   --header-bg: #edececa5;
   --hero-gradient: #fcfcfc;
   --hero-bg-img: url("/pixa-assets/images/background/dots-dark.svg");
 }
 
 .tw-dark {
-  --primary-text-color: #fff;
+  --primary-text-color: #c1fc75;
   --bg-color: #000000;
   --btn-color: #000000;
-  --btn-bg: #ffffff;
-  --header-link-hover: #ffffff;
+  --btn-bg: #c1fc75;
+  --header-link-hover: #c1fc75;
   --header-link-hover-bg: #8a8a8a5e;
-  --input-hover-bd-color: #f8f8f8;
+  --input-hover-bd-color: #c1fc75;
   --dropdown-bg: #171717;
   --dropdown-hover-bg: #2d2d2ddb;
-  --faq-h-text: #efefef;
-  --faq-content-text: #d4d4d4;
+  --faq-h-text: #c1fc75;
+  --faq-content-text: #c1fc75;
   --hr-color: #e1e1e195;
-  --footer-link: #cfcfcf;
-  --footer-link-hover: #ffffff;
+  --footer-link: #c1fc75;
+  --footer-link-hover: #c1fc75;
   --header-bg: #232323a5;
   --hero-gradient: #000;
   --hero-bg-img: url("/pixa-assets/images/background/dots.svg");
@@ -80,7 +80,7 @@ hr {
 }
 
 .header-links::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -111,18 +111,30 @@ hr {
 }
 
 .hero-bg-gradient {
-  background: linear-gradient(180deg, var(--hero-gradient) 23%, rgba(0,0,0,0) 87%, var(--hero-gradient) 97%);
+  background: linear-gradient(
+    180deg,
+    var(--hero-gradient) 23%,
+    rgba(0, 0, 0, 0) 87%,
+    var(--hero-gradient) 97%
+  );
 }
 
 .purple-bg-grad {
-  background: rgb(126,34,206);
-  background: linear-gradient(90deg, #7e22ce91 8%, #625aafae 31%, #7badbbbc 76%, #54d2d0ca 89%);
+  background: rgb(126, 34, 206);
+  background: linear-gradient(
+    90deg,
+    #7e22ce91 8%,
+    #625aafae 31%,
+    #7badbbbc 76%,
+    #54d2d0ca 89%
+  );
   filter: blur(50px);
   opacity: 0.5;
 }
 
 #dashboard {
-  transform: perspective(1200px) translateX(0px) translateY(12px) scale(0.8) rotate(0deg) rotateX(70deg);
+  transform: perspective(1200px) translateX(0px) translateY(12px) scale(0.8)
+    rotate(0deg) rotateX(70deg);
   transition: transform 0.5s;
 }
 
@@ -140,7 +152,7 @@ hr {
 }
 
 .btn:hover {
-  /* Add hover styles if needed */
+  opacity: 1;
 }
 
 .btn:disabled {
@@ -158,7 +170,9 @@ hr {
   transition: border 0.3s;
 }
 
-.input:active, .input:focus, .input:focus-within {
+.input:active,
+.input:focus,
+.input:focus-within {
   border: 1px solid var(--input-hover-bd-color) !important;
 }
 
@@ -250,7 +264,7 @@ hr {
 }
 
 .animated-border::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -100%;
@@ -290,6 +304,15 @@ hr {
   color: var(--footer-link-hover);
 }
 
+/* Footer links in dark mode - white with hover to #c1fc75 */
+.tw-dark .footer-link {
+  color: #ffffff !important;
+}
+
+.tw-dark .footer-link:hover {
+  color: #c1fc75 !important;
+}
+
 .faq-accordion {
   background-color: inherit;
   color: var(--faq-h-text);
@@ -302,6 +325,11 @@ hr {
   transition: height 0.4s;
 }
 
+/* Override FAQ accordion color in dark mode to white */
+.tw-dark .faq-accordion {
+  color: #ffffff !important;
+}
+
 .faq .content {
   padding: 0px 18px;
   color: var(--faq-content-text);
@@ -311,6 +339,42 @@ hr {
   text-align: justify;
   max-height: 0px;
   transition: max-height 0.4s, padding 0.4s;
+}
+
+/* Override FAQ answer content color in dark mode to white */
+.tw-dark .faq .content {
+  color: #ffffff !important;
+}
+
+/* Make all headings use the same color as button background */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--btn-bg) !important;
+}
+
+/* Ensure headings have full opacity in dark mode and override GSAP animations */
+.tw-dark h1,
+.tw-dark h2,
+.tw-dark h3,
+.tw-dark h4,
+.tw-dark h5,
+.tw-dark h6 {
+  opacity: 1 !important;
+}
+
+/* Ensure reveal-up elements in hero section are visible immediately */
+#hero-section .reveal-up {
+  opacity: 1 !important;
+}
+
+/* Make training card transparent buttons use heading color (button bg color) */
+#training .btn[class*="tw-bg-transparent"] {
+  color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
 }
 
 @media not all and (min-width: 1024px) {
@@ -336,4 +400,3 @@ hr {
     box-shadow: 0px 2px 3px 2px #9f9f9f7c;
   }
 }
-

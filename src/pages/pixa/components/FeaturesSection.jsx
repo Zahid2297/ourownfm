@@ -30,7 +30,7 @@ const FeaturesSection = () => {
     <section className="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden">
       <div className="tw-mt-8 tw-flex tw-flex-col tw-w-full tw-h-full tw-place-items-center tw-gap-5">
         <div className="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
-          <h2 className="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2">
+          <h2 className="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Our Four Pillars
           </h2>
           <p className="tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-mt-2">
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
                   <div className="tw-w-full tw-flex tw-place-contet-center tw-min-h-[100px] tw-h-[100px] tw-rounded-xl tw-overflow-hidden tw-items-center tw-justify-center">
                     <i className={`bi ${pillar.icon} tw-text-6xl tw-text-gray-800 dark:tw-text-gray-200`}></i>
                   </div>
-                  <h2 className="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
+                  <h2 className="tw-text-3xl max-md:tw-text-2xl tw-font-medium tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                     {pillar.title}
                   </h2>
                   <p className="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">

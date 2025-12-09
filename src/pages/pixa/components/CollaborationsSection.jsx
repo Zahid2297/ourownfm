@@ -31,7 +31,7 @@ const CollaborationsSection = () => {
     >
       <div className="tw-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[1200px] tw-gap-16 tw-px-4">
         <div className="reveal-up tw-text-center tw-mb-12">
-          <h2 className="tw-text-6xl max-lg:tw-text-4xl tw-leading-normal tw-uppercase tw-font-semibold tw-mb-8">
+          <h2 className="tw-text-6xl max-lg:tw-text-4xl tw-leading-normal tw-uppercase tw-font-semibold tw-mb-8 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Collaborations
           </h2>
           <p className="tw-text-lg tw-text-center tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[800px] tw-mx-auto tw-px-4">
@@ -45,10 +45,10 @@ const CollaborationsSection = () => {
               key={index}
               className="tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
             >
-              <h3 className="tw-text-xl tw-font-semibold tw-mb-3">{collab.title}</h3>
+              <h3 className="tw-text-xl tw-font-semibold tw-mb-3 tw-text-[#19300e] dark:tw-text-[#c1fc75]">{collab.title}</h3>
               <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-mb-3">{collab.description}</p>
               {collab.partner && (
-                <div className="tw-text-sm tw-font-medium tw-text-gray-900 dark:tw-text-white tw-mt-4 tw-pt-3 tw-border-t tw-border-gray-300 dark:tw-border-gray-700">
+                <div className="tw-text-sm tw-font-medium tw-text-gray-900 dark:tw-text-[#c1fc75] tw-mt-4 tw-pt-3 tw-border-t tw-border-gray-300 dark:tw-border-gray-700">
                   {collab.partner}
                 </div>
               )}
@@ -57,7 +57,7 @@ const CollaborationsSection = () => {
         </div>
 
         <div className="reveal-up tw-mt-12 tw-w-full tw-text-center tw-px-2">
-          <h3 className="tw-text-3xl tw-font-semibold tw-mb-8">Site Visits</h3>
+          <h3 className="tw-text-3xl tw-font-semibold tw-mb-8 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Site Visits</h3>
           <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-mb-4">
             All students receive 2–4 structured site visits:
           </p>
@@ -81,13 +81,13 @@ const CollaborationsSection = () => {
         </div>
 
         <div className="reveal-up tw-mt-12 tw-w-full tw-text-center tw-px-2">
-          <h3 className="tw-text-3xl tw-font-semibold tw-mb-8">Placement Assistance (India & GCC)</h3>
+          <h3 className="tw-text-3xl tw-font-semibold tw-mb-8 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Placement Assistance (India & GCC)</h3>
           <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-mb-4">
             We support placements for Facility Executives, Facility Managers, Engineers, Supervisors, Coordinators, Sustainability officers, and CAFM operators.
           </p>
           <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 tw-max-w-[700px] tw-mx-auto">
             <div className="tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-xl tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]">
-              <h4 className="tw-font-semibold tw-mb-2">Placement Support Includes:</h4>
+              <h4 className="tw-font-semibold tw-mb-2 tw-text-[#19300e] dark:tw-text-[#c1fc75]">Placement Support Includes:</h4>
               <ul className="tw-text-sm tw-text-left tw-text-gray-700 dark:tw-text-gray-300 tw-space-y-1">
                 <li>• Resume development</li>
                 <li>• Interview preparation</li>

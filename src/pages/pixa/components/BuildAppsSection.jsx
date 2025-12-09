@@ -6,7 +6,7 @@ const BuildAppsSection = () => {
     >
       <div className="tw-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[900px] tw-gap-6 tw-p-4">
         <div className="purple-bg-grad reveal-up tw-absolute tw-right-[20%] tw-top-[20%] tw-h-[200px] tw-w-[200px]"></div>
-        <h2 className="reveal-up tw-text-6xl max-lg:tw-text-4xl tw-text-center tw-leading-normal tw-uppercase">
+        <h2 className="reveal-up tw-text-6xl max-lg:tw-text-4xl tw-text-center tw-leading-normal tw-uppercase tw-text-[#19300e] dark:tw-text-[#c1fc75]">
           <span className="tw-font-semibold">About Us</span>
         </h2>
         <div className="reveal-up tw-mt-4 tw-max-w-[800px] tw-text-gray-900 dark:tw-text-gray-200 tw-text-center max-md:tw-text-sm tw-text-lg">
@@ -35,7 +35,7 @@ const BuildAppsSection = () => {
               <div className="tw-absolute tw-top-0 tw-right-0 tw-w-32 tw-h-32 tw-bg-gradient-to-br tw-from-purple-200/30 tw-to-blue-200/30 dark:tw-from-purple-900/20 dark:tw-to-blue-900/20 tw-rounded-full tw-blur-2xl"></div>
               <div className="tw-relative tw-z-10 tw-flex tw-flex-col">
                 <h3
-                  className="tw-text-2xl tw-font-semibold tw-text-gray-900 dark:tw-text-white"
+                  className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]"
                   style={{ marginBottom: "18px" }}
                 >
                   Our Purpose
@@ -62,7 +62,7 @@ const BuildAppsSection = () => {
               <div className="tw-absolute tw-top-0 tw-right-0 tw-w-32 tw-h-32 tw-bg-gradient-to-br tw-from-blue-200/30 tw-to-cyan-200/30 dark:tw-from-blue-900/20 dark:tw-to-cyan-900/20 tw-rounded-full tw-blur-2xl"></div>
               <div className="tw-relative tw-z-10 tw-flex tw-flex-col">
                 <h3
-                  className="tw-text-2xl tw-font-semibold tw-text-gray-900 dark:tw-text-white"
+                  className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]"
                   style={{ marginBottom: "18px" }}
                 >
                   Our Vision
@@ -89,7 +89,7 @@ const BuildAppsSection = () => {
               <div className="tw-absolute tw-top-0 tw-right-0 tw-w-32 tw-h-32 tw-bg-gradient-to-br tw-from-green-200/30 tw-to-emerald-200/30 dark:tw-from-green-900/20 dark:tw-to-emerald-900/20 tw-rounded-full tw-blur-2xl"></div>
               <div className="tw-relative tw-z-10 tw-flex tw-flex-col">
                 <h3
-                  className="tw-text-2xl tw-font-semibold tw-text-gray-900 dark:tw-text-white"
+                  className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]"
                   style={{ marginBottom: "18px" }}
                 >
                   Our Commitment
@@ -113,7 +113,7 @@ const BuildAppsSection = () => {
               <div className="tw-absolute tw-top-0 tw-right-0 tw-w-32 tw-h-32 tw-bg-gradient-to-br tw-from-orange-200/30 tw-to-pink-200/30 dark:tw-from-orange-900/20 dark:tw-to-pink-900/20 tw-rounded-full tw-blur-2xl"></div>
               <div className="tw-relative tw-z-10 tw-flex tw-flex-col">
                 <h3
-                  className="tw-text-2xl tw-font-semibold tw-text-gray-900 dark:tw-text-white"
+                  className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]"
                   style={{ marginBottom: "18px" }}
                 >
                   Our Promise

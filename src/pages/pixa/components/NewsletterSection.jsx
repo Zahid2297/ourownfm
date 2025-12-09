@@ -3,7 +3,7 @@ const NewsletterSection = () => {
     <section id="contact" className="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2">
       <div className="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col">
         <div className="tw-flex tw-flex-col max-lg:tw-text-center tw-gap-1">
-          <h2 className="tw-text-2xl tw-text-gray-800 dark:tw-text-gray-200 max-md:tw-text-xl">
+          <h2 className="tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75] max-md:tw-text-xl">
             Get in Touch
           </h2>
           <div className="tw-text-gray-700 dark:tw-text-gray-300">
@@ -18,7 +18,7 @@ const NewsletterSection = () => {
             placeholder="your.email@example.com"
           />
           <a
-            className="btn !tw-rounded-full !tw-border-[1px] !tw-text-black !tw-border-solid !tw-border-black dark:!tw-text-white dark:!tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+            className="btn !tw-rounded-full"
             href="mailto:info@ourownfm.com"
           >
             Connect

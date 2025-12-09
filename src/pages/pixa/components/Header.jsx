@@ -140,7 +140,7 @@ const Header = () => {
                     <i className="bi bi-book"></i>
                   </div>
                   <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
                       Training Programs
                     </div>
                     <p>Industry-aligned FM training modules</p>
@@ -155,7 +155,7 @@ const Header = () => {
                     <i className="bi bi-briefcase"></i>
                   </div>
                   <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
                       Consultancy Services
                     </div>
                     <p>Operational audit, technology integration, ESG</p>
@@ -170,7 +170,7 @@ const Header = () => {
                     <i className="bi bi-diagram-3"></i>
                   </div>
                   <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
                       Project Guidance
                     </div>
                     <p>End-to-end FM project support</p>
@@ -185,7 +185,7 @@ const Header = () => {
                     <i className="bi bi-leaf"></i>
                   </div>
                   <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
                       Sustainability Solutions
                     </div>
                     <p>Energy optimization, green building advisory</p>
@@ -200,7 +200,7 @@ const Header = () => {
                     <i className="bi bi-people"></i>
                   </div>
                   <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
                       Placement Assistance
                     </div>
                     <p>Career support for India & GCC</p>
@@ -215,7 +215,7 @@ const Header = () => {
                     <i className="bi bi-handshake"></i>
                   </div>
                   <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
                       Collaborations
                     </div>
                     <p>Partners: Factech, VDEI, MEP experts</p>

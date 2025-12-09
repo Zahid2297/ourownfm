@@ -29,7 +29,7 @@ const BrandCarousel = () => {
 
   return (
     <section className="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8">
-      <h2 className="reveal-up tw-text-3xl max-md:tw-text-xl">
+      <h2 className="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
         Our Collaborations & Partners
       </h2>
 
@@ -47,7 +47,7 @@ const BrandCarousel = () => {
                   className="tw-h-full tw-w-full tw-object-contain"
                 />
               </div>
-              <div className="tw-font-semibold tw-text-sm tw-text-black dark:tw-text-white tw-text-center">
+              <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-text-center">
                 {partner.name}
               </div>
             </div>
@@ -65,7 +65,7 @@ const BrandCarousel = () => {
                   className="tw-h-full tw-w-full tw-object-contain"
                 />
               </div>
-              <div className="tw-font-semibold tw-text-sm tw-text-black dark:tw-text-white tw-text-center">
+              <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-text-center">
                 {partner.name}
               </div>
             </div>

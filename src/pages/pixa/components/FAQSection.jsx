@@ -42,13 +42,13 @@ const FAQSection = () => {
 
   return (
     <section id="faq" className="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]">
-      <h3 className="tw-text-4xl tw-font-medium max-md:tw-text-2xl">Frequently Asked Questions</h3>
+      <h3 className="tw-text-4xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">Frequently Asked Questions</h3>
       <div className="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4">
         {faqs.map((faq, index) => (
           <div key={index}>
             <div className="faq tw-w-full">
               <h4
-                className="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                className="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg tw-text-[#19300e] dark:tw-text-white"
                 onClick={() => toggleFAQ(index)}
               >
                 <span>{faq.question}</span>
@@ -59,7 +59,7 @@ const FAQSection = () => {
                 ></i>
               </h4>
               <div
-                className="content max-lg:tw-text-sm"
+                className="content max-lg:tw-text-sm tw-text-[#19300e] dark:tw-text-white"
                 style={{
                   maxHeight: openIndex === index ? "240px" : "0px",
                   padding: openIndex === index ? "20px 18px" : "0px 18px",

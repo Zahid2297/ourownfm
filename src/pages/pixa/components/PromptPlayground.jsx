@@ -146,7 +146,7 @@ const PromptPlayground = () => {
             <div className="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center">
               <a
                 href="#sign-up"
-                className="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] hover:!tw-bg-black hover:!tw-text-white dark:hover:!tw-bg-white dark:hover:!tw-text-black !tw-border-[1px] !tw-border-black !tw-text-black dark:!tw-border-white dark:!tw-text-white"
+                className="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] hover:!tw-bg-[#19300e] hover:!tw-text-white dark:hover:!tw-bg-[#c1fc75] dark:hover:!tw-text-black !tw-border-[1px] !tw-border-[#19300e] !tw-text-[#19300e] dark:!tw-border-[#c1fc75] dark:!tw-text-[#c1fc75]"
               >
                 Signup
               </a>
@@ -172,7 +172,7 @@ const PromptPlayground = () => {
               >
                 {prompts.length === 0 ? (
                   <div className="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center">
-                    <h2 className="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80">
+                    <h2 className="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80 dark:tw-opacity-100 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                       Try Prompts
                     </h2>
                     <div className="tw-inline tw-mt-6 max-md:tw-mt-3">

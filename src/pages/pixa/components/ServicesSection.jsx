@@ -73,7 +73,7 @@ const ServicesSection = () => {
     >
       <div className="tw-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[1200px] tw-gap-16 tw-px-4">
         <div className="reveal-up tw-text-center tw-mb-12">
-          <h2 className="tw-text-6xl max-lg:tw-text-4xl tw-leading-normal tw-uppercase tw-font-semibold tw-mb-8">
+          <h2 className="tw-text-6xl max-lg:tw-text-4xl tw-leading-normal tw-uppercase tw-font-semibold tw-mb-8 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Consultancy Services
           </h2>
           <p className="tw-text-lg tw-text-center tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-[800px] tw-mx-auto tw-px-4">
@@ -91,7 +91,7 @@ const ServicesSection = () => {
               <div className="tw-text-5xl tw-mb-4 tw-text-gray-800 dark:tw-text-gray-200">
                 <i className={`bi ${service.icon}`}></i>
               </div>
-              <h3 className="tw-text-2xl tw-font-semibold tw-mb-4">
+              <h3 className="tw-text-2xl tw-font-semibold tw-mb-4 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                 {service.title}
               </h3>
               <ul className="tw-list-none tw-space-y-2 tw-mb-4">
@@ -104,7 +104,7 @@ const ServicesSection = () => {
                   </li>
                 ))}
               </ul>
-              <div className="tw-mt-4 tw-text-lg tw-font-semibold tw-text-gray-900 dark:tw-text-white">
+              <div className="tw-mt-4 tw-text-lg tw-font-semibold tw-text-gray-900 dark:tw-text-[#c1fc75]">
                 Fees: {service.fees}
               </div>
             </div>
@@ -112,7 +112,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="reveal-up tw-mt-12 tw-w-full">
-          <h3 className="tw-text-4xl tw-font-semibold tw-text-center tw-mb-10">
+          <h3 className="tw-text-4xl tw-font-semibold tw-text-center tw-mb-10 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Project Guidance & Support
           </h3>
           <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-8 tw-px-2">
@@ -121,13 +121,13 @@ const ServicesSection = () => {
                 key={index}
                 className="tw-p-8 tw-bg-gradient-to-br tw-from-white tw-to-gray-100 dark:tw-from-black dark:tw-to-gray-900 tw-rounded-xl tw-transition-all tw-duration-300 hover:tw-scale-[1.02] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]"
               >
-                <h4 className="tw-text-xl tw-font-semibold tw-mb-3">
+                <h4 className="tw-text-xl tw-font-semibold tw-mb-3 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                   {project.type}
                 </h4>
                 <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-mb-4 tw-text-sm">
                   {project.description}
                 </p>
-                <div className="tw-text-lg tw-font-semibold tw-text-gray-900 dark:tw-text-white">
+                <div className="tw-text-lg tw-font-semibold tw-text-gray-900 dark:tw-text-[#c1fc75]">
                   {project.fees}
                 </div>
               </div>

@@ -25,7 +25,7 @@ const ArticlesSection = () => {
       id="collaborations"
       className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
     >
-      <h3 className="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+      <h3 className="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
         Our Collaborations & Partners ✨
       </h3>
       <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
@@ -38,7 +38,7 @@ const ArticlesSection = () => {
           <div className="tw-text-5xl tw-mb-4">
             <i className="bi bi-laptop"></i>
           </div>
-          <h3 className="tw-font-semibold tw-text-2xl">CAFM Partners</h3>
+          <h3 className="tw-font-semibold tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">CAFM Partners</h3>
           <p className="tw-text-gray-700 dark:tw-text-gray-300">
             Implement cloud-based CAFM. Provide hands-on digital FM dashboards.
           </p>
@@ -51,7 +51,7 @@ const ArticlesSection = () => {
           <div className="tw-text-5xl tw-mb-4">
             <i className="bi bi-diagram-3"></i>
           </div>
-          <h3 className="tw-font-semibold tw-text-2xl">
+          <h3 className="tw-font-semibold tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             BIM & Digital Twin Partners
           </h3>
           <p className="tw-text-gray-700 dark:tw-text-gray-300">
@@ -67,7 +67,7 @@ const ArticlesSection = () => {
           <div className="tw-text-5xl tw-mb-4">
             <i className="bi bi-tools"></i>
           </div>
-          <h3 className="tw-font-semibold tw-text-2xl">
+          <h3 className="tw-font-semibold tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             MEP Service Providers
           </h3>
           <p className="tw-text-gray-700 dark:tw-text-gray-300">

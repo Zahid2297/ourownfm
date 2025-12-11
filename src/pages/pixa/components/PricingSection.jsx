@@ -56,7 +56,7 @@ const PricingSection = () => {
       id="training"
     >
       <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-        Training Programs
+        Courses & Certifications
       </h3>
       <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
         Each module includes classroom learning, case studies, site visits,

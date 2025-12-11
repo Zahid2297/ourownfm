@@ -7,15 +7,14 @@ const Header = () => {
   const RESPONSIVE_WIDTH = 1024;
 
   useEffect(() => {
-    // Check initial dark mode
+    // Check initial dark mode - default to light mode
     const colorMode = localStorage.getItem("color-mode");
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    const shouldBeDark = colorMode === "dark" || (!colorMode && prefersDark);
+    const shouldBeDark = colorMode === "dark";
     setIsDarkMode(shouldBeDark);
     if (shouldBeDark) {
       document.documentElement.classList.add("tw-dark");
+    } else {
+      document.documentElement.classList.remove("tw-dark");
     }
 
     // Handle responsive

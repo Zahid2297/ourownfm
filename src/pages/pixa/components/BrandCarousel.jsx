@@ -38,36 +38,46 @@ const BrandCarousel = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="carousel-img tw-h-[100px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
+              className="carousel-img tw-min-h-[120px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
             >
               <div className="tw-h-[60px] tw-w-[60px] tw-mb-2 tw-flex tw-items-center tw-justify-center">
                 <img
                   src={partner.icon}
                   alt={partner.name}
-                  className="tw-h-full tw-w-full tw-object-contain"
+                  className="tw-h-full tw-w-full tw-object-contain dark:tw-brightness-0 dark:tw-invert"
                 />
               </div>
-              <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-text-center">
+              <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-white tw-text-center">
                 {partner.name}
               </div>
+              {partner.description && (
+                <div className="tw-text-xs tw-text-gray-600 dark:tw-text-gray-300 tw-text-center tw-mt-1">
+                  {partner.description}
+                </div>
+              )}
             </div>
           ))}
           {/* Duplicate for seamless loop */}
           {partners.map((partner, index) => (
             <div
               key={`dup-${index}`}
-              className="carousel-img tw-h-[100px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
+              className="carousel-img tw-min-h-[120px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
             >
               <div className="tw-h-[60px] tw-w-[60px] tw-mb-2 tw-flex tw-items-center tw-justify-center">
                 <img
                   src={partner.icon}
                   alt={partner.name}
-                  className="tw-h-full tw-w-full tw-object-contain"
+                  className="tw-h-full tw-w-full tw-object-contain dark:tw-brightness-0 dark:tw-invert"
                 />
               </div>
-              <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-text-center">
+              <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-white tw-text-center">
                 {partner.name}
               </div>
+              {partner.description && (
+                <div className="tw-text-xs tw-text-gray-600 dark:tw-text-gray-300 tw-text-center tw-mt-1">
+                  {partner.description}
+                </div>
+              )}
             </div>
           ))}
         </div>

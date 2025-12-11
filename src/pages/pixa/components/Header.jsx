@@ -76,24 +76,24 @@ const Header = () => {
         <div className="tw-h-[35px] tw-max-w-[100px]">
           {!isDarkMode ? (
             <img
-              src="/logo1 black.png"
+              src="/logo1 white.png"
               alt="Our Own FM Academy"
               className="tw-object-contain tw-h-full tw-w-full"
             />
           ) : (
             <img
-              src="/logo1 white (2).png"
+              src="/logo1 dark.png"
               alt="Our Own FM Academy"
               className="tw-object-contain tw-h-full tw-w-full"
             />
           )}
         </div>
-        <span
+        {/* <span
           className="tw-uppercase tw-font-medium tw-leading-none"
           style={{ fontSize: "11px", marginLeft: "-22px" }}
         >
           OUROWN FM ACADEMY
-        </span>
+        </span> */}
       </a>
       <div
         ref={collapseHeaderItemsRef}

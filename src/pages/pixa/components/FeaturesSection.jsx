@@ -10,7 +10,7 @@ const FeaturesSection = () => {
       title: "Sustainability",
       description:
         "Embed energy efficiency, ESG compliance, green building standards, and resource optimisation into every FM function.",
-      icon: "bi-leaf",
+      icon: "bi-tree",
     },
     {
       title: "Leadership",

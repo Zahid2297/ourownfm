@@ -313,6 +313,32 @@ hr {
   color: #c1fc75 !important;
 }
 
+/* Ensure footer logo text is visible in dark mode */
+footer .tw-text-xl.tw-font-semibold {
+  color: #19300e;
+}
+
+.tw-dark footer .tw-text-xl.tw-font-semibold {
+  color: #c1fc75 !important;
+}
+
+/* Ensure footer logos display correctly in dark/light mode */
+footer img[src="/logo1 white.png"] {
+  display: block;
+}
+
+.tw-dark footer img[src="/logo1 white.png"] {
+  display: none !important;
+}
+
+footer img[src="/logo1 dark.png"] {
+  display: none;
+}
+
+.tw-dark footer img[src="/logo1 dark.png"] {
+  display: block !important;
+}
+
 .faq-accordion {
   background-color: inherit;
   color: var(--faq-h-text);

@@ -339,6 +339,27 @@ footer img[src="/logo1 dark.png"] {
   display: block !important;
 }
 
+/* Navigation hover text change effect */
+.nav-hover-item {
+  position: relative;
+}
+
+.nav-hover-item .nav-default {
+  display: inline-block;
+}
+
+.nav-hover-item .nav-hover {
+  display: none;
+}
+
+.nav-hover-item:hover .nav-default {
+  display: none;
+}
+
+.nav-hover-item:hover .nav-hover {
+  display: inline-block;
+}
+
 .faq-accordion {
   background-color: inherit;
   color: var(--faq-h-text);

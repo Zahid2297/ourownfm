@@ -2,10 +2,8 @@ import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
   const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(true);
-  const [isNavDropdownOpen, setIsNavDropdownOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const collapseHeaderItemsRef = useRef(null);
-  const navDropdownRef = useRef(null);
   const RESPONSIVE_WIDTH = 1024;
 
   useEffect(() => {
@@ -62,14 +60,6 @@ const Header = () => {
     }
   };
 
-  const toggleNavDropdown = () => {
-    setIsNavDropdownOpen(!isNavDropdownOpen);
-  };
-
-  const closeNavDropdown = () => {
-    setIsNavDropdownOpen(false);
-  };
-
   return (
     <header className="lg:tw-px-4 tw-max-w-[100vw] max-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-text-gray-700 tw-bg-[#f2f3f4] dark:tw-text-gray-200 dark:tw-bg-[#080808] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
       <a className="tw-flex tw-p-[4px] tw-gap-0 tw-place-items-center" href="#">
@@ -113,119 +103,27 @@ const Header = () => {
         }}
       >
         <nav className="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">
+          <a className="header-links" href="#about">
+            About
+          </a>
           <a className="header-links" href="#training">
-            Training
+            Courses & Certifications
+          </a>
+          <a className="header-links nav-hover-item tw-relative" href="#cafm">
+            <span className="nav-default">CAFM</span>
+            <span className="nav-hover">Quick FMS</span>
+          </a>
+          <a
+            className="header-links nav-hover-item tw-relative"
+            href="https://wa.me/916364807896"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="nav-default">Contact</span>
+            <span className="nav-hover">WhatsApp</span>
           </a>
           <a className="header-links" href="#consultancy">
             Consultancy
-          </a>
-          <a className="header-links tw-relative" href="#about">
-            About
-            <div
-              className="tw-absolute tw-left-[calc(100%+1.25rem)] tw-top-0 tw-w-[50px] tw-h-full tw-cursor-pointer tw-z-10"
-              onClick={toggleNavDropdown}
-            ></div>
-          </a>
-          {isNavDropdownOpen && (
-            <nav
-              ref={navDropdownRef}
-              className="tw-absolute tw-left-0 tw-top-full tw-scale-0 tw-opacity-0 lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0 lg:tw-h-[450px] tw-overflow-hidden tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4 tw-opacity-100 tw-scale-100 max-lg:tw-min-h-[450px] max-lg:!tw-h-fit tw-min-w-[320px]"
-            >
-              <div className="tw-grid max-xl:tw-flex max-xl:tw-flex-col tw-justify-around tw-grid-cols-2 tw-w-full">
-                <a
-                  className="header-links tw-items-center tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#training"
-                >
-                  <div className="tw-font-semibold tw-text-3xl">
-                    <i className="bi bi-book"></i>
-                  </div>
-                  <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
-                      Training Programs
-                    </div>
-                    <p>Industry-aligned FM training modules</p>
-                  </div>
-                </a>
-
-                <a
-                  className="header-links tw-items-center tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#consultancy"
-                >
-                  <div className="tw-font-semibold tw-text-3xl">
-                    <i className="bi bi-briefcase"></i>
-                  </div>
-                  <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
-                      Consultancy Services
-                    </div>
-                    <p>Operational audit, technology integration, ESG</p>
-                  </div>
-                </a>
-
-                <a
-                  className="header-links tw-items-center tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#project-guidance"
-                >
-                  <div className="tw-font-semibold tw-text-3xl">
-                    <i className="bi bi-diagram-3"></i>
-                  </div>
-                  <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
-                      Project Guidance
-                    </div>
-                    <p>End-to-end FM project support</p>
-                  </div>
-                </a>
-
-                <a
-                  className="header-links tw-items-center tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#sustainability"
-                >
-                  <div className="tw-font-semibold tw-text-3xl">
-                    <i className="bi bi-leaf"></i>
-                  </div>
-                  <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
-                      Sustainability Solutions
-                    </div>
-                    <p>Energy optimization, green building advisory</p>
-                  </div>
-                </a>
-
-                <a
-                  className="header-links tw-items-center tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#placements"
-                >
-                  <div className="tw-font-semibold tw-text-3xl">
-                    <i className="bi bi-people"></i>
-                  </div>
-                  <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
-                      Placement Assistance
-                    </div>
-                    <p>Career support for India & GCC</p>
-                  </div>
-                </a>
-
-                <a
-                  className="header-links tw-items-center tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#collaborations"
-                >
-                  <div className="tw-font-semibold tw-text-3xl">
-                    <i className="bi bi-handshake"></i>
-                  </div>
-                  <div className="tw-flex tw-flex-col tw-gap-2">
-                    <div className="tw-text-lg tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-font-medium">
-                      Collaborations
-                    </div>
-                    <p>Partners: Factech, VDEI, MEP experts</p>
-                  </div>
-                </a>
-              </div>
-            </nav>
-          )}
-          <a className="header-links" href="#contact">
-            Contact
           </a>
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">

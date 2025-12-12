@@ -60,9 +60,12 @@ const Header = () => {
   };
 
   return (
-    <header className="lg:tw-px-4 tw-max-w-[100vw] max-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-text-gray-700 tw-bg-[#f2f3f4] dark:tw-text-gray-200 dark:tw-bg-[#080808] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
-      <a className="tw-flex tw-p-[4px] tw-gap-0 tw-place-items-center" href="#">
-        <div className="tw-h-[35px] tw-max-w-[100px]">
+    <header className="lg:tw-px-4 tw-max-w-[100vw] max-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-0 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-items-center tw-min-h-[65px] tw-h-[65px] tw-w-full tw-text-gray-700 tw-bg-[#f2f3f4] dark:tw-text-gray-200 dark:tw-bg-[#080808] tw-px-[3%] tw-py-2 tw-rounded-md lg:tw-max-w-6xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
+      <a
+        className="tw-flex tw-py-2 tw-px-2 tw-gap-0 tw-place-items-center"
+        href="#"
+      >
+        <div className="tw-h-[45px] tw-max-w-[160px]">
           {!isDarkMode ? (
             <img
               src="/logo1 white.png"
@@ -102,6 +105,9 @@ const Header = () => {
         }}
       >
         <nav className="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">
+          <a className="header-links" href="#">
+            Home
+          </a>
           <a className="header-links" href="#about">
             About
           </a>

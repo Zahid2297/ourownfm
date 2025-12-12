@@ -43,40 +43,40 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+          <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
           <h2 className="tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Programs
           </h2>
-          <div className="tw-flex tw-flex-col tw-gap-3">
-            <a href="#training" className="footer-link">
-              Training Programs
-            </a>
-            <a href="#consultancy" className="footer-link">
-              Consultancy Services
-            </a>
-            <a href="#project-guidance" className="footer-link">
-              Project Guidance
-            </a>
-            <a href="#sustainability" className="footer-link">
-              Sustainability Solutions
-            </a>
-            <a href="#placements" className="footer-link">
-              Placement Assistance
-            </a>
+            <div className="tw-flex tw-flex-col tw-gap-3">
+              <a href="#training" className="footer-link">
+                Training Programs
+              </a>
+              <a href="#consultancy" className="footer-link">
+                Consultancy Services
+              </a>
+              <a href="#project-guidance" className="footer-link">
+                Project Guidance
+              </a>
+              <a href="#sustainability" className="footer-link">
+                Sustainability Solutions
+              </a>
+              <a href="#placements" className="footer-link">
+                Placement Assistance
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+          <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
           <h2 className="tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Company
           </h2>
-          <div className="tw-flex tw-flex-col tw-gap-3">
-            <a href="#about" className="footer-link">
-              About Us
-            </a>
-            <a href="#collaborations" className="footer-link">
-              Collaborations
-            </a>
+            <div className="tw-flex tw-flex-col tw-gap-3">
+              <a href="#about" className="footer-link">
+                About Us
+              </a>
+              <a href="#collaborations" className="footer-link">
+                Collaborations
+              </a>
             <a
               href="https://wa.me/916364807896"
               target="_blank"
@@ -87,31 +87,31 @@ const Footer = () => {
             </a>
             <a href="tel:+916364807896" className="footer-link">
               Call NO: +91 6364 807 896
-            </a>
-            <a href="mailto:info@ourownfm.com" className="footer-link">
-              Email: info@ourownfm.com
-            </a>
+              </a>
+              <a href="mailto:info@ourownfm.com" className="footer-link">
+                Email: info@ourownfm.com
+              </a>
             <div className="footer-link tw-text-[#19300e] dark:tw-text-white">
               Address: 1st Floor, Rehmat Nagar, Near P & T Quarters, Kalaburagi,
               Karnataka, India
             </div>
+            </div>
           </div>
-        </div>
 
-        <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+          <div className="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
           <h2 className="tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
             Resources
           </h2>
-          <div className="tw-flex tw-flex-col tw-gap-3">
-            <a href="#faq" className="footer-link">
-              FAQ
-            </a>
-            <a href="#" className="footer-link">
-              Terms of service
-            </a>
-            <a href="#" className="footer-link">
-              Privacy Policy
-            </a>
+            <div className="tw-flex tw-flex-col tw-gap-3">
+              <a href="#faq" className="footer-link">
+                FAQ
+              </a>
+              <a href="#" className="footer-link">
+                Terms of service
+              </a>
+              <a href="#" className="footer-link">
+                Privacy Policy
+              </a>
           </div>
         </div>
       </div>

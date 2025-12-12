@@ -26,53 +26,47 @@ const ArticlesSection = () => {
       className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
     >
       <h3 className="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-        Our Collaborations & Partners ✨
+        QuickFMS Partnership
       </h3>
       <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
-        We collaborate with industry leaders to deliver practical, real-world
-        learning
+        Powered by AI-Driven Facility Management Excellence
       </p>
 
       <div className="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
-        <div className="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] max-lg:tw-w-[350px]">
-          <div className="tw-text-5xl tw-mb-4">
-            <i className="bi bi-laptop"></i>
+        <div className="tw-flex tw-min-h-[600px] tw-w-[600px] tw-max-w-full tw-flex-col tw-gap-6 tw-overflow-hidden tw-rounded-xl tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123] tw-shadow-lg max-lg:tw-w-full max-lg:tw-p-6">
+          <div className="tw-w-full tw-h-[180px] tw-flex tw-items-center tw-justify-center tw-bg-transparent tw-rounded-lg tw-p-6">
+            <img
+              src="/quickfms.webp"
+              alt="QuickFMS"
+              className="tw-h-full tw-w-full tw-object-contain"
+            />
           </div>
-          <h3 className="tw-font-semibold tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">CAFM Partners</h3>
-          <p className="tw-text-gray-700 dark:tw-text-gray-300">
-            Implement cloud-based CAFM. Provide hands-on digital FM dashboards.
-          </p>
-          <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mt-auto">
-            Partner: Factech
-          </p>
-        </div>
-
-        <div className="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] max-lg:tw-w-[350px]">
-          <div className="tw-text-5xl tw-mb-4">
-            <i className="bi bi-diagram-3"></i>
-          </div>
-          <h3 className="tw-font-semibold tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-            BIM & Digital Twin Partners
+          <h3 className="tw-font-semibold tw-text-3xl tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-2">
+            CAFM / QuickFMS
           </h3>
-          <p className="tw-text-gray-700 dark:tw-text-gray-300">
-            BIM-based asset visualisation. As-built data integration.
-            Model-based facility operations.
+          <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base tw-leading-relaxed tw-mb-4">
+            QuickFMS is a leading cloud-based facilities management software
+            platform that helps organisations streamline and optimise their
+            facility operations, infrastructure, and workplace services through
+            advanced modular tools for space management, asset tracking,
+            maintenance scheduling, property and lease management, helpdesk
+            operations, energy tracking, reservation systems, and contract
+            administration all within a unified, intuitive interface. The
+            platform empowers FM teams with real time visibility, automated
+            workflows, and data driven insights that improve efficiency, reduce
+            operating costs, and enhance overall productivity, while its
+            scalable cloud architecture supports organisations of all sizes and
+            enables secure access anywhere, anytime. As a strategic partner,
+            QuickFMS aligns with our mission to digitalise and professionalise
+            FM careers by offering learners practical exposure to one of the
+            industry's most widely adopted CAFM systems, equipping them with
+            real operational skills in asset and space management, maintenance
+            systems, and integrated workplace operations, and effectively
+            bridging the gap between FM theory and the modern digital tools used
+            across the sector today.
           </p>
-          <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mt-auto">
-            Partner: VDEI
-          </p>
-        </div>
-
-        <div className="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-6 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] max-lg:tw-w-[350px]">
-          <div className="tw-text-5xl tw-mb-4">
-            <i className="bi bi-tools"></i>
-          </div>
-          <h3 className="tw-font-semibold tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-            MEP Service Providers
-          </h3>
-          <p className="tw-text-gray-700 dark:tw-text-gray-300">
-            Technical site training. Practical troubleshooting guidance.
-            Equipment maintenance demonstrations.
+          <p className="tw-text-sm tw-font-medium tw-text-gray-600 dark:tw-text-gray-400 tw-mt-auto tw-pt-4 tw-border-t tw-border-gray-300 dark:tw-border-gray-700">
+            Partner: CAFM / QuickFMS
           </p>
         </div>
       </div>

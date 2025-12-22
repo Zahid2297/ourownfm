@@ -65,7 +65,7 @@ const Header = () => {
         className="tw-flex tw-py-2 tw-px-2 tw-gap-0 tw-place-items-center"
         href="#"
       >
-        <div className="tw-h-[45px] tw-max-w-[160px]">
+        <div className="header-logo-container">
           {!isDarkMode ? (
             <img
               src="/logo1 white.png"

@@ -360,6 +360,19 @@ footer img[src="/logo1 dark.png"] {
   display: inline-block;
 }
 
+/* Header logo responsive sizing - mobile first */
+.header-logo-container {
+  height: 50px !important;
+  max-width: 130px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-logo-container {
+    height: 110px !important;
+    max-width: 250px !important;
+  }
+}
+
 .faq-accordion {
   background-color: inherit;
   color: var(--faq-h-text);

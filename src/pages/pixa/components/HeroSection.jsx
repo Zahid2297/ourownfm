@@ -43,14 +43,14 @@ const HeroSection = () => {
 
         <div className="tw-flex tw-flex-col tw-min-h-[60vh] tw-place-content-center tw-items-center">
           <h2 className="reveal-up tw-text-center tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[90px] max-lg:tw-text-4xl max-md:tw-leading-snug">
-            <span>Building a Skilled Future-Ready</span>
+            <span>Building Skilled Future-Ready</span>
             <br />
             <span className="tw-font-thin tw-font-serif">
               Facilities Management Workforce
             </span>
           </h2>
           <div className="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full">
-            Training | Consultancy | Project Guidance Empowering India & GCC
+            Training | Consultancy | Project Guidance
           </div>
 
           <div className="reveal-up tw-mt-10 max-md:tw-flex-col tw-flex tw-place-items-center tw-gap-4">

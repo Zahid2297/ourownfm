@@ -11,50 +11,77 @@ const BuildAppsSection = () => {
         </h2>
         <div className="reveal-up tw-mt-4 tw-max-w-[800px] tw-text-gray-900 dark:tw-text-gray-200 tw-text-center max-md:tw-text-sm tw-text-lg">
           <p className="tw-mb-6">
-            Our Own FM Academy is a future-focused training and development
-            platform dedicated to building skilled, digitally ready, and
-            industry-relevant professionals for the Facilities Management (FM)
-            sector across India and the Gulf region. We bridge the gap between
-            traditional engineering education and the modern demands of FM,
-            where technical depth, digital tools, and operational excellence
-            matter more than ever. Built by experienced industry practitioners,
-            our academy provides learners with practical training, real
-            mentorship, and career guidance, empowering them to step confidently
-            into roles that drive FM operations, digital transformation, and
-            smart-building initiatives.
+            <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              Our Own FM Academy
+            </strong>{" "}
+            is a future-focused training and professional development platform
+            dedicated to building skilled, digitally ready, and
+            industry-relevant Facilities Management (FM) professionals across{" "}
+            <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              India and the Gulf region
+            </strong>
+            .
+            <br />
+            <br />
+            We bridge the critical gap between traditional engineering education
+            and the evolving demands of modern FM—where{" "}
+            <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              technical depth, digital tools, compliance, and operational
+              excellence
+            </strong>{" "}
+            are essential.
+            <br />
+            <br />
+            Built by experienced FM industry practitioners, the Academy delivers{" "}
+            <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              practical, real-world training
+            </strong>
+            , hands-on exposure, and structured mentorship. Our programs go
+            beyond theory, equipping learners with the{" "}
+            <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              skills, confidence, and career guidance
+            </strong>{" "}
+            required to perform effectively in FM operations, digital
+            transformation initiatives, and smart-building environments.
           </p>
         </div>
 
         {/* About the Founder Section */}
-        <div className="reveal-up tw-mt-12 tw-w-full tw-max-w-[900px] tw-flex tw-flex-col md:tw-flex-row tw-gap-8 tw-items-center tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-2xl tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]">
-          <div className="tw-flex-shrink-0">
+        <div className="founder-section reveal-up tw-mt-12 tw-w-full tw-max-w-[900px] tw-flex tw-flex-col md:tw-flex-row tw-gap-8 tw-items-center tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-2xl tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123]">
+          <div className="tw-flex-1 tw-w-full md:tw-w-auto tw-text-left">
+            <h3 className="tw-text-3xl tw-font-semibold tw-mb-4 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              About the Founder
+            </h3>
+            <p className="tw-text-gray-700 dark:tw-text-gray-200 tw-text-base tw-leading-relaxed tw-mt-2 tw-mb-4">
+              <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                Syed Moonis Raza is a seasoned Facilities Management leader with
+                over 30 years of leadership and operational excellence across
+                India and the GCC.
+              </strong>{" "}
+              <br />
+              <br />
+              He has led and optimized complex FM operations across
+              high-visibility sectors, with a strong focus on technical
+              governance, technology adoption, service quality, and
+              performance-driven outcomes.
+              <br />
+              <br /> His deep industry experience and commitment to professional
+              development inspired him to establish{" "}
+              <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                Our Own FM Academy
+              </strong>{" "}
+              with a clear mission to bridge the industry skills gap and develop
+              technically competent, digitally ready, and future-focused FM
+              professionals equipped to meet evolving sector demands with
+              confidence and strategic insight.
+            </p>
+          </div>
+          <div className="tw-flex-shrink-0 tw-w-full md:tw-w-auto tw-flex tw-justify-center md:tw-justify-center md:tw-ml-16">
             <img
               src="/founder.jpeg"
               alt="Syed Moonis Raza, Founder and CEO"
               className="tw-w-[250px] tw-h-[250px] tw-object-cover tw-rounded-full tw-border-4 tw-border-[#19300e] dark:tw-border-[#c1fc75]"
             />
-          </div>
-          <div className="tw-flex-1 tw-text-left">
-            <h3 className="tw-text-3xl tw-font-semibold tw-mb-4 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-              About the Founder
-            </h3>
-            <p className="tw-text-gray-700 dark:tw-text-gray-200 tw-text-base tw-leading-relaxed tw-mb-4">
-              <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-                Syed Moonis Raza
-              </strong>
-              , Founder and CEO of Our Own FM Academy, brings over 30 years of
-              leadership and operational excellence in the Facilities Management
-              domain across India and the GCC. He has directed and optimized
-              complex FM operations, emphasizing technology adoption, service
-              quality, and performance-driven outcomes across high-visibility
-              sectors.
-            </p>
-            <p className="tw-text-gray-700 dark:tw-text-gray-200 tw-text-base tw-leading-relaxed">
-              His deep industry experience and commitment to professional
-              development inspired him to establish the Academy to address the
-              skills gap in FM, enabling professionals to meet evolving sector
-              demands with practical competence and strategic insight.
-            </p>
           </div>
         </div>
 

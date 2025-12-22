@@ -373,6 +373,16 @@ footer img[src="/logo1 dark.png"] {
   }
 }
 
+/* About the Founder section - ensure row layout on desktop */
+@media screen and (min-width: 768px) {
+  .founder-section {
+    flex-direction: row !important;
+  }
+  .founder-section > div:last-child {
+    margin-left: 4rem !important;
+  }
+}
+
 .faq-accordion {
   background-color: inherit;
   color: var(--faq-h-text);

@@ -1,15 +1,15 @@
 const BrandCarousel = () => {
   const partners = [
     {
-      name: "Factech",
+      name: "QUICK FMS",
       description: "CAFM Learning",
       icon: "/pixa-assets/images/home/api.png",
     },
-    {
-      name: "VDEI",
-      description: "BIM & Digital Twins",
-      icon: "/digital-twin.png",
-    },
+    // {
+    //   name: "VDEI",
+    //   description: "BIM & Digital Twins",
+    //   icon: "/digital-twin.png",
+    // },
     {
       name: "MEP Partners",
       description: "Technical Training",
@@ -29,7 +29,7 @@ const BrandCarousel = () => {
 
   return (
     <section className="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8">
-      <h2 className="reveal-up tw-text-3xl max-md:tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+      <h2 className="reveal-up tw-text-6xl max-md:tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75] font-bold">
         Our Collaborations & Partners
       </h2>
 

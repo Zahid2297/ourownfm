@@ -2,22 +2,25 @@ const FourPillarsSection = () => {
   const pillars = [
     {
       title: "Technicality",
-      description: "Provide industry-relevant technical skills, practical site learning, and digital FM integration.",
+      description: "",
       icon: "bi-tools",
     },
     {
       title: "Sustainability",
-      description: "Embed energy efficiency, ESG compliance, green building standards, and resource optimisation into every FM function.",
+      description:
+        "Embed energy-efficient, compliant, and future-ready practices into FM operations and projects.",
       icon: "bi-leaf",
     },
     {
       title: "Leadership",
-      description: "Develop FM leaders who can manage people, systems, and operations with confidence, empathy, and strategic clarity.",
+      description:
+        "Enable confident FM leadership for effective decision-making, coordination, and control.",
       icon: "bi-people",
     },
     {
       title: "Accountability",
-      description: "Promote responsible, transparent, and measurable FM practices driven by data and performance KPIs.",
+      description:
+        "Ensure clear ownership, transparent processes, and measurable performance outcomes.",
       icon: "bi-graph-up",
     },
   ];
@@ -56,4 +59,3 @@ const FourPillarsSection = () => {
 };
 
 export default FourPillarsSection;
-

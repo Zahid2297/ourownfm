@@ -4,45 +4,45 @@ const AdditionalFeaturesSection = () => {
       icon: "bi-graph-up-arrow",
       title: "High-Demand Industry",
       description:
-        "FM is one of the fastest-growing sectors across India and the GCC, offering strong job stability and continuous opportunities for skilled professionals.",
+        "Facilities Management is one of the fastest-growing sectors across India and the GCC, offering strong job stability and sustained demand for skilled professionals.",
     },
     {
       icon: "bi-cpu",
       title: "Digital Transformation in FM",
       description:
-        "Smart buildings, IoT systems, and CAFM platforms are reshaping FM creating high-value career paths for digitally capable professionals.",
+        "Smart buildings, IoT-enabled systems, and CAFM platforms are reshaping FM creating high-value career opportunities for professionals with digital and technical capabilities.",
     },
     {
       icon: "bi-signpost-split",
       title: "Diverse Career Pathways",
       description:
-        "FM spans operations, maintenance, health & safety, sustainability, energy management, soft services, and more providing multiple avenues for career growth.",
+        "FM spans operations, maintenance, health & safety, sustainability, energy management, soft services, and more providing multiple avenues for specialization and career growth.",
     },
     {
       icon: "bi-globe",
       title: "Global & GCC Career Mobility",
       description:
-        "FM professionals are in high demand across GCC countries, opening doors for international career opportunities and competitive compensation.",
+        "FM professionals are in high demand across GCC countries, opening doors to international career opportunities, cross-border exposure, and competitive compensation.",
     },
     {
       icon: "bi-graph-up",
       title: "Career Growth & Leadership Roles",
       description:
-        "FM offers structured progression from technician to supervisor, engineer, manager, and director making it ideal for long-term career development.",
+        "FM offers structured career progression from technician to supervisor, engineer, manager, and director making it ideal for long-term professional development and leadership roles.",
     },
     {
       icon: "bi-tree",
       title: "Contribution to Smart Cities & Sustainability",
       description:
-        "FM plays a critical role in energy efficiency, green buildings, and sustainable operations making it a career with purpose and future relevance.",
+        "FM plays a critical role in energy efficiency, green buildings, and sustainable operations making it a career with purpose and long-term relevance.",
     },
   ];
 
   return (
     <section className="tw-relative tw-flex tw-w-full tw-min-h-[110vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden">
       <div className="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
-        <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-          Why FM is a career opportunity
+        <h3 className="reveal-up pt-20 tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+          Why Faclities Managment (FM) Is A Strong Career OpportunitY
         </h3>
 
         <div className="tw-mt-8 tw-relative tw-gap-10 tw-p-4 tw-grid tw-place-items-center tw-grid-cols-3 max-lg:tw-flex max-lg:tw-flex-col">

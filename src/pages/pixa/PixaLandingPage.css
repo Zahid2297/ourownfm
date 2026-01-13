@@ -362,8 +362,8 @@ footer img[src="/logo1 dark.png"] {
 
 /* Header logo responsive sizing - mobile first */
 .header-logo-container {
-  height: 70px !important;
-  max-width: 180px !important;
+  height: 100px !important;
+  max-width: 250px !important;
 }
 
 @media screen and (min-width: 1024px) {

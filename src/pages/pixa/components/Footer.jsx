@@ -86,7 +86,7 @@ const Footer = () => {
               WhatsApp
             </a>
             <a href="tel:+916364807896" className="footer-link">
-              Call NO: +91 6364 807 896
+              Contact: +91 6364 807 896
               </a>
               <a href="mailto:info@ourownfm.com" className="footer-link">
                 Email: info@ourownfm.com

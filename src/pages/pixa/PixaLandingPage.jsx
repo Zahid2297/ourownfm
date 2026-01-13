@@ -18,13 +18,9 @@ import "./PixaLandingPage.css";
 
 const PixaLandingPage = () => {
   useEffect(() => {
-    // Initialize dark mode from localStorage - default to light mode
-    const colorMode = localStorage.getItem("color-mode");
-    if (colorMode === "dark") {
-      document.documentElement.classList.add("tw-dark");
-    } else {
-      document.documentElement.classList.remove("tw-dark");
-    }
+    // Force dark mode always - dark mode is the only mode
+    document.documentElement.classList.add("tw-dark");
+    localStorage.setItem("color-mode", "dark");
   }, []);
 
   return (

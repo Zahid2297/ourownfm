@@ -2,20 +2,27 @@ import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
   const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(true);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark mode
   const collapseHeaderItemsRef = useRef(null);
   const RESPONSIVE_WIDTH = 1024;
 
-  useEffect(() => {
-    // Check initial dark mode - default to light mode
-    const colorMode = localStorage.getItem("color-mode");
-    const shouldBeDark = colorMode === "dark";
-    setIsDarkMode(shouldBeDark);
-    if (shouldBeDark) {
-      document.documentElement.classList.add("tw-dark");
-    } else {
-      document.documentElement.classList.remove("tw-dark");
+  const updateFavicon = (isDark) => {
+    const favicon = document.getElementById("favicon");
+    if (favicon) {
+      favicon.href = isDark
+        ? "/pixa-assets/logo/logo-dark.png"
+        : "/pixa-assets/logo/logo-light.png";
     }
+  };
+
+  useEffect(() => {
+    // Force dark mode always - no toggle, dark mode is the only mode
+    document.documentElement.classList.add("tw-dark");
+    localStorage.setItem("color-mode", "dark");
+    setIsDarkMode(true);
+    
+    // Update favicon to dark mode
+    updateFavicon(true);
 
     // Handle responsive
     const handleResize = () => {
@@ -42,22 +49,14 @@ const Header = () => {
     }
   };
 
-  const toggleMode = () => {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    document.documentElement.classList.toggle("tw-dark");
-    localStorage.setItem("color-mode", newMode ? "dark" : "light");
-    updateFavicon(newMode);
-  };
-
-  const updateFavicon = (isDark) => {
-    const favicon = document.getElementById("favicon");
-    if (favicon) {
-      favicon.href = isDark
-        ? "/pixa-assets/logo/logo-dark.png"
-        : "/pixa-assets/logo/logo-light.png";
-    }
-  };
+  // Dark mode toggle function commented out - dark mode is now default
+  // const toggleMode = () => {
+  //   const newMode = !isDarkMode;
+  //   setIsDarkMode(newMode);
+  //   document.documentElement.classList.toggle("tw-dark");
+  //   localStorage.setItem("color-mode", newMode ? "dark" : "light");
+  //   updateFavicon(newMode);
+  // };
 
   return (
     <header className="lg:tw-px-4 tw-max-w-[100vw] max-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-0 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-items-center tw-min-h-[65px] tw-h-[65px] tw-w-full tw-text-gray-700 tw-bg-[#f2f3f4] dark:tw-text-gray-200 dark:tw-bg-[#080808] tw-px-[3%] tw-py-2 tw-rounded-md lg:tw-max-w-6xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
@@ -66,19 +65,12 @@ const Header = () => {
         href="#"
       >
         <div className="header-logo-container">
-          {!isDarkMode ? (
-            <img
-              src="/logo1 white.png"
-              alt="Our Own FM Academy"
-              className="tw-object-contain tw-h-full tw-w-full"
-            />
-          ) : (
-            <img
-              src="/logo1 dark.png"
-              alt="Our Own FM Academy"
-              className="tw-object-contain tw-h-full tw-w-full"
-            />
-          )}
+          {/* Always show dark mode logo since dark mode is default */}
+          <img
+            src="/logo1 dark.png"
+            alt="Our Own FM Academy"
+            className="tw-object-contain tw-h-full tw-w-full"
+          />
         </div>
         {/* <span
           className="tw-uppercase tw-font-medium tw-leading-none"
@@ -132,14 +124,15 @@ const Header = () => {
           </a>
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
-          <button
+          {/* Dark mode toggle commented out - dark mode is now default */}
+          {/* <button
             type="button"
             onClick={toggleMode}
             className="header-links tw-text-gray-600 dark:tw-text-gray-300"
             title="toggle-theme"
           >
             <i className={`bi ${isDarkMode ? "bi-moon" : "bi-sun"}`}></i>
-          </button>
+          </button> */}
           <a
             href="#contact"
             aria-label="Connect with us"

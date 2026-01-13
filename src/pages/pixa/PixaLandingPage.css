@@ -470,3 +470,122 @@ h6 {
     box-shadow: 0px 2px 3px 2px #9f9f9f7c;
   }
 }
+
+/* Modern Select Dropdown Styling */
+select.input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2319300e' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1em 1em;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.tw-dark select.input {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23c1fc75' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+}
+
+select.input option {
+  background-color: #ffffff;
+  color: #19300e;
+  padding: 0.5rem;
+}
+
+.tw-dark select.input option {
+  background-color: #080808;
+  color: #ffffff;
+}
+
+select.input:hover {
+  border-color: var(--input-hover-bd-color);
+}
+
+select.input:focus {
+  border-color: var(--input-hover-bd-color);
+  box-shadow: 0 0 0 2px rgba(25, 48, 14, 0.1);
+}
+
+.tw-dark select.input:focus {
+  box-shadow: 0 0 0 2px rgba(193, 252, 117, 0.2);
+}
+
+/* Modern Checkbox Styling */
+.modern-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #6b7280;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.modern-checkbox:hover {
+  border-color: #19300e;
+  transform: scale(1.05);
+}
+
+.modern-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(25, 48, 14, 0.2);
+  border-color: #19300e;
+}
+
+.modern-checkbox:checked {
+  background-color: #19300e;
+  border-color: #19300e;
+}
+
+.modern-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
+
+/* Dark Mode Checkbox */
+.tw-dark .modern-checkbox {
+  border-color: #6b7280;
+}
+
+.tw-dark .modern-checkbox:hover {
+  border-color: #c1fc75;
+}
+
+.tw-dark .modern-checkbox:focus {
+  box-shadow: 0 0 0 2px rgba(193, 252, 117, 0.2);
+  border-color: #c1fc75;
+}
+
+.tw-dark .modern-checkbox:checked {
+  background-color: #c1fc75;
+  border-color: #c1fc75;
+}
+
+.tw-dark .modern-checkbox:checked::after {
+  border-color: #000000;
+}
+
+/* Required Field Indicator - Red Dot */
+.required-indicator {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  margin-left: 4px;
+  vertical-align: middle;
+}

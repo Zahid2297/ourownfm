@@ -11,7 +11,7 @@ const CTASection = () => {
 
         <div className="tw-mt-8 tw-relative tw-flex max-lg:tw-flex-col tw-gap-5">
           <a href="#contact" className="btn reveal-up !tw-rounded-full !tw-p-4 tw-font-medium">
-            Connect With Us
+            Get Started
           </a>
         </div>
       </div>

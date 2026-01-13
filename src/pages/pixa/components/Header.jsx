@@ -138,7 +138,7 @@ const Header = () => {
             aria-label="Connect with us"
             className="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
           >
-            <span>Connect</span>
+            <span>Get Started</span>
             <i className="bi bi-arrow-right"></i>
           </a>
         </div>

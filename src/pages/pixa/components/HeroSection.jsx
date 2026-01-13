@@ -58,7 +58,7 @@ const HeroSection = () => {
               href="#contact"
               className="btn tw-group !tw-w-[170px] max-lg:!tw-w-[160px] tw-flex tw-gap-2 tw-shadow-lg !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
             >
-              <span>Connect</span>
+              <span>Get Started</span>
               <i className="bi bi-arrow-right group-hover:tw-translate-x-1 tw-duration-300"></i>
             </a>
           </div>

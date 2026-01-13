@@ -44,7 +44,7 @@ const PreBuiltToolsSection = () => {
               What We Offer
             </h2>
             <a href="#contact" className="btn !tw-mt-8">
-              Connect
+              Get Started
             </a>
           </div>
         </div>

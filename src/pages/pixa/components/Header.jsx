@@ -2,27 +2,19 @@ import { useState, useEffect, useRef } from "react";
 
 const Header = () => {
   const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(true);
-  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark mode
   const collapseHeaderItemsRef = useRef(null);
   const RESPONSIVE_WIDTH = 1024;
 
-  const updateFavicon = (isDark) => {
-    const favicon = document.getElementById("favicon");
-    if (favicon) {
-      favicon.href = isDark
-        ? "/pixa-assets/logo/logo-dark.png"
-        : "/pixa-assets/logo/logo-light.png";
-    }
-  };
-
   useEffect(() => {
-    // Force dark mode always - no toggle, dark mode is the only mode
+    // Force dark mode always - dark mode is the only mode
     document.documentElement.classList.add("tw-dark");
     localStorage.setItem("color-mode", "dark");
-    setIsDarkMode(true);
     
     // Update favicon to dark mode
-    updateFavicon(true);
+    const favicon = document.getElementById("favicon");
+    if (favicon) {
+      favicon.href = "/pixa-assets/logo/logo-dark.png";
+    }
 
     // Handle responsive
     const handleResize = () => {
@@ -49,15 +41,6 @@ const Header = () => {
     }
   };
 
-  // Dark mode toggle function commented out - dark mode is now default
-  // const toggleMode = () => {
-  //   const newMode = !isDarkMode;
-  //   setIsDarkMode(newMode);
-  //   document.documentElement.classList.toggle("tw-dark");
-  //   localStorage.setItem("color-mode", newMode ? "dark" : "light");
-  //   updateFavicon(newMode);
-  // };
-
   return (
     <header className="lg:tw-px-4 tw-max-w-[100vw] max-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-0 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-items-center tw-min-h-[65px] tw-h-[65px] tw-w-full tw-text-gray-700 tw-bg-[#f2f3f4] dark:tw-text-gray-200 dark:tw-bg-[#080808] tw-px-[3%] tw-py-2 tw-rounded-md lg:tw-max-w-6xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
       <a
@@ -65,7 +48,6 @@ const Header = () => {
         href="#"
       >
         <div className="header-logo-container">
-          {/* Always show dark mode logo since dark mode is default */}
           <img
             src="/logo1 dark.png"
             alt="Our Own FM Academy"
@@ -103,12 +85,11 @@ const Header = () => {
           <a className="header-links" href="#about">
             About
           </a>
-          <a className="header-links" href="#training">
-            Courses & Certifications
+          <a className="header-links" href="#courses">
+            Courses
           </a>
-          <a className="header-links nav-hover-item tw-relative" href="#cafm">
-            <span className="nav-default">CAFM</span>
-            <span className="nav-hover">Quick FMS</span>
+          <a className="header-links" href="#certifications">
+            Certifications
           </a>
           <a
             className="header-links nav-hover-item tw-relative"
@@ -124,15 +105,6 @@ const Header = () => {
           </a>
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
-          {/* Dark mode toggle commented out - dark mode is now default */}
-          {/* <button
-            type="button"
-            onClick={toggleMode}
-            className="header-links tw-text-gray-600 dark:tw-text-gray-300"
-            title="toggle-theme"
-          >
-            <i className={`bi ${isDarkMode ? "bi-moon" : "bi-sun"}`}></i>
-          </button> */}
           <a
             href="#contact"
             aria-label="Connect with us"

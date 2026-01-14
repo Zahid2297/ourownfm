@@ -8,14 +8,9 @@ const Footer = () => {
             className="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6"
           >
             <img
-              src="/logo1 white.png"
-              alt="Our Own FM Academy"
-              className="tw-max-w-[200px] dark:tw-hidden"
-            />
-            <img
               src="/logo1 dark.png"
               alt="Our Own FM Academy"
-              className="tw-max-w-[200px] tw-hidden dark:tw-block"
+              className="tw-max-w-[200px]"
             />
           </a>
           <div className="tw-flex tw-gap-4 tw-text-lg tw-text-[#19300e] dark:tw-text-white">
@@ -48,8 +43,11 @@ const Footer = () => {
             Programs
           </h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
-              <a href="#training" className="footer-link">
-                Training Programs
+              <a href="#courses" className="footer-link">
+                Courses
+              </a>
+              <a href="#certifications" className="footer-link">
+                Certifications
               </a>
               <a href="#consultancy" className="footer-link">
                 Consultancy Services

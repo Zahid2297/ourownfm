@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import BrandCarousel from "./components/BrandCarousel";
-import BuildAppsSection from "./components/BuildAppsSection";
-import FeaturesSection from "./components/FeaturesSection";
 import PreBuiltToolsSection from "./components/PreBuiltToolsSection";
 import AdditionalFeaturesSection from "./components/AdditionalFeaturesSection";
+import CoursesSection from "./components/CoursesSection";
+import CertificationsSection from "./components/CertificationsSection";
 import SubscriptionSection from "./components/SubscriptionSection";
+import ProjectGuidanceSection from "./components/ProjectGuidanceSection";
 import TestimonialsSection from "./components/TestimonialsSection";
-import PricingSection from "./components/PricingSection";
 import ArticlesSection from "./components/ArticlesSection";
 import FAQSection from "./components/FAQSection";
 import CTASection from "./components/CTASection";
@@ -28,13 +28,13 @@ const PixaLandingPage = () => {
       <Header />
       <HeroSection />
       <BrandCarousel />
-      <BuildAppsSection />
-      <FeaturesSection />
       <PreBuiltToolsSection />
       <AdditionalFeaturesSection />
+      <CoursesSection />
+      <CertificationsSection />
       <SubscriptionSection />
+      <ProjectGuidanceSection />
       <TestimonialsSection />
-      <PricingSection />
       <ArticlesSection />
       <FAQSection />
       <CTASection />

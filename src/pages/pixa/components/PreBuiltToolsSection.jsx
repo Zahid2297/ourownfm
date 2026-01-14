@@ -2,33 +2,21 @@ const PreBuiltToolsSection = () => {
   const offerings = [
     {
       icon: "bi-book",
-      title: "Industry-Aligned FM Training",
+      title: "Training",
       description:
-        "Comprehensive coverage of core FM operations, hard and soft services, HSE compliance, audits, asset lifecycle management, and energy efficiency aligned with real industry practices.",
+        "Build strong Facilities Management (FM) capability through structured learning from foundations to leadership. Our training is designed to create technically confident, digitally aware, and operationally independent FM professionals ready for real-site challenges.",
     },
     {
       icon: "bi-laptop",
-      title: "Digital FM Skills",
+      title: "Consultancy",
       description:
-        "Hands-on training in the technologies shaping the future of Facilities Management, including BIM, Revit, IoT, CAFM, CMMS, energy analytics, predictive maintenance, and digital-twin workflows.",
+        "Improve live FM operations with practical, on-ground consultancy that strengthens safety, compliance, performance, and control. We help organizations identify gaps, optimize processes, and implement sustainable improvements with measurable outcomes.",
     },
     {
       icon: "bi-person-badge",
-      title: "Mentorship & Career Support",
+      title: "Project Guidance",
       description:
-        "Direct guidance from experienced FM professionals, including career mentoring, profile building, placement support, and structured career roadmap planning.",
-    },
-    {
-      icon: "bi-building",
-      title: "Real-World Learning",
-      description:
-        "Practical learning through case studies, site-level scenarios, troubleshooting exercises, and operational simulations focused on execution, not just theory.",
-    },
-    {
-      icon: "bi-heart",
-      title: "Accessible & Inclusive Education",
-      description:
-        "Training programs designed to support learners from diverse backgrounds, including small-town candidates, fresh graduates, and professionals transitioning into the FM industry.",
+        "Prevent FM issues before they start with project guidance during design, construction, and handover stages. We ensure systems are designed, installed, documented, and handed over to support smooth operations from Day One.",
     },
   ];
 

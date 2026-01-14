@@ -224,12 +224,12 @@ const NewsletterSection = () => {
           <>
             <div className="tw-flex tw-flex-col tw-text-center tw-gap-1 tw-w-full">
               <h2 className="tw-text-3xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] max-md:tw-text-2xl">
-                Get in Touch
-              </h2>
-              <div className="tw-text-gray-700 dark:tw-text-gray-300">
-                Connect with us to learn more about our programs, consultancy services, or career opportunities.
-              </div>
-            </div>
+            Get in Touch
+          </h2>
+          <div className="tw-text-gray-700 dark:tw-text-gray-300">
+            Connect with us to learn more about our programs, consultancy services, or career opportunities.
+          </div>
+        </div>
 
             <form onSubmit={onSubmit} className="tw-flex tw-w-full tw-flex-col tw-gap-6">
               {/* Honeypot field for spam protection (must remain empty/unchecked) */}
@@ -276,8 +276,8 @@ const NewsletterSection = () => {
                     <label className="tw-text-sm tw-font-medium tw-text-[#19300e] dark:tw-text-white tw-flex tw-items-center tw-gap-1.5">
                       <span>Email Address</span> <span className="required-indicator"></span>
                     </label>
-                    <input
-                      type="email"
+          <input
+            type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
@@ -287,8 +287,8 @@ const NewsletterSection = () => {
                           ? 'tw-border-red-500 dark:tw-border-red-500' 
                           : 'tw-border-gray-600 dark:tw-border-gray-500'
                       } focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-[#19300e] dark:focus:tw-ring-[#c1fc75]`}
-                      placeholder="your.email@example.com"
-                    />
+            placeholder="your.email@example.com"
+          />
                     {errors.email && (
                       <p className="tw-text-red-500 tw-text-xs">{errors.email}</p>
                     )}
@@ -590,7 +590,7 @@ const NewsletterSection = () => {
                     : "tw-text-red-700 dark:tw-text-red-300 tw-bg-red-50 dark:tw-bg-red-900/30"
                 }`}>
                   {result}
-                </div>
+        </div>
               )}
             </form>
           </>

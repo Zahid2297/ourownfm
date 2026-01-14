@@ -447,6 +447,55 @@ h6 {
   border-color: var(--btn-bg) !important;
 }
 
+/* Make certifications section buttons visible */
+#certifications .btn[class*="tw-bg-transparent"] {
+  color: #19300e !important;
+  border-color: #19300e !important;
+}
+
+.tw-dark #certifications .btn[class*="tw-bg-transparent"] {
+  color: #c1fc75 !important;
+  border-color: #c1fc75 !important;
+}
+
+/* Make "Know more" button text visible in dark mode */
+#courses .know-more-btn {
+  color: #19300e !important;
+}
+
+#courses .know-more-btn i {
+  color: #19300e !important;
+}
+
+.tw-dark #courses .know-more-btn {
+  color: #c1fc75 !important;
+}
+
+.tw-dark #courses .know-more-btn i {
+  color: #c1fc75 !important;
+}
+
+/* Force bullet icon color to light green in courses section */
+#courses .bullet-icon {
+  color: #c1fc75 !important;
+}
+
+/* Force descriptive text color to white */
+#courses .pathway-text {
+  color: #ffffff !important;
+}
+
+/* Force value heading text color to light green */
+#courses .value-heading {
+  color: #c1fc75 !important;
+}
+
+/* Force project guidance bullet icons to be visible */
+#project-guidance .project-bullet {
+  color: #ffffff !important;
+  display: inline-block !important;
+}
+
 @media not all and (min-width: 1024px) {
   header .collapsible-header {
     position: fixed;
@@ -545,7 +594,7 @@ select.input:focus {
 }
 
 .modern-checkbox:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;

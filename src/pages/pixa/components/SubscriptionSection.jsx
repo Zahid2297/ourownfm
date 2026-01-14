@@ -27,6 +27,12 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹50,000 – ₹2,00,000 (depending on facility size)
             </p>
+            <a
+              href="#contact"
+              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
+            >
+              Enroll Now
+            </a>
           </div>
 
           <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
@@ -42,6 +48,12 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹75,000 – ₹3,00,000
             </p>
+            <a
+              href="#contact"
+              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
+            >
+              Enroll Now
+            </a>
           </div>
 
           <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
@@ -57,6 +69,12 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹60,000 – ₹2,50,000
             </p>
+            <a
+              href="#contact"
+              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
+            >
+              Enroll Now
+            </a>
           </div>
 
           <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
@@ -72,16 +90,14 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹25,000 – ₹1,50,000
             </p>
+            <a
+              href="#contact"
+              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
+            >
+              Enroll Now
+            </a>
           </div>
         </div>
-
-        <a
-          href="#contact"
-          className="reveal-up tw-group tw-shadow-xl btn tw-flex tw-gap-2 tw-mt-10"
-        >
-          <span>Get Started</span>
-          <i className="bi bi-arrow-right tw-duration-300 group-hover:tw-translate-x-1"></i>
-        </a>
       </div>
     </section>
   );

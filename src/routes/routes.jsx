@@ -6,6 +6,7 @@ import ComingSoonPage from "@/pages/coming_soon/comingSoon";
 import LandingPage from "@/pages/landing/landingPage";
 import ServicePage from "@/pages/Services/servicePage";
 import PixaLandingPage from "@/pages/pixa/PixaLandingPage";
+import AboutUsPage from "@/pages/pixa/AboutUsPage";
 
 export const router = createBrowserRouter([
   {
@@ -31,5 +32,9 @@ export const router = createBrowserRouter([
   {
     path: "/pixa",
     element: <PixaLandingPage />,
+  },
+  {
+    path: "/about",
+    element: <AboutUsPage />,
   },
 ]);

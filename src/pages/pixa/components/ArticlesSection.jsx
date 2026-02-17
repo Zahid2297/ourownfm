@@ -1,3 +1,5 @@
+import quickFMSLogo from "../../../assets/quickFMSlogo.png";
+
 const ArticlesSection = () => {
   const articles = [
     {
@@ -36,7 +38,7 @@ const ArticlesSection = () => {
         <div className="tw-flex tw-min-h-[600px] tw-w-[600px] tw-max-w-full tw-flex-col tw-gap-6 tw-overflow-hidden tw-rounded-xl tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123] tw-shadow-lg max-lg:tw-w-full max-lg:tw-p-6">
           <div className="tw-w-full tw-h-[180px] tw-flex tw-items-center tw-justify-center tw-bg-transparent tw-rounded-lg tw-p-6">
             <img
-              src="/quickfms.webp"
+              src={quickFMSLogo}
               alt="QuickFMS"
               className="tw-h-full tw-w-full tw-object-contain"
             />

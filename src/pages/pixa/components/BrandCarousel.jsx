@@ -1,9 +1,13 @@
+import quickFMSLogo from "../../../assets/quickFMSlogo.png";
+import greenMentorLogo from "../../../assets/greenmentor.png";
+import fmpmLogo from "../../../assets/fmpm.jpg";
+
 const BrandCarousel = () => {
   const partners = [
     {
-      name: "QUICK FMS",
-      description: "CAFM Learning",
-      icon: "/pixa-assets/images/home/api.png",
+      description: "QUICK FMS",
+      icon: quickFMSLogo,
+      originalColors: true,
     },
     // {
     //   name: "VDEI",
@@ -11,14 +15,14 @@ const BrandCarousel = () => {
     //   icon: "/digital-twin.png",
     // },
     {
-      name: "MEP Partners",
-      description: "Technical Training",
-      icon: "/partners.png",
+      description: "Green Mentor",
+      icon: greenMentorLogo,
+      originalColors: true,
     },
     {
-      name: "Facility Owners",
-      description: "Real Site Learning",
-      icon: "/graduation.png",
+      description: "FMPM Learnings",
+      icon: fmpmLogo,
+      originalColors: true,
     },
     {
       name: "Industry Experts",
@@ -44,7 +48,7 @@ const BrandCarousel = () => {
                 <img
                   src={partner.icon}
                   alt={partner.name}
-                  className="tw-h-full tw-w-full tw-object-contain dark:tw-brightness-0 dark:tw-invert"
+                  className={`tw-h-full tw-w-full tw-object-contain ${partner.originalColors ? "" : "dark:tw-brightness-0 dark:tw-invert"}`}
                 />
               </div>
               <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-white tw-text-center">
@@ -67,7 +71,7 @@ const BrandCarousel = () => {
                 <img
                   src={partner.icon}
                   alt={partner.name}
-                  className="tw-h-full tw-w-full tw-object-contain dark:tw-brightness-0 dark:tw-invert"
+                  className={`tw-h-full tw-w-full tw-object-contain ${partner.originalColors ? "" : "dark:tw-brightness-0 dark:tw-invert"}`}
                 />
               </div>
               <div className="tw-font-semibold tw-text-sm tw-text-[#19300e] dark:tw-text-white tw-text-center">

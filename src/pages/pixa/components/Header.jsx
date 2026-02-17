@@ -86,9 +86,9 @@ const Header = () => {
           <Link className="header-links" to="/about">
             About
           </Link>
-          <a className="header-links" href="#courses">
+          <Link className="header-links" to="/courses">
             Courses
-          </a>
+          </Link>
           <a className="header-links" href="#certifications">
             Certifications
           </a>

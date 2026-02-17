@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] tw-text-[#19300e] dark:tw-text-[#c1fc75] max-md:tw-flex-col">
@@ -43,9 +45,9 @@ const Footer = () => {
             Programs
           </h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
-              <a href="#courses" className="footer-link">
+              <Link to="/courses" className="footer-link">
                 Courses
-              </a>
+              </Link>
               <a href="#certifications" className="footer-link">
                 Certifications
               </a>

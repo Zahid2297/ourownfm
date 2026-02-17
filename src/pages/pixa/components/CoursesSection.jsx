@@ -1,12 +1,6 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const CoursesSection = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const toggleExpand = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
-
   const courseLevels = [
     {
       level: 1,
@@ -101,26 +95,13 @@ const CoursesSection = () => {
                   {course.description}
                 </p>
                 <div className="tw-mt-2">
-                  <button
-                    onClick={() => toggleExpand(index)}
-                    className="know-more-btn tw-text-sm tw-font-medium tw-cursor-pointer tw-flex tw-items-center tw-gap-1 hover:tw-underline"
+                  <Link
+                    to="/courses"
+                    className="know-more-btn tw-text-sm tw-font-medium tw-cursor-pointer tw-flex tw-items-center tw-gap-1 hover:tw-underline tw-no-underline tw-text-gray-800 dark:tw-text-gray-200"
                   >
                     Know more
-                    <i
-                      className={`bi ${
-                        expandedIndex === index
-                          ? "bi-chevron-up"
-                          : "bi-chevron-down"
-                      } tw-text-xs`}
-                    ></i>
-                  </button>
-                  {expandedIndex === index && (
-                    <div className="tw-mt-2 tw-pl-4 tw-border-l-2 tw-border-[#19300e] dark:tw-border-[#c1fc75]">
-                      <p className="tw-text-sm tw-text-gray-700 dark:tw-text-gray-300 tw-font-medium">
-                        {course.highlight}
-                      </p>
-                    </div>
-                  )}
+                    <i className="bi bi-chevron-right tw-text-xs" />
+                  </Link>
                 </div>
               </div>
             </div>

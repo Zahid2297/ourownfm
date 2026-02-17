@@ -7,6 +7,7 @@ import LandingPage from "@/pages/landing/landingPage";
 import ServicePage from "@/pages/Services/servicePage";
 import PixaLandingPage from "@/pages/pixa/PixaLandingPage";
 import AboutUsPage from "@/pages/pixa/AboutUsPage";
+import CoursesPage from "@/pages/pixa/CoursesPage";
 
 export const router = createBrowserRouter([
   {
@@ -36,5 +37,9 @@ export const router = createBrowserRouter([
   {
     path: "/about",
     element: <AboutUsPage />,
+  },
+  {
+    path: "/courses",
+    element: <CoursesPage />,
   },
 ]);

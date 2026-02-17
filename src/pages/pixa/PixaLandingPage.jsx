@@ -10,6 +10,7 @@ import SubscriptionSection from "./components/SubscriptionSection";
 import ProjectGuidanceSection from "./components/ProjectGuidanceSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import ArticlesSection from "./components/ArticlesSection";
+import DomeGallerySection from "./components/DomeGallerySection";
 import FAQSection from "./components/FAQSection";
 import CTASection from "./components/CTASection";
 import NewsletterSection from "./components/NewsletterSection";
@@ -36,6 +37,7 @@ const PixaLandingPage = () => {
       <ProjectGuidanceSection />
       <TestimonialsSection />
       <ArticlesSection />
+      <DomeGallerySection />
       <FAQSection />
       <CTASection />
       <NewsletterSection />

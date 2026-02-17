@@ -1,126 +1,76 @@
+import whyWeAreDiffImg1 from "../../../assets/whywearediffimg1.png";
+import whyWeAreDiffImg2 from "../../../assets/whywearediffimg2.png";
+
 const AdditionalFeaturesSection = () => {
-  const whyChooseUs = [
-    {
-      icon: "bi-graph-up-arrow",
-      title: "High-Demand Industry",
-      description:
-        "Facilities Management is one of the fastest-growing sectors across India and the GCC, offering strong job stability and sustained demand for skilled professionals.",
-    },
-    {
-      icon: "bi-cpu",
-      title: "Digital Transformation in FM",
-      description:
-        "Smart buildings, IoT-enabled systems, and CAFM platforms are reshaping FM creating high-value career opportunities for professionals with digital and technical capabilities.",
-    },
-    {
-      icon: "bi-signpost-split",
-      title: "Diverse Career Pathways",
-      description:
-        "FM spans operations, maintenance, health & safety, sustainability, energy management, soft services, and more providing multiple avenues for specialization and career growth.",
-    },
-    {
-      icon: "bi-globe",
-      title: "Global & GCC Career Mobility",
-      description:
-        "FM professionals are in high demand across GCC countries, opening doors to international career opportunities, cross-border exposure, and competitive compensation.",
-    },
-    {
-      icon: "bi-graph-up",
-      title: "Career Growth & Leadership Roles",
-      description:
-        "FM offers structured career progression from technician to supervisor, engineer, manager, and director making it ideal for long-term professional development and leadership roles.",
-    },
-    {
-      icon: "bi-tree",
-      title: "Contribution to Smart Cities & Sustainability",
-      description:
-        "FM plays a critical role in energy efficiency, green buildings, and sustainable operations making it a career with purpose and long-term relevance.",
-    },
-    {
-      icon: "bi-mortarboard",
-      title: "How Learning Happens",
-      bullets: [
-        "Live interaction with FM veterans",
-        "Guidance from senior FM leaders (India & GCC)",
-        "Real site visits and on-site discussions",
-        "Exposure to real problems and practical solutions",
-        "Mentorship beyond the classroom",
-      ],
-      additionalText: "We don't just teach we expose professionals to reality.",
-    },
-    {
-      icon: "bi-bullseye",
-      title: "Our Focus",
-      bullets: [
-        "Zero incidents and zero accidents",
-        "Strong emergency readiness",
-        "Technically confident decision-making",
-        "Independent handling of specialised tasks",
-        "Reduced long-term vendor dependency",
-      ],
-    },
-    {
-      icon: "bi-trophy",
-      title: "Client Impact",
-      bullets: [
-        "Safer buildings",
-        "Smoother handovers",
-        "Better performance",
-        "Higher client satisfaction",
-      ],
-      additionalText: "When FM professionals are strong clients benefit first.",
-    },
-  ];
+  const card1 = {
+    title: "Our Hybrid Capability Model",
+    content: (
+      <>
+        <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base tw-leading-relaxed tw-mb-4 md:pl-10">
+          We integrate FM expertise with specialist partners to deliver real
+          system-level understanding.
+        </p>
+        <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base tw-leading-relaxed md:pl-10">
+          Our hybrid approach ensures learners understand how systems are
+          designed, built, operated, and sustained not just maintained.
+        </p>
+      </>
+    ),
+  };
+
+  const card2 = {
+    title: "Our Ecosystem Includes",
+    bullets: [
+      "CAFM Systems: QuickFMS",
+      "Design & Construction Understanding: BIM, MEP basics, handover readiness",
+      "Sustainability & ESG: Delivered with Green Mentor",
+      "International Certifications: IFMA (FMP / CFM) via AMPM Learnings",
+      "OEM & Specialist Inputs: Equipment, systems, and safety specialists",
+    ],
+  };
 
   return (
-    <section className="tw-relative tw-flex tw-w-full tw-min-h-[110vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden">
-      <div className="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
+    <section className="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-py-12 max-md:tw-py-8">
+      <div className="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[90%] xl:tw-max-w-[1200px] tw-gap-4 tw-p-4">
         <h3 className="reveal-up pt-20 tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-          Why We Are Different(Hybrid Model)
+          Why We Are Different (Hybrid Model)
         </h3>
 
-        <div className="tw-mt-8 tw-relative tw-gap-10 tw-p-4 tw-grid tw-place-items-center tw-grid-cols-3 max-lg:tw-flex max-lg:tw-flex-col">
-          {whyChooseUs.map((item, index) => (
-            <div
-              key={index}
-              className="reveal-up tw-w-full tw-border-[1px] tw-min-h-[450px] tw-rounded-md tw-place-items-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3"
-            >
-              <div className="tw-w-full tw-h-[150px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center tw-items-center">
-                <i
-                  className={`bi ${item.icon} tw-text-6xl tw-text-gray-800 dark:tw-text-gray-200`}
-                ></i>
-              </div>
-              <h3 className="tw-text-2xl tw-text-center tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-                {item.title}
-              </h3>
-              {item.bullets ? (
-                <div className="tw-flex tw-flex-col tw-gap-2 tw-px-4 tw-w-full tw-flex-1 tw-justify-between">
-                  <ul className="tw-list-none tw-text-gray-700 dark:tw-text-gray-300 tw-text-sm tw-space-y-2">
-                    {item.bullets.map((bullet, idx) => (
-                      <li
-                        key={idx}
-                        className="tw-leading-relaxed tw-flex tw-items-start tw-gap-2"
-                      >
-                        <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
-                          •
-                        </span>
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {item.additionalText && (
-                    <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-sm tw-mt-auto tw-font-medium tw-text-center">
-                      {item.additionalText}
-                    </p>
-                  )}
-                </div>
-              ) : (
-                <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
-                  {item.description}
-                </p>
-              )}
+        {/* Card 1: Image left, Content right — 50/50 */}
+        <div className="why-diff-card reveal-up tw-mt-2 tw-w-full tw-rounded-lg tw-border tw-border-gray-200 dark:tw-border-[#1f2123] tw-overflow-hidden tw-bg-[#f2f3f4] dark:tw-bg-black">
+          <div className="why-diff-card__image ">
+            <img src={whyWeAreDiffImg1} alt="Why We Are Different" />
+          </div>
+          <div className="why-diff-card__content">
+            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-4 md:pl-10">
+              {card1.title}
+            </h4>
+            <div className="tw-text-gray-700 dark:tw-text-gray-300">
+              {card1.content}
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Card 2: Content left, Image right — on mobile: image then content (same as card 1) */}
+        <div className="why-diff-card why-diff-card--mobile-image-first reveal-up tw-mt-0 tw-w-full tw-rounded-lg tw-border tw-border-gray-200 dark:tw-border-[#1f2123] tw-overflow-hidden tw-bg-[#f2f3f4] dark:tw-bg-black">
+          <div className="why-diff-card__content">
+            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-4">
+              {card2.title}
+            </h4>
+            <ul className="tw-list-none tw-space-y-2 tw-text-gray-700 dark:tw-text-gray-300 tw-text-base tw-leading-relaxed">
+              {card2.bullets.map((bullet, idx) => (
+                <li key={idx} className="tw-flex tw-items-start tw-gap-2">
+                  <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+                    •
+                  </span>
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="why-diff-card__image">
+            <img src={whyWeAreDiffImg2} alt="Our Ecosystem" />
+          </div>
         </div>
       </div>
     </section>

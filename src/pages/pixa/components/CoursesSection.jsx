@@ -149,21 +149,21 @@ const CoursesSection = () => {
               ))}
             </div>
 
-            <div className="tw-mt-8 tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-6 tw-flex-wrap">
+            <div className="pathway-value-row tw-mt-8 tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-6 tw-flex-wrap">
               <div className="tw-text-center">
                 <p className="value-heading tw-text-2xl tw-font-bold">
                   All 7 Levels
                 </p>
                 <p className="pathway-text tw-text-sm">Complete Pathway</p>
               </div>
-              <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600"></div>
+              <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600 pathway-value-row__divider"></div>
               <div className="tw-text-center">
                 <p className="value-heading tw-text-2xl tw-font-bold">
                   Save More
                 </p>
                 <p className="pathway-text tw-text-sm">Bundle Discount</p>
               </div>
-              <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600"></div>
+              <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600 pathway-value-row__divider"></div>
               <div className="tw-text-center">
                 <p className="value-heading tw-text-2xl tw-font-bold">
                   Lifetime Access

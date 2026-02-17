@@ -36,7 +36,7 @@ const ProjectGuidanceSection = () => {
           </p>
         </div>
 
-        <div className="tw-mt-8 tw-w-full tw-flex tw-flex-row tw-justify-center tw-items-start tw-gap-8 max-md:tw-flex-col">
+        <div className="project-guidance-cards">
           {/* Scope of Project Guidance Card */}
           <div className="reveal-up tw-flex tw-flex-1 tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
             <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">

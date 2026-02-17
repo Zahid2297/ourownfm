@@ -1,52 +1,31 @@
 const CertificationsSection = () => {
-  const trainingModules = [
+  const certifications = [
     {
-      title: "FM Fundamentals & Technical Operations",
-      duration: "20 hours",
-      price: "₹12,000",
-      certification: "FM Operations Certificate",
-      description: "Hard FM, Soft FM, Asset types, Maintenance strategies",
-      highlighted: false,
+      title: "CFM - Certified Facility Manager (IFMA)",
+      price: "₹40,000",
+      features: [
+        "20 hrs live online training",
+        "Full CFM competency coverage",
+        "800+ PPT slides & practice questions",
+      ],
     },
     {
-      title: "Digital FM: CAFM, IoT, BMS, BIM, Digital Twins",
-      duration: "25 hours",
-      price: "₹18,000",
-      certification: "Digital FM Specialist",
-      description: "Data-driven FM, mobile audits, dashboards",
-      highlighted: false,
+      title: "FMP - Facility Management Professional (IFMA)",
+      price: "₹20,000",
+      features: [
+        "8 hrs live online training",
+        "Complete FMP module coverage",
+        "PDF study material & exam strategy",
+      ],
     },
     {
-      title: "Health, Safety, Risk & Compliance",
-      duration: "15 hours",
-      price: "₹10,000",
-      certification: "HSE Compliance Certificate",
-      description: "Statutory Acts, audit templates, RCA",
-      highlighted: false,
-    },
-    {
-      title: "Leadership & People Management in FM",
-      duration: "15 hours",
-      price: "₹10,000",
-      certification: "FM Leadership Certificate",
-      description: "HR basics, soft skills, performance",
-      highlighted: false,
-    },
-    {
-      title: "Sustainability & ESG for FM",
-      duration: "20 hours",
-      price: "₹15,000",
-      certification: "Sustainability Practitioner",
-      description: "Energy audits, Net Zero, LEED",
-      highlighted: false,
-    },
-    {
-      title: "Facility Budgeting, P&L & Cost Optimization",
-      duration: "15 hours",
-      price: "₹12,000",
-      certification: "FM Finance Essentials",
-      description: "ROI models, budgeting, procurement",
-      highlighted: false,
+      title: "LEED Green Associate (USGBC)",
+      price: "₹25,000",
+      features: [
+        "10 hours live online training",
+        "Exam-focused LEED preparation",
+        "Study material & guidance",
+      ],
     },
   ];
 
@@ -55,44 +34,34 @@ const CertificationsSection = () => {
       className="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-gap-6 tw-place-items-center tw-p-[2%]"
       id="certifications"
     >
-      <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-        IFMA Certification (exam training)
+      <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+        Certifications Offered
       </h3>
-      <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
-        Each module includes classroom learning, case studies, site visits,
-        hands-on tools, live dashboards, and project-based assignments.
-      </p>
       <div className="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
-        {trainingModules.map((module, index) => (
+        {certifications.map((cert, index) => (
           <div
             key={index}
-            className={`reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px] ${
-              module.highlighted ? "tw-border-2 dark:tw-border-[#595858]" : ""
-            }`}
+            className="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-start tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
           >
-            <h3 className="tw-text-xl tw-font-semibold tw-text-center tw-mb-2 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-              {module.title}
+            <h3 className="tw-text-xl tw-font-semibold tw-text-left tw-mb-1 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+              {cert.title}
             </h3>
-            <div className="tw-flex tw-gap-2 tw-items-center tw-mb-2">
-              <span className="tw-text-3xl max-md:tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-white">
-                {module.price}
-              </span>
-            </div>
-            <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-2">
-              Duration: {module.duration}
+            <p className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-white tw-mb-3">
+              {cert.price}
             </p>
-            <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 tw-mb-4">
-              Certification: {module.certification}
-            </p>
-            <hr className="tw-w-full" />
-            <p className="tw-mt-4 tw-text-center tw-text-gray-800 dark:tw-text-gray-200 tw-text-sm">
-              {module.description}
-            </p>
+            <ul className="tw-list-none tw-space-y-2 tw-text-sm tw-text-gray-700 dark:tw-text-gray-300">
+              {cert.features.map((feature, idx) => (
+                <li key={idx} className="tw-flex tw-items-start tw-gap-2">
+                  <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+                    •
+                  </span>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
             <a
               href="#contact"
-              className={`btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02] ${
-                module.highlighted ? "" : "!tw-bg-transparent !tw-border-[1px]"
-              }`}
+              className="btn tw-mt-auto tw-w-auto tw-self-center tw-px-5 tw-py-2 tw-text-sm tw-font-medium tw-rounded-md tw-transition-all tw-duration-200 hover:tw-opacity-90 tw-border tw-border-[#19300e] tw-bg-[#19300e] tw-text-white dark:tw-border-[#c1fc75] dark:tw-bg-[#c1fc75] dark:tw-text-[#19300e]"
             >
               Enroll Now
             </a>

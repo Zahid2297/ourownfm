@@ -17,25 +17,20 @@ const Footer = () => {
           </a>
           <div className="tw-flex tw-gap-4 tw-text-lg tw-text-[#19300e] dark:tw-text-white">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/syed-moonis-raza-58a80a229/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="tw-text-[#19300e] dark:tw-text-white"
             >
               <i className="bi bi-linkedin"></i>
             </a>
             <a
-              href="#"
-              aria-label="Instagram"
+              href="mailto:info@ourownfm.com"
+              aria-label="Email"
               className="tw-text-[#19300e] dark:tw-text-white"
             >
-              <i className="bi bi-instagram"></i>
-            </a>
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="tw-text-[#19300e] dark:tw-text-white"
-            >
-              <i className="bi bi-facebook"></i>
+              <i className="bi bi-envelope"></i>
             </a>
           </div>
         </div>
@@ -48,20 +43,14 @@ const Footer = () => {
               <Link to="/courses" className="footer-link">
                 Courses
               </Link>
-              <a href="#certifications" className="footer-link">
+              <a href="/pixa#certifications" className="footer-link">
                 Certifications
               </a>
-              <a href="#consultancy" className="footer-link">
+              <a href="/pixa#consultancy" className="footer-link">
                 Consultancy Services
               </a>
-              <a href="#project-guidance" className="footer-link">
+              <a href="/pixa#project-guidance" className="footer-link">
                 Project Guidance
-              </a>
-              <a href="#sustainability" className="footer-link">
-                Sustainability Solutions
-              </a>
-              <a href="#placements" className="footer-link">
-                Placement Assistance
               </a>
             </div>
           </div>

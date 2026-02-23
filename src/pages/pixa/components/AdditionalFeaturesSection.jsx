@@ -6,14 +6,53 @@ const AdditionalFeaturesSection = () => {
     title: "Our Hybrid Capability Model",
     content: (
       <>
-        <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base tw-leading-relaxed tw-mb-4 md:pl-10">
+        <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base lg:tw-text-lg tw-leading-relaxed tw-mb-4 md:pl-10">
           We integrate FM expertise with specialist partners to deliver real
           system-level understanding.
         </p>
-        <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base tw-leading-relaxed md:pl-10">
+        <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-text-base lg:tw-text-lg tw-leading-relaxed tw-mb-4 md:pl-10">
           Our hybrid approach ensures learners understand how systems are
           designed, built, operated, and sustained not just maintained.
         </p>
+        <p className="tw-font-semibold tw-text-gray-800 dark:tw-text-gray-200 tw-text-base lg:tw-text-lg tw-mt-4 tw-mb-2 md:pl-10">
+          This enables participants to:
+        </p>
+        <ul className="tw-list-none tw-space-y-2 tw-text-gray-700 dark:tw-text-gray-300 tw-text-base lg:tw-text-lg tw-leading-relaxed md:pl-10">
+          <li className="tw-flex tw-items-start tw-gap-2 md:pl-10">
+            <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+              •
+            </span>
+            <span>
+              Understand the full asset lifecycle beyond routine maintenance
+            </span>
+          </li>
+          <li className="tw-flex tw-items-start tw-gap-2 md:pl-10">
+            <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+              •
+            </span>
+            <span>Align operations with original design intent</span>
+          </li>
+          <li className="tw-flex tw-items-start tw-gap-2 md:pl-10">
+            <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+              •
+            </span>
+            <span>Support mobilisation and transition readiness</span>
+          </li>
+          <li className="tw-flex tw-items-start tw-gap-2 md:pl-10">
+            <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+              •
+            </span>
+            <span>Monitor utilities and performance trends effectively</span>
+          </li>
+          <li className="tw-flex tw-items-start tw-gap-2 md:pl-10">
+            <span className="tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-flex-shrink-0">
+              •
+            </span>
+            <span>
+              Contribute to operational decision-making before GO-LIVE
+            </span>
+          </li>
+        </ul>
       </>
     ),
   };

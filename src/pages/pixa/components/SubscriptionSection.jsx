@@ -2,7 +2,7 @@ const SubscriptionSection = () => {
   return (
     <section
       id="consultancy"
-      className="consultancy-section tw-relative tw-flex tw-w-full tw-min-h-[100vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+      className="consultancy-section tw-relative tw-flex tw-w-full tw-min-h-[100vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-visible"
     >
       <div className="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-place-items-center tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
         <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
@@ -14,7 +14,11 @@ const SubscriptionSection = () => {
         </p>
 
         <div className="tw-mt-8 tw-relative tw-flex tw-flex-col tw-gap-8 tw-w-full tw-max-w-[1000px]">
-          <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
+          <a
+            href="#contact"
+            className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
+          >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
             <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               1. Operational Audit & Gap Assessment
             </h4>
@@ -27,15 +31,14 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹50,000 – ₹2,00,000 (depending on facility size)
             </p>
-            <a
-              href="#contact"
-              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
-            >
-              Enroll Now
-            </a>
-          </div>
+            </div>
+          </a>
 
-          <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
+          <a
+            href="#contact"
+            className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
+          >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
             <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               2. FM Technology Integration
             </h4>
@@ -48,15 +51,14 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹75,000 – ₹3,00,000
             </p>
-            <a
-              href="#contact"
-              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
-            >
-              Enroll Now
-            </a>
-          </div>
+            </div>
+          </a>
 
-          <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
+          <a
+            href="#contact"
+            className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
+          >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
             <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               3. ESG & Sustainability Consulting
             </h4>
@@ -69,15 +71,14 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹60,000 – ₹2,50,000
             </p>
-            <a
-              href="#contact"
-              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
-            >
-              Enroll Now
-            </a>
-          </div>
+            </div>
+          </a>
 
-          <div className="reveal-up tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
+          <a
+            href="#contact"
+            className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
+          >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
             <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               4. HR & Talent Advisory for FM
             </h4>
@@ -90,13 +91,8 @@ const SubscriptionSection = () => {
             <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
               Fees: ₹25,000 – ₹1,50,000
             </p>
-            <a
-              href="#contact"
-              className="btn tw-mt-4 tw-w-full md:tw-w-auto tw-text-center"
-            >
-              Enroll Now
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>

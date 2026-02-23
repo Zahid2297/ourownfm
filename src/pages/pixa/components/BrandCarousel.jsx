@@ -32,19 +32,19 @@ const BrandCarousel = () => {
   ];
 
   return (
-    <section className="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8">
+    <section className="brand-carousel-section tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8">
       <h2 className="reveal-up tw-text-6xl max-md:tw-text-xl tw-text-[#19300e] dark:tw-text-[#c1fc75] font-bold">
         Our Collaborations & Partners
       </h2>
 
       <div className="reveal-up carousel-container">
-        <div className="carousel lg:w-place-content-center tw-mt-10 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2">
+        <div className="carousel lg:w-place-content-center tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2 brand-carousel-track">
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="carousel-img tw-min-h-[120px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
+              className="brand-carousel-card carousel-img tw-min-h-[120px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
             >
-              <div className="tw-h-[60px] tw-w-[60px] tw-mb-2 tw-flex tw-items-center tw-justify-center">
+              <div className="brand-carousel-card__logo tw-h-[60px] tw-w-[60px] tw-mb-2 tw-flex tw-items-center tw-justify-center">
                 <img
                   src={partner.icon}
                   alt={partner.name}
@@ -61,13 +61,13 @@ const BrandCarousel = () => {
               )}
             </div>
           ))}
-          {/* Duplicate for seamless loop */}
+          {/* Duplicate for seamless loop (hidden on mobile) */}
           {partners.map((partner, index) => (
             <div
               key={`dup-${index}`}
-              className="carousel-img tw-min-h-[120px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
+              className="brand-carousel-card brand-carousel-duplicate carousel-img tw-min-h-[120px] tw-w-[200px] tw-flex tw-flex-col tw-items-center tw-justify-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-rounded-lg"
             >
-              <div className="tw-h-[60px] tw-w-[60px] tw-mb-2 tw-flex tw-items-center tw-justify-center">
+              <div className="brand-carousel-card__logo tw-h-[60px] tw-w-[60px] tw-mb-2 tw-flex tw-items-center tw-justify-center">
                 <img
                   src={partner.icon}
                   alt={partner.name}

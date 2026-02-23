@@ -35,14 +35,16 @@ const CertificationsSection = () => {
       id="certifications"
     >
       <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-        Certifications Offered
+        IFMA Certification (exam preparation)
       </h3>
       <div className="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col">
         {certifications.map((cert, index) => (
-          <div
+          <a
             key={index}
-            className="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-start tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+            href="#contact"
+            className="certification-card tw-flex tw-w-[350px] tw-flex-col tw-place-items-start tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px] tw-cursor-pointer tw-no-underline"
           >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-3 tw-w-full">
             <h3 className="tw-text-xl tw-font-semibold tw-text-left tw-mb-1 tw-text-[#19300e] dark:tw-text-[#c1fc75]">
               {cert.title}
             </h3>
@@ -59,13 +61,8 @@ const CertificationsSection = () => {
                 </li>
               ))}
             </ul>
-            <a
-              href="#contact"
-              className="btn tw-mt-auto tw-w-auto tw-self-center tw-px-5 tw-py-2 tw-text-sm tw-font-medium tw-rounded-md tw-transition-all tw-duration-200 hover:tw-opacity-90 tw-border tw-border-[#19300e] tw-bg-[#19300e] tw-text-white dark:tw-border-[#c1fc75] dark:tw-bg-[#c1fc75] dark:tw-text-[#19300e]"
-            >
-              Enroll Now
-            </a>
-          </div>
+            </div>
+          </a>
         ))}
       </div>
     </section>

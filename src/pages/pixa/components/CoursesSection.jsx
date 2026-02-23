@@ -119,7 +119,7 @@ const CoursesSection = () => {
                 BEST VALUE
               </div>
               <h3 className="tw-text-4xl tw-font-bold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-6">
-                Complete FM Learning Pathway
+                Complete FM Learning Pathway (All 7 Levels)
               </h3>
               <p className="tw-text-xl tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed tw-max-w-3xl tw-mx-auto tw-mt-2">
                 Master all 7 levels from foundations to leadership. Get

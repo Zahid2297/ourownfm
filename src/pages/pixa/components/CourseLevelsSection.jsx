@@ -153,8 +153,12 @@ const CourseLevelsSection = () => {
         {/* Level cards – same style as Fee Structure cards */}
         <div className="course-levels-cards">
           {courseLevels.map((course) => (
-            <article
+            <Link
               key={course.level}
+              to={{ pathname: "/pixa", hash: "contact" }}
+              className="course-level-card-link tw-block tw-no-underline tw-text-inherit tw-cursor-pointer"
+            >
+            <article
               className="course-level-card tw-flex tw-flex-col tw-overflow-hidden"
             >
               {/* Image with level badge */}
@@ -226,6 +230,7 @@ const CourseLevelsSection = () => {
                 </div>
               </div>
             </article>
+            </Link>
           ))}
 
           {/* Full FM Leadership Pathway (All 7 Levels) card */}

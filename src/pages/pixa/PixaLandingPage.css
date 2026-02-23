@@ -326,12 +326,16 @@ hr {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+.course-levels-cards > .course-level-card-link,
 .course-levels-cards
   > .course-level-card:not(.course-level-card--full-pathway) {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
+.course-level-card-link:hover .course-level-card {
+  opacity: 0.95;
 }
 @media (min-width: 768px) {
   .course-level-card--full-pathway {

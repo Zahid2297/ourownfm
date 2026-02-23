@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CoursesSection from "./components/CoursesSection";
+import CourseLevelsSection from "./components/CourseLevelsSection";
 import "./PixaLandingPage.css";
 
 const CoursesPage = () => {
@@ -17,9 +17,9 @@ const CoursesPage = () => {
       <Header />
       <div
         className="tw-flex tw-flex-1 tw-flex-col"
-        style={{ paddingTop: "180px" }}
+        style={{ paddingTop: "250px" }}
       >
-        <CoursesSection />
+        <CourseLevelsSection />
       </div>
       <Footer />
     </div>

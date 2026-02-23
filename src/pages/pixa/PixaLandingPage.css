@@ -63,6 +63,16 @@
   }
 }
 
+/* Less gap between Project Guidance and Success Stories */
+.project-guidance-section {
+  margin-bottom: 4rem !important;
+}
+
+/* Less gap between Success Stories and QuickFMS Partnership */
+.testimonials-section {
+  margin-bottom: 4rem !important;
+}
+
 body.modal-open {
   overflow: hidden;
 }
@@ -224,7 +234,9 @@ hr {
   overflow: visible !important;
 }
 #consultancy .consultancy-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   display: flex;
   transform: scale(1);
 }
@@ -235,7 +247,9 @@ hr {
 
 /* Certification cards: same hover grow effect */
 #certifications .certification-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   display: flex;
   transform: scale(1);
 }
@@ -265,6 +279,35 @@ hr {
   .project-guidance-cards {
     flex-direction: column;
   }
+}
+
+/* Pathway card: box style like Fee Structure */
+.pathway-card .reveal-up {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(225, 225, 225, 0.12);
+  background: #ffffff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+.tw-dark .pathway-card .reveal-up {
+  background: #000000;
+  border-color: rgba(193, 252, 117, 0.15);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(193, 252, 117, 0.06);
+}
+.pathway-card__accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #19300e, transparent);
+  border-radius: 12px 12px 0 0;
+}
+.tw-dark .pathway-card__accent {
+  background: linear-gradient(90deg, transparent, #c1fc75, transparent);
+}
+.pathway-card__header {
+  padding-top: 0.5rem;
 }
 
 /* Pathway value row: single row on mobile (All 7 Levels, Save More, Lifetime Access) */
@@ -733,6 +776,124 @@ h6 {
 #project-guidance .project-bullet {
   color: #ffffff !important;
   display: inline-block !important;
+}
+
+/* Fee Structure headings: ensure visible green in dark mode */
+.tw-dark .project-guidance-fee-card .fee-structure-heading {
+  color: #c1fc75 !important;
+}
+
+/* Fee Structure card: width and professional styling */
+.project-guidance-fee-card.fee-structure-card {
+  max-width: 1670px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 2rem 1.5rem !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(225, 225, 225, 0.12) !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06) !important;
+}
+.tw-dark .project-guidance-fee-card.fee-structure-card {
+  background: #000000 !important;
+  border-color: rgba(193, 252, 117, 0.15) !important;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(193, 252, 117, 0.06) !important;
+}
+.tw-dark .project-guidance-fee-card.fee-structure-card::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #c1fc75, transparent);
+  border-radius: 12px 12px 0 0;
+  margin: -2rem -1.5rem 0 -1.5rem;
+  margin-bottom: 2rem;
+}
+.fee-structure-card__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.tw-dark .fee-structure-card__header {
+  border-bottom-color: rgba(193, 252, 117, 0.2);
+}
+.project-guidance-fee-card .fee-structure-heading:first-of-type {
+  margin-bottom: 0 !important;
+}
+
+/* Fee Structure main heading only: bigger and centered */
+.project-guidance-fee-card .fee-structure-main-heading {
+  font-size: 1.875rem !important;
+  text-align: center !important;
+}
+@media (min-width: 768px) {
+  .project-guidance-fee-card .fee-structure-main-heading {
+    font-size: 2.25rem !important;
+  }
+}
+
+/* Fee Structure: horizontal layout (4 columns) on desktop */
+.fee-structure-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .fee-structure-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .fee-structure-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Fee Structure columns: separation and padding */
+.fee-structure-column {
+  padding: 1rem 0;
+}
+@media (min-width: 1024px) {
+  .fee-structure-column {
+    padding: 0 1rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .fee-structure-column:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+  .tw-dark .fee-structure-column {
+    border-left-color: rgba(193, 252, 117, 0.12);
+  }
+}
+
+/* Fee Structure list readability */
+.fee-structure-list {
+  line-height: 1.5;
+}
+
+/* Fee Structure fee block: subtle highlight */
+.fee-structure-fee-block {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: rgba(25, 48, 14, 0.06);
+  border-left: 3px solid #19300e;
+}
+.tw-dark .fee-structure-fee-block {
+  background: rgba(193, 252, 117, 0.06);
+  border-left-color: #c1fc75;
+}
+.fee-structure-fee-block span:first-of-type {
+  font-weight: 600;
+}
+.fee-structure-label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  opacity: 0.95;
 }
 
 @media not all and (min-width: 1024px) {

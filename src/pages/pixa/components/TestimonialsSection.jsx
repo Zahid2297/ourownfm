@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]">
+    <section className="testimonials-section tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]">
       <h3 className="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
         Success Stories from Our Community
       </h3>

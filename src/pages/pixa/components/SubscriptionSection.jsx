@@ -19,18 +19,21 @@ const SubscriptionSection = () => {
             className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
           >
             <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
-            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-              1. Operational Audit & Gap Assessment
-            </h4>
-            <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
-              <li>Hard & Soft FM audit</li>
-              <li>Process mapping</li>
-              <li>KPI/SLAs evaluation</li>
-              <li>Cost & resource optimisation</li>
-            </ul>
-            <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
-              Fees: ₹50,000 – ₹2,00,000 (depending on facility size)
-            </p>
+              <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                1. Operational Audit & Gap Assessment
+              </h4>
+              <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
+                <li>Hard & Soft FM audit</li>
+                <li>Process mapping</li>
+                <li>SLA / KPI evaluation</li>
+                <li>Cost & resource optimisation</li>
+              </ul>
+              <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
+                Fee: AED 2,500 – AED 10,000{" "}
+                <span className="tw-block tw-text-sm tw-mt-0.5">
+                  (depending on facility size)
+                </span>
+              </p>
             </div>
           </a>
 
@@ -39,18 +42,22 @@ const SubscriptionSection = () => {
             className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
           >
             <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
-            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-              2. FM Technology Integration
-            </h4>
-            <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
-              <li>CAFM implementation support</li>
-              <li>IoT sensors deployment</li>
-              <li>BMS optimisation</li>
-              <li>Digital Twin readiness</li>
-            </ul>
-            <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
-              Fees: ₹75,000 – ₹3,00,000
-            </p>
+              <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                2. FM Technology Integration Support
+              </h4>
+              <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
+                <li>CAFM onboarding</li>
+                <li>Digital workflows</li>
+                <li>BMS coordination</li>
+                <li>Asset documentation alignment</li>
+              </ul>
+              <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
+                Fee: AED 5,000 – AED 15,000
+                <span className="tw-block tw-text-sm tw-mt-0.5">
+                  {" "}
+                  (project-specific)
+                </span>
+              </p>
             </div>
           </a>
 
@@ -59,18 +66,18 @@ const SubscriptionSection = () => {
             className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
           >
             <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
-            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-              3. ESG & Sustainability Consulting
-            </h4>
-            <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
-              <li>Energy audit</li>
-              <li>LEED/Green building advisory</li>
-              <li>Carbon reporting</li>
-              <li>Net Zero roadmap</li>
-            </ul>
-            <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
-              Fees: ₹60,000 – ₹2,50,000
-            </p>
+              <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                3. ESG & Sustainability Advisory
+              </h4>
+              <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
+                <li>Energy performance review</li>
+                <li>Operational compliance</li>
+                <li>Sustainability readiness</li>
+                <li>ESG documentation support</li>
+              </ul>
+              <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
+                Fee: AED 4,000 – AED 12,000
+              </p>
             </div>
           </a>
 
@@ -79,18 +86,57 @@ const SubscriptionSection = () => {
             className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
           >
             <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
-            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-              4. HR & Talent Advisory for FM
-            </h4>
-            <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
-              <li>Org structure finalisation</li>
-              <li>Job descriptions</li>
-              <li>Competency mapping</li>
-              <li>Performance systems</li>
-            </ul>
-            <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
-              Fees: ₹25,000 – ₹1,50,000
-            </p>
+              <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                4. FM Organisation & Talent Advisory
+              </h4>
+              <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
+                <li>Org structure planning</li>
+                <li>Role definition</li>
+                <li>Competency mapping</li>
+                <li>Performance frameworks</li>
+              </ul>
+              <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
+                Fee: AED 3,000 – AED 8,000
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="#contact"
+            className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
+          >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
+              <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                5. Mobilisation & Transition Support
+              </h4>
+              <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
+                <li>Asset takeover planning</li>
+                <li>Documentation readiness</li>
+                <li>Temporary utilities risk</li>
+                <li>GO-LIVE governance</li>
+              </ul>
+              <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
+                Fee: Starting from AED 25,000 per engagement
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="#contact"
+            className="consultancy-card tw-flex tw-w-full tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl tw-cursor-pointer tw-no-underline"
+          >
+            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
+              <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                6. Remote Advisory (Monthly Retainer)
+              </h4>
+              <ul className="tw-list-disc tw-list-inside tw-text-gray-800 dark:tw-text-gray-200 tw-space-y-2">
+                <li>Review meetings</li>
+                <li>Performance input</li>
+                <li>Process support</li>
+              </ul>
+              <p className="tw-text-lg tw-font-medium tw-mt-4 tw-text-[#19300e] dark:tw-text-white">
+                Fee: AED 7,500 – AED 15,000 per month
+              </p>
             </div>
           </a>
         </div>

@@ -108,27 +108,27 @@ const CoursesSection = () => {
           </div>
         ))}
 
-        {/* All Levels Combined Info */}
-        <div className="reveal-up tw-mt-6 tw-w-full tw-flex tw-flex-col tw-gap-6 tw-rounded-2xl tw-border-[3px] tw-border-[#19300e] dark:tw-border-[#c1fc75] tw-bg-gradient-to-br tw-from-[#f2f3f4] tw-to-[#e8e9ea] dark:tw-from-[#0a0a0a] dark:tw-to-[#1a1a1a] tw-p-10 tw-shadow-2xl tw-relative tw-overflow-hidden">
-          {/* Decorative gradient overlay */}
-          <div className="tw-absolute tw-top-0 tw-right-0 tw-w-64 tw-h-64 tw-bg-gradient-to-br tw-from-[#19300e]/10 dark:tw-from-[#c1fc75]/10 tw-to-transparent tw-rounded-full tw-blur-3xl"></div>
+        {/* All Levels Combined Info – box style like Fee Structure */}
+        <div className="pathway-card tw-mt-6 tw-w-full tw-max-w-[1100px] tw-mx-auto">
+          <div className="reveal-up tw-w-full tw-rounded-xl tw-border tw-border-[#19300e]/20 dark:tw-border-[#c1fc75]/20 tw-bg-white dark:tw-bg-black tw-p-8 tw-shadow-xl tw-relative">
+            {/* Top accent line */}
+            <div className="pathway-card__accent" aria-hidden="true" />
 
-          <div className="tw-relative tw-z-10">
-            <div className="tw-text-center tw-mb-6">
+            <div className="pathway-card__header tw-text-center tw-mb-6 tw-pb-5 tw-border-b tw-border-gray-200 dark:tw-border-[#c1fc75]/20">
               <div className="tw-inline-block tw-px-4 tw-py-2 tw-bg-[#19300e] dark:tw-bg-[#c1fc75] tw-text-white dark:tw-text-[#19300e] tw-text-sm tw-font-bold tw-rounded-full tw-mb-4">
                 BEST VALUE
               </div>
-              <h3 className="tw-text-4xl tw-font-bold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-6">
+              <h3 className="pathway-card__title tw-text-4xl tw-font-bold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-4">
                 Complete FM Learning Pathway (All 7 Levels)
               </h3>
-              <p className="tw-text-xl tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed tw-max-w-3xl tw-mx-auto tw-mt-2">
+              <p className="tw-text-xl tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed tw-max-w-3xl tw-mx-auto">
                 Master all 7 levels from foundations to leadership. Get
                 comprehensive training, mentorship, and certification
                 preparation in one complete package.
               </p>
             </div>
 
-            <div className="tw-mt-8 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-4">
+            <div className="tw-mt-6 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-4">
               {courseLevels.map((course, idx) => (
                 <div
                   key={idx}

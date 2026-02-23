@@ -81,10 +81,10 @@ const AdditionalFeaturesSection = () => {
             <img src={whyWeAreDiffImg1} alt="Why We Are Different" />
           </div>
           <div className="why-diff-card__content">
-            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-4 md:pl-10">
+            <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-10 md:pl-10">
               {card1.title}
             </h4>
-            <div className="tw-text-gray-700 dark:tw-text-gray-300">
+            <div className="tw-text-gray-700 dark:tw-text-gray-300 tw-pt-1">
               {card1.content}
             </div>
           </div>

@@ -22,11 +22,11 @@ const ProjectGuidanceSection = () => {
       className="project-guidance-section tw-relative tw-flex tw-w-full tw-min-h-[100vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
     >
       <div className="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[1200px] tw-gap-6 tw-p-4">
-        <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+        <h3 className="tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-text-[#19300e] dark:tw-text-[#c1fc75]">
           Project Guidance
         </h3>
 
-        <div className="reveal-up tw-mt-4 tw-max-w-[900px] tw-text-center tw-space-y-4">
+        <div className="tw-mt-4 tw-max-w-[900px] tw-text-center tw-space-y-4">
           <p className="tw-text-lg tw-text-gray-800 dark:tw-text-gray-200 tw-leading-relaxed">
             Project Guidance is a preventive FM service, delivered during
             design, construction and pre-handover stages where most long-term FM
@@ -39,7 +39,7 @@ const ProjectGuidanceSection = () => {
         <div className="project-guidance-cards">
           {/* Scope of Project Guidance Card */}
           <div className="project-guidance-card tw-flex tw-flex-1 tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
-            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
+            <div className="tw-flex tw-flex-col tw-gap-4 tw-w-full">
               <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                 Scope of Project Guidance
               </h4>
@@ -60,7 +60,7 @@ const ProjectGuidanceSection = () => {
 
           {/* Why Project Guidance Is Critical Card */}
           <div className="project-guidance-card tw-flex tw-flex-1 tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-6 tw-shadow-xl">
-            <div className="reveal-up tw-flex tw-flex-col tw-gap-4 tw-w-full">
+            <div className="tw-flex tw-flex-col tw-gap-4 tw-w-full">
               <h4 className="tw-text-2xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75]">
                 Why Project Guidance Is Critical
               </h4>
@@ -91,7 +91,7 @@ const ProjectGuidanceSection = () => {
 
         {/* Fee Structure – wide card */}
         <div className="project-guidance-card project-guidance-fee-card fee-structure-card tw-mt-8 tw-w-full tw-max-w-[1000px] tw-mx-auto">
-          <div className="reveal-up tw-w-full">
+          <div className="tw-w-full">
             <div className="fee-structure-card__header">
               <h4 className="fee-structure-heading fee-structure-main-heading tw-text-3xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-0 tw-text-center">
                 Fee Structure

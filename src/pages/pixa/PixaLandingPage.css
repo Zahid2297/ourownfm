@@ -189,6 +189,12 @@ hr {
   justify-content: center;
   padding: 2rem;
 }
+.why-diff-card__content h4 {
+  margin-bottom: 1.25rem !important;
+}
+.why-diff-card__content h4 + div {
+  margin-top: 0.5rem !important;
+}
 .why-diff-card--reverse .why-diff-card__content {
   order: 1;
 }

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import BrandCarousel from "./components/BrandCarousel";
@@ -18,11 +19,22 @@ import Footer from "./components/Footer";
 import "./PixaLandingPage.css";
 
 const PixaLandingPage = () => {
+  const location = useLocation();
+
   useEffect(() => {
     // Force dark mode always - dark mode is the only mode
     document.documentElement.classList.add("tw-dark");
     localStorage.setItem("color-mode", "dark");
   }, []);
+
+  useEffect(() => {
+    if (location.hash !== "#contact") return;
+    const timer = setTimeout(() => {
+      const el = document.getElementById("contact");
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [location.pathname, location.hash]);
 
   return (
     <div className="pixa-landing-page tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] tw-text-[#19300e] dark:tw-bg-black dark:tw-text-[#c1fc75]">

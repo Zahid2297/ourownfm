@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import level1Img from "../../../assets/level1.jpeg";
 import level2Img from "../../../assets/level2.png";
 import level3Img from "../../../assets/level3.webp";
@@ -19,7 +20,7 @@ const levelImages = [
 const courseLevels = [
   {
     level: 1,
-    title: "FM Operational Foundations",
+    title: "FM Operational Foundations (Level 1)",
     focus: "Introduction to structured FM operations and system awareness.",
     eligibility: [
       "Entry-level FM professionals",
@@ -37,7 +38,7 @@ const courseLevels = [
   },
   {
     level: 2,
-    title: "FM Service Delivery Coordination",
+    title: "FM Service Delivery Coordination (Level 2)",
     focus: "Coordination between technical teams, vendors, and helpdesk.",
     eligibility: ["FM Executives", "Site Coordinators", "2-5 years experience"],
     outcomeLabel: "Ability to:",
@@ -51,7 +52,7 @@ const courseLevels = [
   },
   {
     level: 3,
-    title: "Asset Performance Monitoring",
+    title: "Asset Performance Monitoring (Level 3)",
     focus: "Preventive planning and operational data interpretation.",
     eligibility: ["Supervisors", "Planning Engineers", "3-6 years experience"],
     outcomeLabel: "Capability to:",
@@ -65,7 +66,7 @@ const courseLevels = [
   },
   {
     level: 4,
-    title: "Mobilisation & Transition Readiness",
+    title: "Mobilisation & Transition Readiness (Level 4)",
     focus: "FM involvement during project handover and GO-LIVE.",
     eligibility: ["Engineers", "Team Leads", "5-8 years experience"],
     outcomeLabel: "Support:",
@@ -79,7 +80,7 @@ const courseLevels = [
   },
   {
     level: 5,
-    title: "Infrastructure & Utilities Management",
+    title: "Infrastructure & Utilities Management (Level 5)",
     focus: "External systems and underground network awareness.",
     eligibility: ["FM Managers", "Operations Leads", "6-10 years experience"],
     outcomeLabel: "Manage:",
@@ -94,7 +95,7 @@ const courseLevels = [
   },
   {
     level: 6,
-    title: "FM Risk & Performance Governance",
+    title: "FM Risk & Performance Governance (Level 6)",
     focus: "Contractual accountability and SLA/KPI readiness.",
     eligibility: [
       "Senior Engineers",
@@ -112,7 +113,7 @@ const courseLevels = [
   },
   {
     level: 7,
-    title: "FM Leadership Foundations",
+    title: "FM Leadership Foundations (Level 7)",
     focus: "Operational decision-making and service accountability.",
     eligibility: ["FM Managers", "Site Heads", "10+ years experience"],
     outcomeLabel: "Lead:",
@@ -154,93 +155,168 @@ const CourseLevelsSection = () => {
           {courseLevels.map((course) => (
             <article
               key={course.level}
-              className="course-level-card tw-rounded-xl tw-border tw-border-gray-200 tw-bg-gray-50 tw-flex tw-flex-col tw-overflow-hidden"
+              className="course-level-card tw-flex tw-flex-col tw-overflow-hidden"
             >
-              {/* Level image */}
+              {/* Image with level badge */}
               <div className="course-level-card__image" aria-hidden>
                 <img
                   src={levelImages[course.level - 1]}
                   alt=""
                   className="course-level-card__img"
                 />
+                <span className="course-level-card__badge">
+                  Level {course.level}
+                </span>
               </div>
+
               <div className="course-level-card__content tw-flex tw-flex-col tw-flex-1">
-              <h2 className="course-level-card__title tw-text-lg tw-font-bold tw-text-[#19300e] tw-mb-4">
-                {course.level}. {course.title}
-              </h2>
+                <h2 className="course-level-card__title">{course.title}</h2>
 
-              <div className="course-level-card__body tw-space-y-4 tw-text-gray-800 tw-flex-1">
-                <div>
-                  <p className="course-level-card__label tw-font-semibold tw-text-[#19300e] tw-mb-1">
-                    Focus:
-                  </p>
-                  <p className="tw-text-sm tw-leading-relaxed">
-                    {course.focus}
-                  </p>
-                </div>
-
-                <div>
-                  <p className="course-level-card__label tw-font-semibold tw-text-[#19300e] tw-mb-1">
-                    Eligibility:
-                  </p>
-                  <ul className="course-level-list tw-list-none tw-space-y-1 tw-text-sm">
-                    {course.eligibility.map((item, i) => (
-                      <li key={i} className="tw-flex tw-items-start tw-gap-2">
-                        <span className="course-level-bullet tw-text-[#19300e] tw-flex-shrink-0">
-                          •
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="course-level-card__label tw-font-semibold tw-text-[#19300e] tw-mb-1">
-                    Outcome:
-                  </p>
-                  <p className="tw-font-medium tw-mb-1 tw-text-sm">
-                    {course.outcomeLabel}
-                  </p>
-                  <ul className="course-level-list tw-list-none tw-space-y-1 tw-text-sm">
-                    {course.outcomeItems.map((item, i) => (
-                      <li key={i} className="tw-flex tw-items-start tw-gap-2">
-                        <span className="course-level-bullet tw-text-[#19300e] tw-flex-shrink-0">
-                          •
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {course.certification ? (
-                  <div>
-                    <p className="course-level-card__label tw-font-semibold tw-text-[#19300e] tw-mb-1">
-                      Certification:
-                    </p>
-                    <p className="tw-text-sm tw-leading-relaxed">
-                      {course.certification}
-                    </p>
+                <div className="course-level-card__body tw-flex-1">
+                  <div className="course-level-card__block">
+                    <p className="course-level-card__label">Focus</p>
+                    <p className="course-level-card__text">{course.focus}</p>
                   </div>
-                ) : (
-                  <div>
-                    <p className="course-level-card__label tw-font-semibold tw-text-[#19300e] tw-mb-1">
-                      Progression:
-                    </p>
-                    <p className="tw-text-sm">{course.progression}</p>
-                  </div>
-                )}
-              </div>
 
-              {/* Fee block – distinct block at bottom like Fee Structure */}
-              <div className="course-level-fee-block tw-mt-5 tw-rounded-lg tw-text-center tw-font-medium">
-                Fee:{" "}
-                <span className="course-level-fee-amount">{course.fee}</span>
-              </div>
+                  <div className="course-level-card__block">
+                    <p className="course-level-card__label">Eligibility</p>
+                    <ul className="course-level-list">
+                      {course.eligibility.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="course-level-card__block">
+                    <p className="course-level-card__label">Outcome</p>
+                    <p className="course-level-card__sublabel">
+                      {course.outcomeLabel}
+                    </p>
+                    <ul className="course-level-list">
+                      {course.outcomeItems.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="course-level-card__block">
+                    {course.certification ? (
+                      <>
+                        <p className="course-level-card__label">
+                          Certification
+                        </p>
+                        <p className="course-level-card__text">
+                          {course.certification}
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="course-level-card__label">Progression</p>
+                        <p className="course-level-card__text">
+                          {course.progression}
+                        </p>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                <div className="course-level-fee-block">
+                  <span className="course-level-fee-block__label">Fee</span>
+                  <span className="course-level-fee-amount">{course.fee}</span>
+                </div>
               </div>
             </article>
           ))}
+
+          {/* Full FM Leadership Pathway (All 7 Levels) card */}
+          <article className="course-level-card course-level-card--full-pathway tw-flex tw-flex-col">
+            <div className="course-level-card__content tw-flex tw-flex-col tw-flex-1 tw-w-full">
+              <h2 className="course-level-card__title">
+                Full FM Leadership Pathway (All 7 Levels)
+              </h2>
+              <p className="course-level-card__intro">
+                Participants may choose to enrol in the complete 7-Level FM
+                Leadership Pathway, covering operational foundations through to
+                leadership readiness across asset lifecycle environments.
+              </p>
+
+              <div className="course-level-card__body tw-flex-1">
+                <div className="course-level-card__block">
+                  <p className="course-level-card__label">Includes</p>
+                  <ul className="course-level-list">
+                    {[
+                      "All 7 Learning Levels",
+                      "Structured progression",
+                      "Infrastructure & mobilisation awareness",
+                      "SLA / KPI governance",
+                      "Leadership decision-making scenarios",
+                    ].map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="course-level-card__block">
+                  <p className="course-level-card__label">Fees</p>
+                  <div className="course-pathway-fees">
+                    <p className="course-pathway-fee-row">
+                      <span className="course-pathway-fee-label">
+                        Total Individual Fee
+                      </span>
+                      <span className="course-pathway-fee-value">
+                        AED 15,300
+                      </span>
+                    </p>
+                    <p className="course-pathway-fee-row course-pathway-fee-row--highlight">
+                      <span className="course-pathway-fee-label">
+                        Full Pathway Package Fee
+                      </span>
+                      <span className="course-level-fee-amount">
+                        AED 12,000
+                      </span>
+                    </p>
+                    <span className="course-pathway-fee-note">
+                      (Special bundled enrolment)
+                    </span>
+                  </div>
+                </div>
+
+                <div className="course-level-card__block">
+                  <p className="course-level-card__label">Eligibility</p>
+                  <p className="course-level-card__text">
+                    Minimum 3+ years FM experience recommended.
+                  </p>
+                </div>
+
+                <div className="course-level-card__block">
+                  <p className="course-level-card__label">Duration</p>
+                  <p className="course-level-card__text">
+                    Delivered in progressive modules over scheduled cohorts.
+                  </p>
+                </div>
+
+                <div className="course-level-card__block">
+                  <p className="course-level-card__label">Completion</p>
+                  <p className="course-level-card__text">
+                    <strong>
+                      FM Leadership Pathway Completion Certificate
+                    </strong>
+                    <span className="tw-block tw-mt-1"> from </span>
+                    <strong className="course-pathway-academy">
+                      Our Own FM Academy
+                    </strong>
+                  </p>
+                </div>
+              </div>
+
+              <Link
+                to={{ pathname: "/pixa", hash: "contact" }}
+                className="course-pathway-enroll-btn"
+              >
+                Enroll in Complete Pathway
+              </Link>
+            </div>
+          </article>
         </div>
       </div>
     </section>

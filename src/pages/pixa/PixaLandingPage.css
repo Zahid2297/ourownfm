@@ -1463,3 +1463,63 @@ select.input:focus {
   margin-left: 4px;
   vertical-align: middle;
 }
+
+/* About Us – CEO card: professional styling */
+.about-ceo-card {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 10px 40px -15px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+.about-ceo-title {
+  letter-spacing: -0.02em;
+}
+.about-ceo-signature {
+  border-top-width: 1px;
+}
+
+/* Dark mode: CEO card */
+.tw-dark .about-ceo-card {
+  background-color: #0c0c0c;
+  border-color: rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 4px 6px -2px rgba(0, 0, 0, 0.3),
+    0 20px 50px -20px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 0 rgba(193, 252, 117, 0.04);
+}
+.tw-dark .about-ceo-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #c1fc75 0%, rgba(193, 252, 117, 0.3) 100%);
+  border-radius: 0.75rem 0 0 0.75rem;
+  pointer-events: none;
+}
+.tw-dark .about-ceo-card__text,
+.tw-dark .about-ceo-card__text p {
+  color: #e5e7eb;
+}
+.tw-dark .about-ceo-card .about-ceo-card__text .tw-text-gray-700,
+.tw-dark .about-ceo-card .about-ceo-card__text p.tw-text-lg,
+.tw-dark .about-ceo-signature .tw-text-gray-600 {
+  color: #9ca3af;
+}
+.tw-dark .about-ceo-signature {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* CEO image: professional frame (dark mode) */
+.tw-dark .about-ceo-image-wrap {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 8px 30px -10px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(193, 252, 117, 0.08);
+  border-radius: 0.75rem;
+}
+.tw-dark .about-ceo-image {
+  border-radius: 0.75rem;
+}

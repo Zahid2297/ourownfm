@@ -23,12 +23,12 @@ const AboutUsPage = () => {
                 Message from the CEO & Founder
               </h2>
               <div className="about-ceo-card tw-relative tw-mt-10 tw-w-full tw-rounded-2xl tw-overflow-hidden tw-border tw-border-gray-200 tw-p-8 sm:tw-p-10 lg:tw-p-12">
-                <div className="tw-flex tw-flex-row tw-gap-6 sm:tw-gap-10 tw-items-stretch">
+                <div className="about-ceo-card-inner tw-flex tw-flex-row tw-gap-6 sm:tw-gap-10 tw-items-stretch">
                   <div className="tw-w-1/2 tw-min-w-0 tw-space-y-5 tw-text-base sm:tw-text-lg tw-text-gray-800 tw-leading-[1.7] about-ceo-card__text tw-pr-2 sm:tw-pr-6">
                     <p>
-                      Facilities Management is now a business-critical discipline,
-                      powered by digital FM, automation, and data-driven
-                      decision-making.
+                      Facilities Management is now a business-critical
+                      discipline, powered by digital FM, automation, and
+                      data-driven decision-making.
                     </p>
                     <p>
                       As buildings become smarter and more complex, FM
@@ -59,9 +59,9 @@ const AboutUsPage = () => {
                       operations responsibly.
                     </p>
                     <p>
-                      Stronger FM capability results in safer operations, smoother
-                      handovers, effective use of technology, and consistent value
-                      for clients.
+                      Stronger FM capability results in safer operations,
+                      smoother handovers, effective use of technology, and
+                      consistent value for clients.
                     </p>
                     <p>
                       This Academy is our contribution to building a safer, more
@@ -87,7 +87,7 @@ const AboutUsPage = () => {
                       operations. Project Guidance protects future performance.
                     </p>
                   </div>
-                  <div className="tw-w-1/2 tw-min-w-0 tw-flex tw-items-center tw-justify-end tw-pl-2 sm:tw-pl-6">
+                  <div className="about-ceo-card__image-col tw-w-1/2 tw-min-w-0 tw-flex tw-items-center tw-justify-end tw-pl-2 sm:tw-pl-6">
                     <div className="about-ceo-image-wrap tw-w-full tw-max-w-[340px] tw-rounded-xl tw-overflow-hidden tw-flex tw-justify-end">
                       <img
                         src="/founder.png"
@@ -95,6 +95,59 @@ const AboutUsPage = () => {
                         className="about-ceo-image tw-w-full tw-h-full tw-max-h-[400px] tw-object-cover tw-object-top"
                       />
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Our Vision & Our Mission */}
+          <section
+            className="tw-w-full tw-pt-24 tw-pb-16 tw-px-0 tw-mt-8"
+            aria-label="Vision and Mission"
+          >
+            <div className="about-vision-mission-wrap tw-mx-auto tw-w-full tw-max-w-[800px] tw-px-[5%]">
+              <div className="about-vision-mission-card tw-w-full tw-max-w-full tw-rounded-2xl tw-border tw-border-gray-200 dark:tw-border-gray-700 tw-overflow-hidden tw-bg-white dark:tw-bg-[#0c0c0c] tw-p-8 sm:tw-p-10 lg:tw-p-12 tw-shadow-lg">
+                <h3 className="tw-text-2xl sm:tw-text-3xl tw-font-bold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-0 tw-tracking-tight">
+                  Our Vision & Mission
+                </h3>
+                <div className="tw-mt-8 tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-3 lg:tw-gap-14">
+                  <div>
+                    <h4 className="tw-text-lg tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-2">
+                      Our Vision
+                    </h4>
+                    <p className="tw-text-gray-700 dark:tw-text-gray-300 tw-leading-relaxed tw-mb-0">
+                      To contribute to a safer, more capable, and more
+                      professional Facilities Management industry <br /> by
+                      strengthening the people responsible for operating and
+                      protecting built assets.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="tw-text-lg tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-mb-3 tw-mt-0">
+                      Our Mission
+                    </h4>
+                    <ul className="tw-space-y-2 tw-text-gray-700 dark:tw-text-gray-300 tw-leading-relaxed tw-list-disc tw-pl-5">
+                      <li>
+                        To develop FM professionals from{" "}
+                        <strong className="tw-text-[#19300e] dark:tw-text-[#c1fc75]">
+                          basics to leadership
+                        </strong>
+                      </li>
+                      <li>
+                        To reduce dependency on vendors through strong in-house
+                        capability
+                      </li>
+                      <li>
+                        To promote zero incidents, zero accidents, and high
+                        emergency readiness
+                      </li>
+                      <li>To enable smooth project handover and takeover</li>
+                      <li>
+                        To ensure clients benefit through reliable, compliant,
+                        and efficient FM operations
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

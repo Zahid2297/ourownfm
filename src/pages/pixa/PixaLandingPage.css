@@ -73,6 +73,12 @@
   margin-bottom: 4rem !important;
 }
 
+/* QuickFMS Partnership card – narrow width */
+.quickfms-partnership-card {
+  width: 100%;
+  max-width: 1150px;
+}
+
 body.modal-open {
   overflow: hidden;
 }
@@ -1495,7 +1501,11 @@ select.input:focus {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #c1fc75 0%, rgba(193, 252, 117, 0.3) 100%);
+  background: linear-gradient(
+    180deg,
+    #c1fc75 0%,
+    rgba(193, 252, 117, 0.3) 100%
+  );
   border-radius: 0.75rem 0 0 0.75rem;
   pointer-events: none;
 }
@@ -1512,6 +1522,27 @@ select.input:focus {
   border-color: rgba(255, 255, 255, 0.08);
 }
 
+/* CEO card: mobile only – image first, then content (desktop unchanged) */
+@media (max-width: 1023px) {
+  .about-ceo-card-inner {
+    flex-direction: column;
+  }
+  .about-ceo-card__text {
+    order: 2;
+    width: 100%;
+  }
+  .about-ceo-card__image-col {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .about-ceo-card__image-col .about-ceo-image-wrap {
+    justify-content: center;
+    max-width: 280px;
+  }
+}
+
 /* CEO image: professional frame (dark mode) */
 .tw-dark .about-ceo-image-wrap {
   box-shadow:
@@ -1522,4 +1553,92 @@ select.input:focus {
 }
 .tw-dark .about-ceo-image {
   border-radius: 0.75rem;
+}
+
+/* About page: Vision & Mission + Founder cards (dark) */
+.tw-dark .about-vision-mission-card,
+.tw-dark .about-founder-card {
+  background-color: #0c0c0c;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.tw-dark .about-vision-mission-card h4,
+.tw-dark .about-founder-card strong {
+  color: #c1fc75;
+}
+.tw-dark .about-vision-mission-card p,
+.tw-dark .about-vision-mission-card li,
+.tw-dark .about-founder-card p {
+  color: #e5e7eb;
+}
+.tw-dark .about-founder-card .tw-text-gray-600 {
+  color: #9ca3af;
+}
+.tw-dark .about-founder-card p.tw-font-bold {
+  color: #c1fc75;
+}
+
+/* Vision & Mission card: right-side image panel (museum-style) */
+.about-vision-mission-imgs {
+  background: #0c0c0c;
+}
+.about-vision-mission-img {
+  filter: grayscale(0.4) contrast(1.05);
+  transition: filter 0.3s ease;
+}
+.about-vision-mission-card:hover .about-vision-mission-img {
+  filter: grayscale(0.2) contrast(1.08);
+}
+.tw-dark .about-vision-mission-imgs {
+  background: #080808;
+}
+.tw-dark .about-vision-mission-imgs .tw-bg-gradient-to-r {
+  background: linear-gradient(to right, #0c0c0c 0%, transparent 50%);
+}
+
+/* Diagonal image stack (vision + mission) */
+.about-vision-mission-imgs {
+  overflow: visible;
+}
+.about-diagonal-stack {
+  margin-left: 8%;
+  overflow: visible;
+  min-height: 180px;
+}
+.about-diagonal-img--back,
+.about-diagonal-img--front {
+  min-height: 160px;
+}
+.about-diagonal-img--back {
+  transform: translate(12%, 8%);
+}
+.about-diagonal-img--front {
+  transform: translate(-10%, -8%);
+}
+@media (min-width: 1024px) {
+  .about-diagonal-stack {
+    margin-left: 12%;
+    min-height: 200px;
+  }
+  .about-diagonal-img--back,
+  .about-diagonal-img--front {
+    min-height: 200px;
+  }
+  .about-diagonal-img--back {
+    transform: translate(14%, 10%);
+  }
+  .about-diagonal-img--front {
+    transform: translate(-12%, -10%);
+  }
+}
+
+/* What We Offer: sticky heading */
+#what-we-offer {
+  overflow: visible;
+}
+@media (min-width: 1024px) {
+  #what-we-offer .what-we-offer-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+  }
 }

@@ -35,8 +35,8 @@ const ArticlesSection = () => {
       </p>
 
       <div className="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
-        <div className="tw-flex tw-min-h-[600px] tw-w-[600px] tw-max-w-full tw-flex-col tw-gap-6 tw-overflow-hidden tw-rounded-xl tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123] tw-shadow-lg max-lg:tw-w-full max-lg:tw-p-6">
-          <div className="tw-w-full tw-h-[180px] tw-flex tw-items-center tw-justify-center tw-bg-transparent tw-rounded-lg tw-p-6">
+        <div className="quickfms-partnership-card tw-flex tw-min-h-[520px] tw-flex-col tw-gap-6 tw-overflow-hidden tw-rounded-xl tw-p-8 tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-border-[1px] tw-border-gray-200 dark:tw-border-[#1f2123] tw-shadow-lg max-lg:tw-p-6">
+          <div className="tw-w-full tw-h-[250px] tw-min-h-[240px] tw-flex tw-items-center tw-justify-center tw-bg-transparent tw-rounded-lg tw-p-4">
             <img
               src={quickFMSLogo}
               alt="QuickFMS"

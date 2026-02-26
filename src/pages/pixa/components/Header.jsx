@@ -1,8 +1,16 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(true);
+
+  const scrollToTop = (e) => {
+    if (location.pathname === "/pixa") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   const collapseHeaderItemsRef = useRef(null);
   const RESPONSIVE_WIDTH = 1024;
 
@@ -47,6 +55,7 @@ const Header = () => {
       <Link
         className="tw-flex tw-py-2 tw-px-2 tw-gap-0 tw-place-items-center"
         to="/pixa"
+        onClick={scrollToTop}
       >
         <div className="header-logo-container">
           <img
@@ -80,7 +89,7 @@ const Header = () => {
         }}
       >
         <nav className="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">
-          <Link className="header-links" to="/pixa">
+          <Link className="header-links" to="/pixa" onClick={scrollToTop}>
             Home
           </Link>
           <Link className="header-links" to="/about">
@@ -89,9 +98,9 @@ const Header = () => {
           <Link className="header-links" to="/courses">
             Courses
           </Link>
-          <a className="header-links" href="#certifications">
+          <Link className="header-links" to="/pixa#certifications">
             Certifications
-          </a>
+          </Link>
           <a
             className="header-links nav-hover-item tw-relative"
             href="https://wa.me/916364807896"
@@ -101,19 +110,19 @@ const Header = () => {
             <span className="nav-default">Contact</span>
             <span className="nav-hover">WhatsApp</span>
           </a>
-          <a className="header-links" href="#consultancy">
+          <Link className="header-links" to="/pixa#consultancy">
             Consultancy
-          </a>
+          </Link>
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
-          <a
-            href="#contact"
+          <Link
+            to="/pixa#contact"
             aria-label="Connect with us"
             className="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
           >
             <span>Get Started</span>
             <i className="bi bi-arrow-right"></i>
-          </a>
+          </Link>
         </div>
       </div>
       <button

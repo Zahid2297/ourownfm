@@ -28,9 +28,10 @@ const PixaLandingPage = () => {
   }, []);
 
   useEffect(() => {
-    if (location.hash !== "#contact") return;
+    const hash = location.hash?.replace("#", "") || "";
+    if (!hash || !["contact", "certifications", "consultancy"].includes(hash)) return;
     const timer = setTimeout(() => {
-      const el = document.getElementById("contact");
+      const el = document.getElementById(hash);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 150);
     return () => clearTimeout(timer);

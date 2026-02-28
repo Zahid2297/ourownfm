@@ -9,7 +9,6 @@ import CoursesSection from "./components/CoursesSection";
 import CertificationsSection from "./components/CertificationsSection";
 import SubscriptionSection from "./components/SubscriptionSection";
 import ProjectGuidanceSection from "./components/ProjectGuidanceSection";
-import TestimonialsSection from "./components/TestimonialsSection";
 import ArticlesSection from "./components/ArticlesSection";
 import DomeGallerySection from "./components/DomeGallerySection";
 import FAQSection from "./components/FAQSection";
@@ -29,7 +28,7 @@ const PixaLandingPage = () => {
 
   useEffect(() => {
     const hash = location.hash?.replace("#", "") || "";
-    if (!hash || !["contact", "certifications", "consultancy"].includes(hash)) return;
+    if (!hash || !["contact", "certifications", "consultancy", "project-guidance", "gallery"].includes(hash)) return;
     const timer = setTimeout(() => {
       const el = document.getElementById(hash);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -48,7 +47,6 @@ const PixaLandingPage = () => {
       <CertificationsSection />
       <SubscriptionSection />
       <ProjectGuidanceSection />
-      <TestimonialsSection />
       <ArticlesSection />
       <DomeGallerySection />
       <FAQSection />

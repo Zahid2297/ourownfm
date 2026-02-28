@@ -2,7 +2,7 @@ const CertificationsSection = () => {
   const certifications = [
     {
       title: "CFM - Certified Facility Manager (IFMA)",
-      price: "₹40,000",
+      price: "AED 1600",
       features: [
         "20 hrs live online training",
         "Full CFM competency coverage",
@@ -11,7 +11,7 @@ const CertificationsSection = () => {
     },
     {
       title: "FMP - Facility Management Professional (IFMA)",
-      price: "₹20,000",
+      price: "AED 800",
       features: [
         "8 hrs live online training",
         "Complete FMP module coverage",
@@ -20,7 +20,7 @@ const CertificationsSection = () => {
     },
     {
       title: "LEED Green Associate (USGBC)",
-      price: "₹25,000",
+      price: "AED 1000",
       features: [
         "10 hours live online training",
         "Exam-focused LEED preparation",

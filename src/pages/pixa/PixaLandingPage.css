@@ -1635,6 +1635,29 @@ select.input:focus {
 #what-we-offer {
   overflow: visible;
 }
+/* What We Offer: force 3 cards in one row on desktop */
+.what-we-offer-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  max-width: 1400px; /* narrow card row so cards don't stretch */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.what-we-offer-cards > div {
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 480px) {
+  .what-we-offer-cards {
+    flex-direction: column;
+  }
+  .what-we-offer-cards > div {
+    width: 100%;
+  }
+}
 @media (min-width: 1024px) {
   #what-we-offer .what-we-offer-sticky {
     position: -webkit-sticky;

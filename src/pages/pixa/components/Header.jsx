@@ -113,6 +113,12 @@ const Header = () => {
           <Link className="header-links" to="/pixa#consultancy">
             Consultancy
           </Link>
+          <Link className="header-links" to="/pixa#project-guidance">
+            Project Guidance
+          </Link>
+          <Link className="header-links" to="/pixa#gallery">
+            Gallery
+          </Link>
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
           <Link

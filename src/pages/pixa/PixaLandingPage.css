@@ -251,17 +251,25 @@ hr {
     box-shadow 0.25s ease;
   display: flex;
   transform: scale(1);
-  box-shadow: 0 4px 20px rgba(25, 48, 14, 0.15), 0 0 0 1px rgba(25, 48, 14, 0.08);
+  box-shadow:
+    0 4px 20px rgba(25, 48, 14, 0.15),
+    0 0 0 1px rgba(25, 48, 14, 0.08);
 }
 .tw-dark #consultancy .consultancy-card {
-  box-shadow: 0 4px 20px rgba(193, 252, 117, 0.12), 0 0 0 1px rgba(193, 252, 117, 0.15);
+  box-shadow:
+    0 4px 20px rgba(193, 252, 117, 0.12),
+    0 0 0 1px rgba(193, 252, 117, 0.15);
 }
 #consultancy .consultancy-card:hover {
   transform: scale(1.04) !important;
-  box-shadow: 0 8px 28px rgba(25, 48, 14, 0.2), 0 0 0 1px rgba(25, 48, 14, 0.12);
+  box-shadow:
+    0 8px 28px rgba(25, 48, 14, 0.2),
+    0 0 0 1px rgba(25, 48, 14, 0.12);
 }
 .tw-dark #consultancy .consultancy-card:hover {
-  box-shadow: 0 8px 28px rgba(193, 252, 117, 0.18), 0 0 0 1px rgba(193, 252, 117, 0.2);
+  box-shadow:
+    0 8px 28px rgba(193, 252, 117, 0.18),
+    0 0 0 1px rgba(193, 252, 117, 0.2);
 }
 
 /* Certification cards: same hover grow effect + green shadow as heading */
@@ -271,17 +279,25 @@ hr {
     box-shadow 0.25s ease;
   display: flex;
   transform: scale(1);
-  box-shadow: 0 4px 20px rgba(25, 48, 14, 0.15), 0 0 0 1px rgba(25, 48, 14, 0.08);
+  box-shadow:
+    0 4px 20px rgba(25, 48, 14, 0.15),
+    0 0 0 1px rgba(25, 48, 14, 0.08);
 }
 .tw-dark #certifications .certification-card {
-  box-shadow: 0 4px 20px rgba(193, 252, 117, 0.12), 0 0 0 1px rgba(193, 252, 117, 0.15);
+  box-shadow:
+    0 4px 20px rgba(193, 252, 117, 0.12),
+    0 0 0 1px rgba(193, 252, 117, 0.15);
 }
 #certifications .certification-card:hover {
   transform: scale(1.04) !important;
-  box-shadow: 0 8px 28px rgba(25, 48, 14, 0.2), 0 0 0 1px rgba(25, 48, 14, 0.12);
+  box-shadow:
+    0 8px 28px rgba(25, 48, 14, 0.2),
+    0 0 0 1px rgba(25, 48, 14, 0.12);
 }
 .tw-dark #certifications .certification-card:hover {
-  box-shadow: 0 8px 28px rgba(193, 252, 117, 0.18), 0 0 0 1px rgba(193, 252, 117, 0.2);
+  box-shadow:
+    0 8px 28px rgba(193, 252, 117, 0.18),
+    0 0 0 1px rgba(193, 252, 117, 0.2);
 }
 
 /* Project Guidance: center the two cards */
@@ -1526,6 +1542,137 @@ select.input:focus {
   vertical-align: middle;
 }
 
+/* About Us – Who We Are: centered card + space below */
+.about-who-we-are {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1950px;
+}
+.about-who-we-are__heading {
+  margin-bottom: 0;
+}
+
+/* About: Four Pillars – 2 columns, 2 rows */
+.about-four-pillars-section {
+  margin-top: 5rem !important;
+  margin-bottom: 4rem;
+}
+.about-four-pillars-wrap {
+  max-width: 1550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-four-pillars-header {
+  margin-bottom: 3rem;
+}
+.about-four-pillars-section .about-four-pillars-subtitle {
+  font-weight: 700 !important;
+  text-align: left !important;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+.tw-dark .about-four-pillars-section .about-four-pillars-subtitle {
+  color: #d1d5db;
+}
+.about-four-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 1023px) {
+  .about-four-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 639px) {
+  .about-four-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About: Four Pillars single combined card */
+.about-four-pillars-single-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.about-four-pillars-single-card__image {
+  display: block;
+  align-self: stretch;
+  height: 100%;
+  overflow: hidden;
+}
+.about-four-pillars-single-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  vertical-align: bottom;
+}
+@media (max-width: 767px) {
+  .about-four-pillars-single-card {
+    flex-direction: column;
+  }
+  .about-four-pillars-single-card__image {
+    min-height: 220px;
+    max-height: 280px;
+  }
+}
+
+/* Four Pillars – sub-cards inside the main card */
+.pillar-sub-card {
+  position: relative;
+  overflow: hidden;
+}
+.pillar-sub-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #19300e, #c1fc75);
+  opacity: 0.7;
+}
+.tw-dark .pillar-sub-card::before {
+  background: linear-gradient(180deg, #c1fc75, rgba(193, 252, 117, 0.5));
+}
+.pillar-sub-card__icon {
+  flex-shrink: 0;
+}
+
+.about-who-we-are__inner {
+  width: 100%;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+/* Who We Are card: image always on left, not on top */
+.about-who-we-are__card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.about-who-we-are__image {
+  width: 38%;
+  min-width: 140px;
+  flex-shrink: 0;
+  display: block;
+  overflow: hidden;
+}
+.about-who-we-are__image img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 /* About Us – CEO card: professional styling */
 .about-ceo-card {
   box-shadow:
@@ -1570,9 +1717,12 @@ select.input:focus {
   color: #e5e7eb;
 }
 .tw-dark .about-ceo-card .about-ceo-card__text .tw-text-gray-700,
-.tw-dark .about-ceo-card .about-ceo-card__text p.tw-text-lg,
+.tw-dark .about-ceo-card .about-ceo-card__text p.tw-text-lg:not(.about-ceo-card__tagline),
 .tw-dark .about-ceo-signature .tw-text-gray-600 {
   color: #9ca3af;
+}
+.tw-dark .about-ceo-card__tagline {
+  color: #e5e7eb;
 }
 .tw-dark .about-ceo-signature {
   border-color: rgba(255, 255, 255, 0.08);
@@ -1631,6 +1781,50 @@ select.input:focus {
 }
 .tw-dark .about-founder-card p.tw-font-bold {
   color: #c1fc75;
+}
+
+/* Vision & Mission card: block with small heading images */
+.about-vision-mission-block {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 4rem;
+}
+.about-vision-mission-block__media {
+  flex: 0 0 36%;
+  max-width: 680px;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+}
+.about-vision-mission-block__media .about-vision-mission-img {
+  width: 100%;
+  height: auto;
+  min-height: 160px;
+  max-height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.tw-dark .about-vision-mission-block__media .about-vision-mission-img {
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+.about-vision-mission-block__content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .about-vision-mission-block {
+    flex-direction: column;
+  }
+  .about-vision-mission-block__media .about-vision-mission-img {
+    min-height: 220px;
+  }
 }
 
 /* Vision & Mission card: right-side image panel (museum-style) */
@@ -1710,16 +1904,24 @@ select.input:focus {
 
 /* What We Offer: card shadow/border in heading green */
 .what-we-offer-card {
-  box-shadow: 0 4px 20px rgba(25, 48, 14, 0.15), 0 0 0 1px rgba(25, 48, 14, 0.08);
+  box-shadow:
+    0 4px 20px rgba(25, 48, 14, 0.15),
+    0 0 0 1px rgba(25, 48, 14, 0.08);
 }
 .what-we-offer-card:hover {
-  box-shadow: 0 8px 28px rgba(25, 48, 14, 0.2), 0 0 0 1px rgba(25, 48, 14, 0.12);
+  box-shadow:
+    0 8px 28px rgba(25, 48, 14, 0.2),
+    0 0 0 1px rgba(25, 48, 14, 0.12);
 }
 .tw-dark .what-we-offer-card {
-  box-shadow: 0 4px 20px rgba(193, 252, 117, 0.12), 0 0 0 1px rgba(193, 252, 117, 0.15);
+  box-shadow:
+    0 4px 20px rgba(193, 252, 117, 0.12),
+    0 0 0 1px rgba(193, 252, 117, 0.15);
 }
 .tw-dark .what-we-offer-card:hover {
-  box-shadow: 0 8px 28px rgba(193, 252, 117, 0.18), 0 0 0 1px rgba(193, 252, 117, 0.2);
+  box-shadow:
+    0 8px 28px rgba(193, 252, 117, 0.18),
+    0 0 0 1px rgba(193, 252, 117, 0.2);
 }
 
 /* What We Offer: same image size for all 3 cards (4:3 aspect) */

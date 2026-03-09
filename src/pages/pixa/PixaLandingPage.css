@@ -1738,7 +1738,10 @@ select.input:focus {
   color: #e5e7eb;
 }
 .tw-dark .about-ceo-card .about-ceo-card__text .tw-text-gray-700,
-.tw-dark .about-ceo-card .about-ceo-card__text p.tw-text-lg:not(.about-ceo-card__tagline),
+.tw-dark
+  .about-ceo-card
+  .about-ceo-card__text
+  p.tw-text-lg:not(.about-ceo-card__tagline),
 .tw-dark .about-ceo-signature .tw-text-gray-600 {
   color: #9ca3af;
 }
@@ -1992,7 +1995,9 @@ select.input:focus {
 }
 .terms-card {
   padding: 1.5rem 2rem;
-  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 .terms-card:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);

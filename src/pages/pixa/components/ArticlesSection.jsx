@@ -33,18 +33,14 @@ const PARTNER_CARDS = [
 ];
 
 const ArticlesSection = () => {
-
   return (
     <section
       id="collaborations"
       className="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
     >
       <h3 className="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-        Partners
+        Our Partners
       </h3>
-      <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
-        Powered by AI-Driven Facility Management Excellence
-      </p>
 
       <div className="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
         {PARTNER_CARDS.map((card, index) => (

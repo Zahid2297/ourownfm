@@ -110,15 +110,6 @@ const Header = () => {
           <Link className="header-links" to="/pixa#certifications">
             Certifications
           </Link>
-          <a
-            className="header-links nav-hover-item tw-relative"
-            href="https://wa.me/916364807896"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="nav-default">Contact</span>
-            <span className="nav-hover">WhatsApp</span>
-          </a>
           <Link className="header-links" to="/pixa#consultancy">
             Consultancy
           </Link>
@@ -129,8 +120,17 @@ const Header = () => {
             Gallery
           </Link>
           <Link className="header-links" to="/terms">
-            Terms
+            T&Cs
           </Link>
+          <a
+            className="header-links nav-hover-item tw-relative"
+            href="https://wa.me/916364807896"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="nav-default">Contact</span>
+            <span className="nav-hover">WhatsApp</span>
+          </a>
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
           <Link

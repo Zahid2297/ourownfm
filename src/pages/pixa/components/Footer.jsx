@@ -60,9 +60,9 @@ const Footer = () => {
             Company
           </h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
-              <a href="#about" className="footer-link">
+              <Link to="/about" className="footer-link">
                 About Us
-              </a>
+              </Link>
               <a href="#collaborations" className="footer-link">
                 Collaborations
               </a>
@@ -95,12 +95,9 @@ const Footer = () => {
               <a href="#faq" className="footer-link">
                 FAQ
               </a>
-              <a href="#" className="footer-link">
-                Terms of service
-              </a>
-              <a href="#" className="footer-link">
-                Privacy Policy
-              </a>
+              <Link to="/terms" className="footer-link">
+                Terms & Conditions
+              </Link>
           </div>
         </div>
       </div>

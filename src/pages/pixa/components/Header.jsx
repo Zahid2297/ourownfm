@@ -41,6 +41,15 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // On route change (mobile): close nav overlay and remove modal-open so page works
+  useEffect(() => {
+    setIsHeaderCollapsed(true);
+    document.body.classList.remove("modal-open");
+    if (collapseHeaderItemsRef.current) {
+      collapseHeaderItemsRef.current.style.height = "";
+    }
+  }, [location.pathname]);
+
   const toggleHeader = () => {
     setIsHeaderCollapsed(!isHeaderCollapsed);
     if (!isHeaderCollapsed) {

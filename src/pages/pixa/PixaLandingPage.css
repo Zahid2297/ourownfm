@@ -1673,6 +1673,27 @@ select.input:focus {
   display: block;
 }
 
+/* Who We Are card: mobile – stack image on top, text below */
+@media (max-width: 767px) {
+  .about-who-we-are__card {
+    flex-direction: column;
+  }
+  .about-who-we-are__image {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 16 / 9;
+    max-height: 220px;
+  }
+  .about-who-we-are__image img {
+    min-height: 0;
+    height: 100%;
+  }
+  .about-who-we-are__inner {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 /* About Us – CEO card: professional styling */
 .about-ceo-card {
   box-shadow:

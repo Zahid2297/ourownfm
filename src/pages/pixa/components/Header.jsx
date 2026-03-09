@@ -18,11 +18,11 @@ const Header = () => {
     // Force dark mode always - dark mode is the only mode
     document.documentElement.classList.add("tw-dark");
     localStorage.setItem("color-mode", "dark");
-    
+
     // Update favicon to dark mode
     const favicon = document.getElementById("favicon");
     if (favicon) {
-      favicon.href = "/pixa-assets/logo/logo-dark.png";
+      favicon.href = "/favicon.png";
     }
 
     // Handle responsive
@@ -84,8 +84,8 @@ const Header = () => {
               ? "0vh"
               : ""
             : window.innerWidth < RESPONSIVE_WIDTH
-            ? "90vh"
-            : "",
+              ? "90vh"
+              : "",
         }}
       >
         <nav className="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import fmCareerLadderImg from "../../../assets/fm_career_ladder_clear.png";
 
 const CoursesSection = () => {
   const courseLevels = [
@@ -128,56 +129,70 @@ const CoursesSection = () => {
               </p>
             </div>
 
-            <div className="tw-mt-6 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-4">
-              {courseLevels.map((course, idx) => (
-                <div
-                  key={idx}
-                  className="tw-flex tw-items-start tw-gap-3 tw-p-3 tw-rounded-lg tw-bg-white/50 dark:tw-bg-[#080808]/50 tw-backdrop-blur-sm"
-                >
-                  <span className="bullet-icon tw-text-[#c1fc75] tw-font-bold tw-text-lg tw-flex-shrink-0 tw-mt-0.5">
-                    •
-                  </span>
-                  <div className="tw-flex-1">
-                    <p className="tw-text-gray-800 dark:tw-text-gray-200 tw-font-semibold tw-mb-1">
-                      Level {course.level}: {course.title}
+            <div className="pathway-card__grid tw-mt-6 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8 md:tw-gap-10 tw-items-start">
+              {/* Left: levels list, value row, button (50%) */}
+              <div className="tw-min-w-0 tw-order-1">
+                <div className="tw-grid tw-grid-cols-1 tw-gap-4">
+                  {courseLevels.map((course, idx) => (
+                    <div
+                      key={idx}
+                      className="tw-flex tw-items-start tw-gap-3 tw-p-3 tw-rounded-lg tw-bg-white/50 dark:tw-bg-[#080808]/50 tw-backdrop-blur-sm"
+                    >
+                      <span className="bullet-icon tw-text-[#c1fc75] tw-font-bold tw-text-lg tw-flex-shrink-0 tw-mt-0.5">
+                        •
+                      </span>
+                      <div className="tw-flex-1">
+                        <p className="tw-text-gray-800 dark:tw-text-gray-200 tw-font-semibold tw-mb-1">
+                          Level {course.level}: {course.title}
+                        </p>
+                        <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400">
+                          {course.purpose}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pathway-value-row tw-mt-8 tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-6 tw-flex-wrap">
+                  <div className="tw-text-center">
+                    <p className="value-heading tw-text-2xl tw-font-bold">
+                      All 7 Levels
                     </p>
-                    <p className="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400">
-                      {course.purpose}
+                    <p className="pathway-text tw-text-sm">Complete Pathway</p>
+                  </div>
+                  <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600 pathway-value-row__divider"></div>
+                  <div className="tw-text-center">
+                    <p className="value-heading tw-text-2xl tw-font-bold">
+                      Save More
                     </p>
+                    <p className="pathway-text tw-text-sm">Bundle Discount</p>
+                  </div>
+                  <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600 pathway-value-row__divider"></div>
+                  <div className="tw-text-center">
+                    <p className="value-heading tw-text-2xl tw-font-bold">
+                      Lifetime Access
+                    </p>
+                    <p className="pathway-text tw-text-sm">Learn at Your Pace</p>
                   </div>
                 </div>
-              ))}
-            </div>
 
-            <div className="pathway-value-row tw-mt-8 tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-6 tw-flex-wrap">
-              <div className="tw-text-center">
-                <p className="value-heading tw-text-2xl tw-font-bold">
-                  All 7 Levels
-                </p>
-                <p className="pathway-text tw-text-sm">Complete Pathway</p>
+                <a
+                  href="#contact"
+                  className="btn tw-mt-8 tw-w-full md:tw-w-auto tw-mx-auto tw-block tw-text-center tw-text-lg tw-px-8 tw-py-4 tw-font-bold tw-shadow-lg hover:tw-shadow-xl tw-transition-all"
+                >
+                  Enroll in Complete Pathway
+                </a>
               </div>
-              <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600 pathway-value-row__divider"></div>
-              <div className="tw-text-center">
-                <p className="value-heading tw-text-2xl tw-font-bold">
-                  Save More
-                </p>
-                <p className="pathway-text tw-text-sm">Bundle Discount</p>
-              </div>
-              <div className="tw-h-12 tw-w-px tw-bg-gray-300 dark:tw-bg-gray-600 pathway-value-row__divider"></div>
-              <div className="tw-text-center">
-                <p className="value-heading tw-text-2xl tw-font-bold">
-                  Lifetime Access
-                </p>
-                <p className="pathway-text tw-text-sm">Learn at Your Pace</p>
+
+              {/* Right: FM Career Ladder image – equal column (50%), smaller height, full width */}
+              <div className="tw-min-w-0 tw-flex tw-justify-center tw-items-start tw-w-full tw-order-2">
+                <img
+                  src={fmCareerLadderImg}
+                  alt="FM Career Ladder - From Foundation to Leadership"
+                  className="pathway-career-ladder-img tw-w-full tw-h-auto tw-object-contain tw-max-h-[380px]"
+                />
               </div>
             </div>
-
-            <a
-              href="#contact"
-              className="btn tw-mt-8 tw-w-full md:tw-w-auto tw-mx-auto tw-text-lg tw-px-8 tw-py-4 tw-font-bold tw-shadow-lg hover:tw-shadow-xl tw-transition-all"
-            >
-              Enroll in Complete Pathway
-            </a>
           </div>
         </div>
       </div>

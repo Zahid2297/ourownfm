@@ -251,23 +251,37 @@ hr {
     box-shadow 0.25s ease;
   display: flex;
   transform: scale(1);
+  box-shadow: 0 4px 20px rgba(25, 48, 14, 0.15), 0 0 0 1px rgba(25, 48, 14, 0.08);
+}
+.tw-dark #consultancy .consultancy-card {
+  box-shadow: 0 4px 20px rgba(193, 252, 117, 0.12), 0 0 0 1px rgba(193, 252, 117, 0.15);
 }
 #consultancy .consultancy-card:hover {
   transform: scale(1.04) !important;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 8px 28px rgba(25, 48, 14, 0.2), 0 0 0 1px rgba(25, 48, 14, 0.12);
+}
+.tw-dark #consultancy .consultancy-card:hover {
+  box-shadow: 0 8px 28px rgba(193, 252, 117, 0.18), 0 0 0 1px rgba(193, 252, 117, 0.2);
 }
 
-/* Certification cards: same hover grow effect */
+/* Certification cards: same hover grow effect + green shadow as heading */
 #certifications .certification-card {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
   display: flex;
   transform: scale(1);
+  box-shadow: 0 4px 20px rgba(25, 48, 14, 0.15), 0 0 0 1px rgba(25, 48, 14, 0.08);
+}
+.tw-dark #certifications .certification-card {
+  box-shadow: 0 4px 20px rgba(193, 252, 117, 0.12), 0 0 0 1px rgba(193, 252, 117, 0.15);
 }
 #certifications .certification-card:hover {
   transform: scale(1.04) !important;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 8px 28px rgba(25, 48, 14, 0.2), 0 0 0 1px rgba(25, 48, 14, 0.12);
+}
+.tw-dark #certifications .certification-card:hover {
+  box-shadow: 0 8px 28px rgba(193, 252, 117, 0.18), 0 0 0 1px rgba(193, 252, 117, 0.2);
 }
 
 /* Project Guidance: center the two cards */
@@ -739,6 +753,48 @@ hr {
 }
 .pathway-card__header {
   padding-top: 0.5rem;
+}
+
+/* Pathway card: equal left/right columns (levels + image) */
+@media (min-width: 768px) {
+  .pathway-card__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+
+/* FM Career Ladder image: smaller height, full column width */
+.pathway-career-ladder-img {
+  margin-top: 60px;
+  height: 100%;
+  max-height: 980px;
+  width: 100%;
+  max-width: 680px;
+  border-radius: 0px 100px 0px 100px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Mobile only: Career Ladder image fits in viewport, no overflow/clipping */
+@media (max-width: 767px) {
+  .pathway-career-ladder-img {
+    border-radius: 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+  /* Allow image to show fully without being clipped by card */
+  #courses .pathway-card .reveal-up {
+    overflow: visible;
+  }
 }
 
 /* Pathway value row: single row on mobile (All 7 Levels, Save More, Lifetime Access) */
@@ -1640,16 +1696,43 @@ select.input:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 1.25rem;
+  gap: 3.5rem; /* space between each card */
   max-width: 1400px; /* narrow card row so cards don't stretch */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem; /* extra space between "What We Offer" heading and cards */
 }
 .what-we-offer-cards > div {
   flex: 1 1 0;
   min-width: 0;
 }
+
+/* What We Offer: card shadow/border in heading green */
+.what-we-offer-card {
+  box-shadow: 0 4px 20px rgba(25, 48, 14, 0.15), 0 0 0 1px rgba(25, 48, 14, 0.08);
+}
+.what-we-offer-card:hover {
+  box-shadow: 0 8px 28px rgba(25, 48, 14, 0.2), 0 0 0 1px rgba(25, 48, 14, 0.12);
+}
+.tw-dark .what-we-offer-card {
+  box-shadow: 0 4px 20px rgba(193, 252, 117, 0.12), 0 0 0 1px rgba(193, 252, 117, 0.15);
+}
+.tw-dark .what-we-offer-card:hover {
+  box-shadow: 0 8px 28px rgba(193, 252, 117, 0.18), 0 0 0 1px rgba(193, 252, 117, 0.2);
+}
+
+/* What We Offer: same image size for all 3 cards (4:3 aspect) */
+.what-we-offer-card__image {
+  aspect-ratio: 4 / 3;
+}
+.what-we-offer-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 @media (max-width: 480px) {
   .what-we-offer-cards {
     flex-direction: column;

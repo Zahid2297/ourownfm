@@ -1,4 +1,4 @@
-import trainingImg from "../../../assets/trainingimg.webp";
+import trainingImg from "../../../assets/trainingimg.jpg";
 import consultancyImg from "../../../assets/consultancyimg.webp";
 import projectGuidanceImg from "../../../assets/projectGimag.webp";
 

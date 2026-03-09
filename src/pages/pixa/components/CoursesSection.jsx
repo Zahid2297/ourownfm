@@ -68,7 +68,7 @@ const CoursesSection = () => {
       id="courses"
     >
       <h3 className="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl tw-text-[#19300e] dark:tw-text-[#c1fc75]">
-        Courses
+        Training Courses
       </h3>
       <p className="reveal-up tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-text-center tw-max-w-[700px] tw-mt-2">
         Comprehensive FM learning pathways from foundations to leadership
@@ -172,7 +172,9 @@ const CoursesSection = () => {
                     <p className="value-heading tw-text-2xl tw-font-bold">
                       Lifetime Access
                     </p>
-                    <p className="pathway-text tw-text-sm">Learn at Your Pace</p>
+                    <p className="pathway-text tw-text-sm">
+                      Learn at Your Pace
+                    </p>
                   </div>
                 </div>
 

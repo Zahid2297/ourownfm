@@ -143,7 +143,7 @@ const CourseLevelsSection = () => {
               className="bi bi-mortarboard-fill tw-text-[#19300e]"
               aria-hidden
             />
-            Our Own FM Academy (Courses)
+            Our Own FM Academy (Training Courses)
           </h1>
           <p className="course-levels-subtitle tw-text-lg tw-text-gray-700 tw-text-center tw-mt-1">
             Structured FM Leadership Pathway

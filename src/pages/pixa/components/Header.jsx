@@ -105,7 +105,7 @@ const Header = () => {
             About
           </Link>
           <Link className="header-links" to="/courses">
-            Courses
+            Training
           </Link>
           <Link className="header-links" to="/pixa#certifications">
             Certifications

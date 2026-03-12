@@ -6,7 +6,7 @@ const Header = () => {
   const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(true);
 
   const scrollToTop = (e) => {
-    if (location.pathname === "/pixa") {
+    if (location.pathname === "/" || location.pathname === "/pixa") {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
@@ -63,7 +63,7 @@ const Header = () => {
     <header className="lg:tw-px-4 tw-max-w-[100vw] max-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-0 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-items-center tw-min-h-[65px] tw-h-[65px] tw-w-full tw-text-gray-700 tw-bg-[#f2f3f4] dark:tw-text-gray-200 dark:tw-bg-[#080808] tw-px-[3%] tw-py-2 tw-rounded-md lg:tw-max-w-6xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]">
       <Link
         className="tw-flex tw-py-2 tw-px-2 tw-gap-0 tw-place-items-center"
-        to="/pixa"
+        to="/"
         onClick={scrollToTop}
       >
         <div className="header-logo-container">
@@ -98,29 +98,14 @@ const Header = () => {
         }}
       >
         <nav className="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">
-          <Link className="header-links" to="/pixa" onClick={scrollToTop}>
-            Home
-          </Link>
           <Link className="header-links" to="/about">
             About
           </Link>
           <Link className="header-links" to="/courses">
             Training
           </Link>
-          <Link className="header-links" to="/pixa#certifications">
+          <Link className="header-links" to="/#certifications">
             Certifications
-          </Link>
-          <Link className="header-links" to="/pixa#consultancy">
-            Consultancy
-          </Link>
-          <Link className="header-links" to="/pixa#project-guidance">
-            Project Guidance
-          </Link>
-          <Link className="header-links" to="/pixa#gallery">
-            Gallery
-          </Link>
-          <Link className="header-links" to="/terms">
-            T&Cs
           </Link>
           <a
             className="header-links nav-hover-item tw-relative"
@@ -134,7 +119,7 @@ const Header = () => {
         </nav>
         <div className="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center">
           <Link
-            to="/pixa#contact"
+            to="/#contact"
             aria-label="Connect with us"
             className="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
           >

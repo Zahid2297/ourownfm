@@ -43,14 +43,17 @@ const Footer = () => {
               <Link to="/courses" className="footer-link">
                 Courses
               </Link>
-              <a href="/pixa#certifications" className="footer-link">
+              <a href="/#certifications" className="footer-link">
                 Certifications
               </a>
-              <a href="/pixa#consultancy" className="footer-link">
+              <a href="/#consultancy" className="footer-link">
                 Consultancy Services
               </a>
-              <a href="/pixa#project-guidance" className="footer-link">
+              <a href="/#project-guidance" className="footer-link">
                 Project Guidance
+              </a>
+              <a href="/#gallery" className="footer-link">
+                Gallery
               </a>
             </div>
           </div>
@@ -60,6 +63,9 @@ const Footer = () => {
             Company
           </h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
+              <Link to="/" className="footer-link">
+                Home
+              </Link>
               <Link to="/about" className="footer-link">
                 About Us
               </Link>
@@ -92,6 +98,9 @@ const Footer = () => {
             Resources
           </h2>
             <div className="tw-flex tw-flex-col tw-gap-3">
+              <Link to="/#contact" className="footer-link">
+                Get Started
+              </Link>
               <a href="#faq" className="footer-link">
                 FAQ
               </a>

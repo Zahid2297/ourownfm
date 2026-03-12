@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+const WHATSAPP_NUMBER = "916364807896";
+
 const NewsletterSection = () => {
   const [result, setResult] = useState("");
   const [showThankYou, setShowThankYou] = useState(false);
@@ -59,8 +61,6 @@ const NewsletterSection = () => {
 
     if (!formData.message || !formData.message.trim()) {
       newErrors.message = 'Message is required';
-    } else if (formData.message.length < 50) {
-      newErrors.message = 'Message must be at least 50 characters';
     } else if (formData.message.length > 700) {
       newErrors.message = 'Message must not exceed 700 characters';
     }
@@ -112,82 +112,49 @@ const NewsletterSection = () => {
       return;
     }
 
-    console.log("Validation passed, preparing form data...");
+    console.log("Validation passed, building WhatsApp message...");
 
-    // Create FormData manually to ensure proper format
-    const formDataToSend = new FormData();
-    
-    // Add web3forms required fields first
-    formDataToSend.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
-    formDataToSend.append("subject", "new contact request");
-    formDataToSend.append("from_name", formData.name);
-    
-    // Add botcheck field - MUST be empty string (unchecked) for security
-    formDataToSend.append("botcheck", "");
-    
-    // Add all form fields
-    formDataToSend.append("name", formData.name);
-    formDataToSend.append("email", formData.email);
-    formDataToSend.append("mobile", formData.mobile);
-    formDataToSend.append("country", formData.country);
-    formDataToSend.append("company", formData.company || 'N/A');
-    formDataToSend.append("job_title", formData.jobTitle || 'N/A');
-    formDataToSend.append("industry", formData.industry || 'N/A');
-    formDataToSend.append("enquiry_type", formData.enquiryType);
-    formDataToSend.append("course_interests", formData.courseInterests.join(', ') || 'None');
-    if (formData.otherCourse) {
-      formDataToSend.append("other_course", formData.otherCourse);
-    }
-    formDataToSend.append("message", formData.message);
-    
-    console.log("FormData entries:", Array.from(formDataToSend.entries()));
+    // Build prefilled message with clear sections and line breaks for readability
+    const courseInterestsLine =
+      formData.courseInterests?.length ||
+      (formData.otherCourse && formData.otherCourse.trim())
+        ? [
+            "",
+            `*Course interests:* ${[
+              ...(formData.courseInterests || []),
+              formData.otherCourse?.trim()
+            ]
+              .filter(Boolean)
+              .join(", ")}`
+          ]
+        : [];
 
-    try {
-      console.log("Sending request to web3forms...");
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formDataToSend
-      });
+    const message = [
+      "*📋 New enquiry from website*",
+      "",
+      "*Basic details*",
+      `Name: ${formData.name.trim()}`,
+      `Email: ${formData.email.trim()}`,
+      `Mobile: ${formData.mobile.trim()}`,
+      `Country: ${formData.country}`,
+      "",
+      "*Organisation*",
+      `Company: ${formData.company?.trim() || "—"}`,
+      `Job title: ${formData.jobTitle?.trim() || "—"}`,
+      `Industry: ${formData.industry || "—"}`,
+      "",
+      "*Enquiry*",
+      `Type: ${formData.enquiryType}`,
+      ...courseInterestsLine,
+      "",
+      "*Message*",
+      "",
+      formData.message.trim()
+    ].join("\n");
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
-      console.log("Response received:", response.status);
-      const data = await response.json();
-      console.log("Response data:", data);
-      
-      if (data.success) {
-        setShowThankYou(true);
-        setResult("");
-        event.target.reset();
-        setFormData({
-          name: '',
-          email: '',
-          mobile: '',
-          country: '',
-          company: '',
-          jobTitle: '',
-          industry: '',
-          enquiryType: '',
-          courseInterests: [],
-          otherCourse: '',
-          message: '',
-          consent: false
-        });
-      } else {
-        // Show more detailed error message
-        const errorMsg = data.message || 'Please try again.';
-        console.error("Web3Forms error:", errorMsg, data);
-        setResult(`Error: ${errorMsg}`);
-        
-        // If it's a security error, suggest waiting
-        if (errorMsg.includes('security') || errorMsg.includes('Could not submit')) {
-          setResult(`Security check failed. Please wait a moment and try again. If the problem persists, the form may be temporarily rate-limited.`);
-        }
-      }
-    } catch (error) {
-      console.error("Submission error:", error);
-      setResult(`Error: ${error.message || 'Please try again.'}`);
-    } finally {
-      setIsSubmitting(false);
-    }
+    setIsSubmitting(false);
+    window.location.href = whatsappUrl;
   };
 
   const courseOptions = [
@@ -502,7 +469,7 @@ const NewsletterSection = () => {
                         ? 'tw-border-red-500 dark:tw-border-red-500' 
                         : 'tw-border-gray-600 dark:tw-border-gray-500'
                     } focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-[#19300e] dark:focus:tw-ring-[#c1fc75]`}
-                    placeholder="Please describe your requirements (50-700 characters)"
+                    placeholder="Please describe your requirements (max 700 characters)"
                   />
                   <div className="tw-flex tw-justify-between tw-items-center">
                     {errors.message && (
@@ -511,11 +478,9 @@ const NewsletterSection = () => {
                     <p className={`tw-text-xs tw-ml-auto ${
                       formData.message.length > 700 
                         ? 'tw-text-red-500' 
-                        : formData.message.length < 50 && formData.message.length > 0
-                        ? 'tw-text-yellow-500'
                         : 'tw-text-gray-500 dark:tw-text-gray-400'
                     }`}>
-                      {formData.message.length} / 700 characters (minimum 50)
+                      {formData.message.length} / 700 characters
                     </p>
                   </div>
                 </div>

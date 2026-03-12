@@ -13,7 +13,7 @@ import TermsPage from "@/pages/pixa/TermsPage";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <ComingSoonPage />,
+    element: <PixaLandingPage />,
   },
   {
     path: "/slider",

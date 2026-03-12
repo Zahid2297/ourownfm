@@ -155,7 +155,7 @@ const CourseLevelsSection = () => {
           {courseLevels.map((course) => (
             <Link
               key={course.level}
-              to={{ pathname: "/pixa", hash: "contact" }}
+              to={{ pathname: "/", hash: "contact" }}
               className="course-level-card-link tw-block tw-no-underline tw-text-inherit tw-cursor-pointer"
             >
             <article
@@ -315,7 +315,7 @@ const CourseLevelsSection = () => {
               </div>
 
               <Link
-                to={{ pathname: "/pixa", hash: "contact" }}
+                to={{ pathname: "/", hash: "contact" }}
                 className="course-pathway-enroll-btn"
               >
                 Enroll in Complete Pathway

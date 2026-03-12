@@ -92,6 +92,9 @@ const Header = () => {
         }}
       >
         <nav className="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center">
+          <Link className="header-links" to="/" onClick={scrollToTop}>
+            Home
+          </Link>
           <Link className="header-links" to="/about">
             About
           </Link>

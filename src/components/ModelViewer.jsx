@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-/* eslint-disable react/no-unknown-property */
 import { Suspense, useRef, useLayoutEffect, useEffect, useMemo } from "react";
 import {
   Canvas,
@@ -361,8 +360,6 @@ const ModelInner = ({
 
 const ModelViewer = ({
   url,
-  width = 400,
-  height = 400,
   modelXOffset = 0,
   modelYOffset = 0,
   defaultRotationX = -50,

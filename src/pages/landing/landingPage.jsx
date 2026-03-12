@@ -1,9 +1,5 @@
-import { useState, useRef } from "react";
-import { RiCheckLine, RiMailLine } from "react-icons/ri";
-import { div } from "three/tsl";
 import Silk from "@/components/Silk";
 import TextType from "@/components/TextType";
-import { BsSun } from "react-icons/bs";
 import StaggeredMenu from "@/components/StaggeredMenu";
 import ModelViewer from "@/components/ModelViewer";
 import AnimatedContent from "@/components/AnimatedContent";
@@ -28,8 +24,6 @@ const LandingPage = () => {
 
     { label: "LinkedIn", link: "https://linkedin.com" },
   ];
-
-  const menuRef = useRef();
 
   return (
     <div className="min-h-screen relative overflow-visible">

@@ -1,18 +1,4 @@
-import { useState } from "react";
-import { RiCheckLine, RiMailLine } from "react-icons/ri";
-import { div } from "three/tsl";
-import Silk from "@/components/Silk";
-
 const Nav = () => {
-  const items = [
-    { label: "Home", href: "/" },
-    {
-      label: "Services",
-      href: "/services",
-    },
-    { label: "About", href: "/about-us" },
-    { label: "Contact", href: "/contact-us" },
-  ];
   return (
     <div className="h-screen relative overflow-hidden">
       <nav className="w-full h-26 bg-transparent flex justify-between items-center px-2 md:px-2 rounded-b-3xl shadow-xl/30 shadow-slate-100">

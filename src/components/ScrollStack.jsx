@@ -25,17 +25,14 @@ const ScrollStack = ({
   stackPosition = "20%",
   scaleEndPosition = "10%",
   baseScale = 0.85,
-  rotationAmount = 0,
-  blurAmount = 0,
   useWindowScroll = false,
-  onStackComplete,
+  ...rest
 }) => {
+  void rest; // rotationAmount, blurAmount, onStackComplete accepted but unused
   const scrollerRef = useRef(null);
-  const stackCompletedRef = useRef(false);
   const animationFrameRef = useRef(null);
   const lenisRef = useRef(null);
   const cardsRef = useRef([]);
-  const lastTransformsRef = useRef(new Map());
   const isUpdatingRef = useRef(false);
 
   const calculateProgress = useCallback((scrollTop, start, end) => {

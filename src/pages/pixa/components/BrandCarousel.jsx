@@ -9,11 +9,6 @@ const BrandCarousel = () => {
       icon: quickFMSLogo,
       originalColors: true,
     },
-    // {
-    //   name: "VDEI",
-    //   description: "BIM & Digital Twins",
-    //   icon: "/digital-twin.png",
-    // },
     {
       description: "Green Mentor",
       icon: greenMentorLogo,

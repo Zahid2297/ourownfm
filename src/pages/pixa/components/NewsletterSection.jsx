@@ -4,7 +4,6 @@ const WHATSAPP_NUMBER = "916364807896";
 
 const NewsletterSection = () => {
   const [result, setResult] = useState("");
-  const [showThankYou, setShowThankYou] = useState(false);
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -28,7 +27,7 @@ const NewsletterSection = () => {
   };
 
   const validatePhone = (phone) => {
-    const phoneRegex = /^[\+]?[(]?[0-9]{1,4}[)]?[-\s\.]?[(]?[0-9]{1,4}[)]?[-\s\.]?[0-9]{1,9}$/;
+    const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/;
     return phoneRegex.test(phone.replace(/\s/g, ''));
   };
 
@@ -70,9 +69,7 @@ const NewsletterSection = () => {
     }
 
     setErrors(newErrors);
-    const isValid = Object.keys(newErrors).length === 0;
-    console.log("Validation result:", isValid, "Errors:", newErrors);
-    return isValid;
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleInputChange = (e) => {
@@ -98,21 +95,16 @@ const NewsletterSection = () => {
     }
   };
 
-  const onSubmit = async (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
     setIsSubmitting(true);
     setResult("");
-    
-    console.log("Form submitted, validating...");
-    
+
     if (!validateForm()) {
-      console.log("Validation failed:", errors);
       setResult("Please fix the errors in the form.");
       setIsSubmitting(false);
       return;
     }
-
-    console.log("Validation passed, building WhatsApp message...");
 
     // Build prefilled message with clear sections and line breaks for readability
     const courseInterestsLine =
@@ -169,27 +161,7 @@ const NewsletterSection = () => {
   return (
     <section id="contact" className="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2">
       <div className="tw-flex tw-w-full tw-max-w-[900px] tw-place-content-center tw-place-items-center tw-flex-col tw-gap-6 tw-rounded-lg tw-bg-[#f2f3f4] dark:tw-bg-[#080808] tw-p-8 max-md:tw-max-w-full max-md:tw-p-4">
-        {showThankYou ? (
-          <div className="tw-flex tw-flex-col tw-items-center tw-justify-center tw-gap-6 tw-text-center tw-py-12">
-            <div className="tw-w-20 tw-h-20 tw-rounded-full tw-bg-green-500 dark:tw-bg-green-600 tw-flex tw-items-center tw-justify-center tw-mb-4">
-              <i className="bi bi-check-lg tw-text-white tw-text-4xl"></i>
-            </div>
-            <h2 className="tw-text-4xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] max-md:tw-text-3xl">
-              Thank You!
-            </h2>
-            <p className="tw-text-lg tw-text-gray-700 dark:tw-text-gray-300 tw-max-w-md">
-              We've received your enquiry and will get back to you soon.
-            </p>
-            <button
-              onClick={() => setShowThankYou(false)}
-              className="btn tw-mt-4 tw-rounded-lg tw-px-6 tw-py-3 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
-            >
-              Send Another Enquiry
-            </button>
-          </div>
-        ) : (
-          <>
-            <div className="tw-flex tw-flex-col tw-text-center tw-gap-1 tw-w-full">
+        <div className="tw-flex tw-flex-col tw-text-center tw-gap-1 tw-w-full">
               <h2 className="tw-text-3xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] max-md:tw-text-2xl">
             Get in Touch
           </h2>
@@ -199,17 +171,6 @@ const NewsletterSection = () => {
         </div>
 
             <form onSubmit={onSubmit} className="tw-flex tw-w-full tw-flex-col tw-gap-6">
-              {/* Honeypot field for spam protection (must remain empty/unchecked) */}
-              <input 
-                type="checkbox" 
-                name="botcheck" 
-                className="tw-hidden" 
-                style={{ display: 'none', position: 'absolute', left: '-9999px' }} 
-                tabIndex="-1" 
-                autoComplete="off"
-                aria-hidden="true"
-              />
-              
               {/* Basic Details Section */}
               <div className="tw-flex tw-flex-col tw-gap-4">
                 <h3 className="tw-text-xl tw-font-semibold tw-text-[#19300e] dark:tw-text-[#c1fc75] tw-border-b tw-border-gray-300 dark:tw-border-gray-700 tw-pb-2">
@@ -548,18 +509,12 @@ const NewsletterSection = () => {
                 {isSubmitting ? 'Submitting...' : 'Submit Enquiry'}
               </button>
 
-              {result && !showThankYou && (
-                <div className={`tw-text-center tw-text-sm tw-mt-2 tw-p-3 tw-rounded-lg ${
-                  result.includes("Success") 
-                    ? "tw-text-green-700 dark:tw-text-green-300 tw-bg-green-50 dark:tw-bg-green-900/30" 
-                    : "tw-text-red-700 dark:tw-text-red-300 tw-bg-red-50 dark:tw-bg-red-900/30"
-                }`}>
+              {result && (
+                <div className="tw-text-center tw-text-sm tw-mt-2 tw-p-3 tw-rounded-lg tw-text-red-700 dark:tw-text-red-300 tw-bg-red-50 dark:tw-bg-red-900/30">
                   {result}
-        </div>
+                </div>
               )}
             </form>
-          </>
-        )}
       </div>
     </section>
   );

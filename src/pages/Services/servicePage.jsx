@@ -1,6 +1,4 @@
 import Nav from "@/components/Nav";
-import { useState } from "react";
-import { RiCheckLine, RiMailLine } from "react-icons/ri";
 import Silk from "@/components/Silk";
 
 const ServicePage = () => {

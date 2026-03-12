@@ -73,12 +73,6 @@ const Header = () => {
             className="tw-object-contain tw-h-full tw-w-full"
           />
         </div>
-        {/* <span
-          className="tw-uppercase tw-font-medium tw-leading-none"
-          style={{ fontSize: "11px", marginLeft: "-22px" }}
-        >
-          OUROWN FM ACADEMY
-        </span> */}
       </Link>
       <div
         ref={collapseHeaderItemsRef}

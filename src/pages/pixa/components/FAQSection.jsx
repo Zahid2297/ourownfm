@@ -20,7 +20,7 @@ const FAQSection = () => {
         "Yes! We offer placement support for India and GCC markets. This includes resume development, interview preparation, job matching through our partner network, and GCC recruitment coordination. We support placements for Facility Executives, Managers, Engineers, Supervisors, Coordinators, and more.",
     },
     {
-      question: "What makes your training different from other FM courses?",
+      question: "What makes our training different from other FM courses?",
       answer:
         "Our training is designed by industry practitioners, focuses on practical and digital-first FM skills, includes real-world learning through site visits, and provides continuous mentorship beyond the classroom. We emphasize hands-on experience with CAFM, BIM, IoT, and other modern FM tools.",
     },

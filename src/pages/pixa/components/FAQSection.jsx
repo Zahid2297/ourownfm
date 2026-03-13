@@ -10,7 +10,7 @@ const FAQSection = () => {
         "Facilities Management (FM) is the practice of coordinating people, places, processes, and technology to ensure the functionality, comfort, safety, and efficiency of the built environment. It includes both hard FM (technical services like HVAC, electrical, plumbing) and soft FM (services like cleaning, security, catering).",
     },
     {
-      question: "Who can enroll in your training programs?",
+      question: "Who can enroll in our training programs?",
       answer:
         "Our training programs are designed for everyone — from fresh graduates to working professionals. We especially welcome those switching careers, professionals from small towns, and anyone looking to build a career in FM. No prior experience is required for our fundamental courses.",
     },
